@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya:wght@900&family=B612+Mono:wght@400;700&family=Karla:wght@700&family=Varela+Round&display=swap');
+.content{
+    margin: 0 auto;
+    max-width: 760px;
+}
+h1, footer, footer p a{
+    color: white;;
+}
+footer, footer p a{
+    font-family: 'Varela Round', sans-serif;
+}
+h1, footer{
+    background-color: #261C13;
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    padding: 30px;
+    font-size: 3em;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-family: 'Alegreya SC', serif;
+    border: 3px dotted #F9999B;
+}
+h2{
+    color: #010D4A;
+}
+img{
+    float: right;
+    margin-top: -100px;
+    margin-right: 10px;
+}
+
+hr{
+    margin-top: -15px;
+}
+li a{
+    color: #5C0209;
+}
+.portal{
+    padding: 10px;
+    font-family: 'Varela Round', sans-serif;  
+}
+footer{
+    padding: 5px;
+    border: 3px dotted #F9999B;
+}
+.copyright{
+    font-size: 0.8em;
+}
+.todaysDate {
+    font-size: 0.7em;
+}
