@@ -51,3 +51,28 @@ footer{
 .updatedDate {
     font-size: 0.7em;
 }
+@media(max-width: 750px){
+    img{
+        float: right;
+        margin: 0px;
+    }
+    portal{
+        display: block;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+@media(max-width: 550px){
+   img{
+       float: none;
+       margin: 0 auto;
+       display: block;
+   }
+   portal{
+       float: none;
+   } 
+   footer{
+       margin-top: 0px;
+   }
+}
