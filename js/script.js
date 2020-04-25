@@ -1,4 +1,7 @@
-function lastModified() {
         let date = new Date(document.lastModified);
-    document.getElementById("dateOutput").innerHTML = `Last Updated: ${date.getMonth} / ${date.getDay} / ${date.getFullYear}${date.getHours}:${date.getUTCMinutes}:${date.getUTCMilliseconds}`;
-    }
+        let month = date.getMonth();
+        let day = date.getDay();
+        let year = date.getFullYear();
+        let time = date.getTime(); 
+        let message = `Last Updated: ${month} / ${day} / ${year} ${time}`;
+        document.getElementById("dateOutput").innerHTML = message;
