@@ -1,2 +1,2 @@
 let dateModified = new Date(document.lastModified);
-document.getElementById("todaysdate").innerHTML = "Last Updated: " + dateModified;
+document.getElementById("todaysDate").innerHTML = "Last Updated: " + dateModified;
