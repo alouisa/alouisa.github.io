@@ -37,6 +37,10 @@ hr{
 li a{
     color: #5C0209;
 }
+li a:hover{
+    background-color: rgb(247, 223, 224);
+    color: #261C13;
+}
 .portal{
     padding: 5px 5px 30px 50px;
     font-family: 'Varela Round', sans-serif;  
