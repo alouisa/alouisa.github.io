@@ -1,13 +1,13 @@
 @media(min-width: 32.5em){
 .content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
 }
 .copyright{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .updatedDate {
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 }

@@ -1,0 +1,13 @@
+@media(min-width: 60em){
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+.copyright{
+    font-size: 1em;
+}
+.updatedDate {
+    font-size: 0.9em;
+}
+}
