@@ -5,6 +5,7 @@ header{
     margin-bottom: 20px;
 }
 .content{
+    max-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
