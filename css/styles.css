@@ -15,7 +15,8 @@ h1, footer{
 }
 h1{
     padding: 30px;
-    font-size: 3em;
+    text-align: left;
+    font-size: 2.5em;
     letter-spacing: 3px;
     word-spacing: 5px;
     font-family: 'Alegreya SC', serif;
@@ -25,9 +26,8 @@ h2{
     color: #010D4A;
 }
 img{
-    float: right;
-    margin-top: -140px;
-    margin-right: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 hr{
@@ -56,29 +56,4 @@ footer{
 }
 .updatedDate {
     font-size: 0.7em;
-}
-@media(max-width: 750px){
-    img{
-        float: right;
-        margin: 0px;
-    }
-    portal{
-        display: block;
-    }
-    footer{
-        margin-top: 100px;
-    }
-}
-@media(max-width: 550px){
-   img{
-       float: none;
-       margin: 0 auto;
-       display: block;
-   }
-   portal{
-       float: none;
-   } 
-   footer{
-       margin-top: 0px;
-   }
 }
