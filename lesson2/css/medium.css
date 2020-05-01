@@ -1,4 +1,9 @@
 @media(min-width: 32.5em){
+header{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;

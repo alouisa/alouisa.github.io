@@ -1,23 +1,23 @@
-.main-content{
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 header, footer{
      background-color: rgb(20, 28, 34);
      color:white;
      text-align: center;
     }
 header{
-    padding: 10px; 
+    padding: 10px;
 }
+.content{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 header, card{
     margin-bottom: 20px;
 }
  card{
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(202, 207, 224, 0.616);
     overflow: hidden;
     }
 h1, h3{
@@ -32,6 +32,10 @@ h3{
 }
 h4{
     margin-bottom: 5px;
+}
+h4, #target-site, #sololearn-site, #pixlr-site{
+    color: rgb(34, 50, 61);
+    padding-left: 10px;
 }
 #target-site, #sololearn-site, #pixlr-site{
     display: inline-block;
