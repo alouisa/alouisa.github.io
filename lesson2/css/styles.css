@@ -1,3 +1,20 @@
+.main-content{
+    max-width: 29em;
+    margin: 0 auto;
+}
+
+header{
+     background-color: rgb(20, 28, 34);
+     color:white;
+     padding: 10px;
+     text-align: center; 
+}
+h3{
+     background-color: rgb(34, 50, 61);
+     color:white; 
+     border-radius: 5px;
+     padding: 10px 
+}
 img{
     display: block;
     margin: 0 auto;
