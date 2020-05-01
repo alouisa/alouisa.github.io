@@ -1,5 +1,5 @@
 .main-content{
-    max-width: 29em;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -8,25 +8,26 @@ header{
      color:white;
      padding: 10px;
      text-align: center; 
-}
-.pixlr-contrast, .sololearn-whitespace, .target-heirarchy{
-    border-radius: 0.5px solid gray;
+    }
+h1{
+   margin-bottom: -10px; 
 }
 h3{
      background-color: rgb(34, 50, 61);
      color:white; 
      border-radius: 5px;
-     padding: 10px 
+     padding: 10px;
+     margin-bottom: -10px; 
 }
 img{
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+    max-width: 100%;
 }
 #target-site, #sololearn-site, #pixlr-site{
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
-
 footer{
     padding: 5px;
     text-align: center;
