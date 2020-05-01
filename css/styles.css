@@ -39,7 +39,7 @@ li{
 li a{
     color: #5C0209;
 }
-li a:hover{
+a:hover{
     background-color: rgb(247, 223, 224);
     color: #261C13;
 }
