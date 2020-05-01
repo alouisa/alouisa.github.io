@@ -1,8 +1,12 @@
 @media(min-width: 60em){
+header{
+    max-width: 80%;
+}
 h1{
     font-size:2.5em;
 }
 .content{
+    max-width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 50px;

@@ -33,6 +33,9 @@ h1{
 h2{
     font-size: 1.7em;
 }
+h2, .updatedDate{
+    color: rgba(223, 228, 247, 0.801);
+}
 h1, h3{
     margin-bottom: -10px; 
 } 
