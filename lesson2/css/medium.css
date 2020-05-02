@@ -1,4 +1,4 @@
-@media(min-width: 32.5em){
+@media only screen and (min-width: 32.5em){
 header{
     max-width: 90%;
     margin: 0 auto;
