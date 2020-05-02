@@ -9,7 +9,7 @@ h1{
     max-width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 40px;
 }
 .copyright{
     font-size: 1em;
