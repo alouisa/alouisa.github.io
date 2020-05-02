@@ -21,7 +21,7 @@ header, .pixlr-card, .sololearn-card, .target-card{
  .pixlr-card, .sololearn-card, .target-card{
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 10px;
-    background-color: rgba(202, 207, 224, 0.616);
+    background-color: rgba(228, 232, 245, 0.986);
     overflow: hidden;
     }
 h1, h2, h3, footer{
