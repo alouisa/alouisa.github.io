@@ -8,7 +8,7 @@ header{
     padding: 10px;
     
 }
-.content{
+main{
     max-width: 80%;
     margin: 0 auto;
     display: grid;
