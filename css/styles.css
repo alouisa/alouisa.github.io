@@ -1,26 +1,28 @@
+*{
+    box-sizing: border-box;
+}
 header, main, footer{
     margin: 0 auto;
     max-width: 760px;
 }
 h1, footer, footer p a{
-    color: white;;
+    color: white;
 }
 footer, footer p a{
     font-family: 'Varela Round', sans-serif;
 }
-h1, footer{
+header, footer{
     background-color: #261C13;
     border-radius: 10px;
     text-align: center;
+    border: 3px dotted #F9999B;
+    padding: 10px;
 }
 h1{
-    padding: 30px;
-    text-align: center;
     font-size: 2.5em;
     letter-spacing: 3px;
     word-spacing: 5px;
     font-family: 'Alegreya SC', serif;
-    border: 3px dotted #F9999B;
 }
 h2{
     color: #010D4A;
@@ -28,6 +30,7 @@ h2{
 img{
     display: block;
     margin: 0 auto;
+     margin-top: 20px;
 }
 
 hr{
@@ -44,13 +47,12 @@ a:hover{
     background-color: rgb(247, 223, 224);
     color: #261C13;
 }
-.portal{
-    padding: 5px 5px 30px 50px;
+main{
+    padding:10px;
     font-family: 'Varela Round', sans-serif;  
 }
 footer{
     padding: 5px;
-    border: 3px dotted #F9999B;
 }
 .copyright{
     font-size: 0.8em;
