@@ -2,6 +2,9 @@
     max-width: 80%;
     margin: 0 auto;
 }
+.main-nav, header{
+    text-align: center;
+}
 .main-nav ul li{
     list-style: none;
 }
@@ -9,4 +12,7 @@
     display: block;
     text-decoration: none;
     font-size: 1.5em;
+}
+header{
+    font-size: 1.6em;;
 }
