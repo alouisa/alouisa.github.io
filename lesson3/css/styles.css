@@ -1,15 +1,9 @@
- .main-nav, header, main, footer{
+.logo{
+    width: 150px;
+}
+.main-nav, header, main, footer{
     max-width: 767px;
     margin: 0 auto;
-}
-header{
-    font-size: 1.3em;;
-}
-header,
-footer {
-    text-align: center;
-	background-color: rgb(175, 242, 245);
-	padding: 10px;
 }
 .main-nav{
     text-align: center;
@@ -30,6 +24,15 @@ footer {
 .main-nav a:hover{   
     background-color:rgb(229, 229, 226);
 }
+header{
+    font-size: 1.3em;;
+}
 main{
     padding: 25px;
-} 
+}
+header,
+footer {
+    text-align: center;
+	background-color: rgb(175, 242, 245);
+	padding: 10px;
+}
