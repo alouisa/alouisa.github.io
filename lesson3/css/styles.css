@@ -1,18 +1,35 @@
  .main-nav, header, main, footer{
-    max-width: 80%;
+    max-width: 767px;
     margin: 0 auto;
 }
-.main-nav, header{
+header{
+    font-size: 1.3em;;
+}
+header,
+footer {
+    text-align: center;
+	background-color: rgb(175, 242, 245);
+	padding: 10px;
+}
+.main-nav{
     text-align: center;
 }
-.main-nav ul li{
+.main-nav ul{
     list-style: none;
+    padding: 0;
+    border: 1px solid black;
+
 }
 .main-nav a{
     display: block;
     text-decoration: none;
     font-size: 1.5em;
+    padding: 0.5rem;
+
 }
-header{
-    font-size: 1.6em;;
+.main-nav a:hover{   
+    background-color:rgb(229, 229, 226);
 }
+main{
+    padding: 25px;
+} 
