@@ -57,6 +57,7 @@ h4{
 h4, #target-site, #sololearn-site, #pixlr-site, .pixlr-card p, .sololearn-card p, .target-card p{
     color: rgb(34, 50, 61);
     padding-left: 20px;
+    padding-right: 20px;
 }
 #target-site, #sololearn-site, #pixlr-site{
     display: inline-block;
