@@ -46,8 +46,14 @@ footer {
     padding: 10px;
 }
 .personas, .scenarios{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .scenarios{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+}
+#site-name{
+    letter-spacing: 1px;
+}
+.site-name-section{
+    text-align: center;
 }
