@@ -19,10 +19,9 @@
 }
 .main-nav a{
     text-decoration: none;
+    font-size: 1.5em;
     padding: 0.5rem;
-}
-.main-nav a, .nav-font{
-    font-size: 1.5em
+
 }
 .main-nav a:hover{   
     background-color:rgb(229, 229, 226);
@@ -37,15 +36,10 @@ main{
     max-width: 100%;
 }
 header,
-footer, .tag-names{
+footer {
     text-align: center;
+	background-color: rgb(175, 242, 245);
 	padding: 10px;
-}
-header, footer{
-   	background-color: rgb(175, 242, 245); 
-}
-.tag-names{
-    background-color:  rgb(229, 243, 243);
 }
 .personas, .scenarios{
     margin-top: 70px;
