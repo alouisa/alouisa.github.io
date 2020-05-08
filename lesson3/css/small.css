@@ -41,3 +41,9 @@ footer {
 	background-color: rgb(175, 242, 245);
 	padding: 10px;
 }
+.personas, .scenarios{
+    margin-top: 70px;
+}
+.scenarios{
+    margin-bottom: 70px;
+}
