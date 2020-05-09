@@ -1,7 +1,7 @@
-.logo, .logo-img{
-    width: 150px;
+.logo{
+    width: 120px;
 }
-.logo,.main-nav a{
+logo, .main-nav a{
     display: block;
 }
 header{
