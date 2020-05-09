@@ -11,10 +11,6 @@ header{
 .logo, .main-nav a{
     display: block;
 }
-.main-nav, header, main, footer, .logo{
-    max-width: 850px;
-    margin: 0 auto;
-}
 header,
 footer {
     background-color: rgb(175, 242, 245);
@@ -23,6 +19,10 @@ footer {
 } 
 .main-nav, header, footer{
     text-align: center;
+}
+.main-nav, header, main, footer, .logo{
+    max-width: 850px;
+    margin: 0 auto;
 }
 .main-nav ul{
     list-style-type: none;
@@ -44,6 +44,8 @@ footer {
 }
 main{
     padding: 25px;
+    background-color: rgb(247, 248, 233);
+
 }
 .image-max{
     max-width: 100%;
