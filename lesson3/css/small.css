@@ -15,7 +15,8 @@ header{
 header,
 footer {
     background-color: rgb(175, 242, 245);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .main-nav, header, footer{
@@ -48,7 +49,7 @@ main{
 .personas, .scenarios{
     margin-top: 50px;
 }
-.scenarios, .nav-style, .headings, .paragraphs{
+.scenarios, .nav-style, .headings, .paragraphs, .site-name-section{
     margin-bottom: 50px;
 }
 #site-name{
