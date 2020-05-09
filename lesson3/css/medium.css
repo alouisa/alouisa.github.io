@@ -5,5 +5,8 @@
     .main-nav li{
         flex: 1 1 100%;
     }
+    .main-nav a {
+        border: 1px solid white;
+    }
 
 }
