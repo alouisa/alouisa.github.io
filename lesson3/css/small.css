@@ -1,13 +1,13 @@
+header{
+    font-size: 1.3em;
+    color: #292c30;
+} 
 .logo{
     width: 120px;
 }
 .logo, .main-nav a{
     display: block;
 }
-header{
-    font-size: 1.3em;
-    color: #292c30;
-} 
 .main-nav, header, main, footer, .logo{
     max-width: 850px;
     margin: 0 auto;
