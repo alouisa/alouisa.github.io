@@ -16,6 +16,9 @@ footer {
 	background-color: rgb(175, 242, 245);
     padding: 10px;
 }
+h1{
+    color: rgb(56, 56, 56);
+}
 .main-nav, header, footer{
     text-align: center;
 }
@@ -28,7 +31,8 @@ footer {
 }
 .main-nav a{
     text-decoration: none;
-    background-color: #003776;
+    /* background-color: #003776; */
+    background-color: #011a36;
     color: white;
     font-size: 1.5em;
     padding:  15px;
@@ -36,7 +40,6 @@ footer {
 }
 .main-nav a:hover{   
      color: #FFE835;
-     text-decoration: #86E2FF underline;
 }
 main{
     padding: 25px;
