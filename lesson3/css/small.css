@@ -5,20 +5,19 @@
     display: block;
 }
 header{
-    font-size: 1.3em;;
+    font-size: 1.3em;
+    color: #292c30;
 } 
 .main-nav, header, main, footer, .logo{
-    max-width: 767px;
+    max-width: 850px;
     margin: 0 auto;
 }
 header,
 footer {
-	background-color: rgb(175, 242, 245);
+    background-color: rgb(175, 242, 245);
     padding: 10px;
 }
-h1{
-    color: rgb(56, 56, 56);
-}
+
 .main-nav, header, footer{
     text-align: center;
 }
@@ -31,15 +30,14 @@ h1{
 }
 .main-nav a{
     text-decoration: none;
-    /* background-color: #003776; */
     background-color: #011a36;
     color: white;
     font-size: 1.5em;
     padding:  15px;
 
 }
-.main-nav a:hover{   
-     color: #FFE835;
+.main-nav a:hover{   ;
+     color: #FFBB33;
 }
 main{
     padding: 25px;
@@ -60,6 +58,7 @@ main{
     text-align: center;
 }
 
+/* Color Scheme */
 .primary, .seconday, .accent1, .accent2{
     padding: 10px;
 }
