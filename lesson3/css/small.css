@@ -20,7 +20,7 @@ footer {
     background-color: rgb(175, 242, 245);
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} 
 .main-nav, header, footer{
     text-align: center;
 }
@@ -35,7 +35,7 @@ footer {
     text-decoration: none;
     background-color: #251e10;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding:  15px;
 
 }
