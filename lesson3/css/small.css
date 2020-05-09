@@ -4,10 +4,6 @@ header{
 } 
 .logo{
     width: 120px;
-    padding-right: 0;
-}
-h1{
-    padding-left: 0;
 }
 .logo, .main-nav a{
     display: block;
@@ -22,7 +18,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .main-nav, header, footer{
     text-align: center;
 }
