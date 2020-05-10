@@ -42,6 +42,11 @@ footer {
 .main-nav a:hover{ 
      color: rgb(241, 252, 180);
 }
+h2, h3{
+{
+    color: #251e10;
+}
+}
 main{
     padding: 25px;
     background-color: rgb(247, 248, 233);
@@ -68,7 +73,7 @@ main{
     padding: 10px;
 }
 .primary{
- background-color: #003776;
+ background-color: #251e10;
  color: white;
 }
 .secondary{
