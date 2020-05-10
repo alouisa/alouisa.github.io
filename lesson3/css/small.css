@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap');
 *{
     box-sizing: border-box;
 }
 header{
+    font-family: 'Sacramento', cursive;
     font-size: 1.3em;
     color: #292c30;
 } 
@@ -40,9 +42,10 @@ footer {
 
 }
 .main-nav a:hover{ 
-     color: rgb(241, 252, 180);
+     color: #FFE835;
 }
-h2, h3{
+.main-nav, main, footer{
+    font-family: 'Montserrat', sans-serif;
     color: #251e10;
 }
 main{
@@ -68,14 +71,15 @@ main{
     padding: 10px;
 }
 .primary{
- background-color: #251e10;
- color: white;
+    background-color: #F7F8EF;
+    border: 1px solid black
 }
 .secondary{
-    background-color: #86E2FF;
+    background-color: #251e10;
+    color: white;
 }
 .accent1{
-    background-color: #FFBB33;
+     background-color: #86E2FF;
 }
 .accent2{
     background-color: #FFE835;
