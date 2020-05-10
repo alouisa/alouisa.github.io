@@ -20,7 +20,7 @@ footer {
 .main-nav, header, footer{
     text-align: center;
 }
-.main-nav, header, main, footer, .logo{
+.main-nav, header, main, footer, .logo, .site-name-section{
     max-width: 850px;
     margin: 0 auto;
 }
@@ -63,9 +63,6 @@ main{
 }
 #site-name{
     letter-spacing: 1px;
-}
-.site-name-section{
-    text-align: center;
 }
 
 /* Color Scheme */
