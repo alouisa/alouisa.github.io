@@ -6,9 +6,6 @@ header{
     font-family: 'Sacramento', cursive;
     font-size: 1.5em;
     color: #292c30;
-} 
-.logo{
-    width: 120px;
 }
 .logo, .main-nav a{
     display: block;
