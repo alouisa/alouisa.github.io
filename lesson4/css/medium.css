@@ -12,4 +12,8 @@
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
     }
+    .main-nav ul.hide{
+    display: block;
+
+}
 }
