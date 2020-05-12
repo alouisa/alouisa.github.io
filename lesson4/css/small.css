@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap');
+*{
+    box-sizing: border-box;
+}
+.main-nav, header, main, footer{
+    max-width: 850px;
+    margin: 0 auto;
+}
+header,
+footer {
+    background-color: rgb(175, 242, 245);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+header, main, footer{
+    padding: 25px
+} 
+
+header{
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5em;
+    color: #292c30
+}
+
 .main-nav button{
     margin: .2rem 2%;
     background-color: transparent;
@@ -9,7 +33,10 @@
 }
 .main-nav{
     background-color: #ccc;
+}
+.main-nav, main, footer{
     font-family: 'Montserrat', sans-serif;
+    color: #251e10;
 }
 .main-nav ul{
     list-style-type: none;
@@ -31,6 +58,10 @@
 }
 .main-nav ul.hide{
     display: none;
+}
+main{
+    background-color: rgb(247, 248, 233);
+
 }
 
 
