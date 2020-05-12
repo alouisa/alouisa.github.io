@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap');
+.main-nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+    
+}
+.main-nav{
+    background-color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a{
+    display: block;
+    padding: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.main-nav ul li a:hover{
+    background-color:rgba(0,0,0,0.4); 
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2); color: #fff;
+}
+
+
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}

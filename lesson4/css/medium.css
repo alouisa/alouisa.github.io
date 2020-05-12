@@ -1,0 +1,15 @@
+@media only screen and (min-width: 42em){
+    .main-nav button{
+        display: none;
+    }
+    .main-nav ul{
+       margin-left: 2%; 
+    }
+    .main-nav ul li{
+        float: left;
+    }
+    .main-nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+}
