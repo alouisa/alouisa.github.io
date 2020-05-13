@@ -1,15 +1,4 @@
-@media only screen and (min-width: 52em){
-    header, footer, .main-nav ul.hide{
-         display: flex;
-         flex-direction: row;    
-    }
-    header, footer{
-         justify-content: center;
-         align-items: center;  
-    }
-     .main-nav ul{
-        max-width: 850px;
-     } 
+@media only screen and (min-width: 52em){ 
     .main-nav button{
         display: none;
     }
@@ -20,5 +9,9 @@
     .main-nav ul li a{
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
+    }
+     .main-nav ul.hide{
+        display: flex;
+        flex-direction: row;    
     }
 }

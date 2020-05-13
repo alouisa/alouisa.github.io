@@ -6,6 +6,13 @@ body{
     background-color: rgb(247, 248, 233);
 
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.5em;
+    color: #292c30; 
+}
 main {
     max-width: 850px;
     margin: 0 auto;
@@ -20,11 +27,6 @@ footer {
 header, main, footer{
     padding: 25px;
 } 
-
-header{
-    font-size: 1.5em;
-    color: #292c30; 
-}
 /* .logo{
     display: block;
 } */
@@ -76,4 +78,7 @@ h1{
 }
 .main-nav ul.hide{
     display: none;
+}
+footer{
+    text-align: center;
 }
