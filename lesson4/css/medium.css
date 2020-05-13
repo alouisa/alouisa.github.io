@@ -1,4 +1,4 @@
-@media only screen and (min-width: 42em){
+@media only screen and (min-width: 52em){
     header, footer, .main-nav ul.hide{
          display: flex;
          flex-direction: row;    
@@ -15,7 +15,7 @@
     }
     .main-nav ul li{
        flex: 1 1 100%;
-       text-align: center
+       text-align: center;
     }
     .main-nav ul li a{
         border: none;
