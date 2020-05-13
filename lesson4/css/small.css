@@ -14,14 +14,26 @@ footer {
 
 }
 header, main, footer{
-    padding: 25px
+    padding: 25px;
 } 
 
 header{
-    font-family: 'Sacramento', cursive;
+    display: flex;
     font-size: 1.5em;
-    color: #292c30
+    color: #292c30; 
 }
+h1{
+    font-family: 'Sacramento', cursive;
+}
+.header-text{
+    display:flex;
+    flex-direction: column;
+}
+ .header-text p{
+    margin-top: -30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+} 
 
 .main-nav button{
     margin: .2rem 2%;
