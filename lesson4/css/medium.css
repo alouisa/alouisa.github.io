@@ -1,26 +1,24 @@
 @media only screen and (min-width: 42em){
+    header, footer, .main-nav ul.hide{
+         display: flex;
+         flex-direction: row;    
+    }
     header, footer{
-    justify-content: center;
-    align-items: center; 
-}
+         justify-content: center;
+         align-items: center;  
+    }
+     .main-nav ul{
+        max-width: 850px;
+     } 
     .main-nav button{
         display: none;
     }
-    .main-nav ul{
-       margin-left: 2%; 
-    }
     .main-nav ul li{
-        float: left;
+       flex: 1 1 100%;
+       text-align: center
     }
     .main-nav ul li a{
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
     }
-    .main-nav ul.hide{
-    display: block;
-
-}
-footer{
-    display: flex;
-}
 }

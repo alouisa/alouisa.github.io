@@ -22,15 +22,17 @@ header, main, footer{
 } 
 
 header{
-    display: flex;
     font-size: 1.5em;
     color: #292c30; 
 }
+/* .logo{
+    display: block;
+} */
 h1{
     font-family: 'Sacramento', cursive;
 }
 .header-text{
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
  .header-text p{
@@ -74,13 +76,4 @@ h1{
 }
 .main-nav ul.hide{
     display: none;
-}
-
-
-
-
-.clearfix:after{
-    content: "";
-    display: table;
-    clear: both;
 }
