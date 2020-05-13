@@ -1,5 +1,11 @@
-@media only screen and (64rem){
+@media only screen and (min-width:55em){
     .main-nav ul{
-
+       margin: 0 auto; 
+    }
+    .main-nav ul li a{
+    font-size: 0.9rem;
+    }
+    .main-nav ul li:first-child a{
+        border-left: 1px solid rgba(0,0,0,0.3);
     }
 }

@@ -54,6 +54,7 @@ h1{
     color: #251e10;
 }
 .main-nav ul{
+    max-width: 900px;
     list-style-type: none;
     margin: 0;
     padding: 0;

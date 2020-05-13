@@ -1,18 +1,19 @@
-@media only screen and (min-width: 52em){
+@media only screen and (min-width: 40em){
    header{ 
-    justify-content: center;
-    align-items: center; 
+       justify-content: center;
+       align-items: center; 
    } 
     .main-nav button{
         display: none;
     }
     .main-nav ul li{
        flex: 1 1 100%;
-       text-align: center;
     }
     .main-nav ul li a{
+        text-align: center;
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
+        font-size: 0.72rem;
     }
      .main-nav ul.hide{
         display: flex;
