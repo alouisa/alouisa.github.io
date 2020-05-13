@@ -8,14 +8,8 @@ body{
 }
 header{
     display: flex;
-    justify-content: center;
-    align-items: center; 
     font-size: 1.5em;
     color: #292c30; 
-}
-main {
-    max-width: 850px;
-    margin: 0 auto;
 }
 header,
 footer {
@@ -27,9 +21,10 @@ footer {
 header, main, footer{
     padding: 25px;
 } 
-/* .logo{
-    display: block;
-} */
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
 h1{
     font-family: 'Sacramento', cursive;
 }
@@ -37,7 +32,7 @@ h1{
     display: flex;
     flex-direction: column;
 }
- .header-text p{
+ .header-text div{
     margin-top: -30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
