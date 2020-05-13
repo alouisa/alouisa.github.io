@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em){
+@media only screen and (min-width: 41em){
    header{ 
        justify-content: center;
        align-items: center; 
@@ -13,7 +13,7 @@
         text-align: center;
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
-        font-size: 0.72rem;
+        font-size: 0.74rem;
     }
      .main-nav ul.hide{
         display: flex;
