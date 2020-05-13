@@ -2,7 +2,11 @@
 *{
     box-sizing: border-box;
 }
-.main-nav, header, main, footer{
+body{
+    background-color: rgb(247, 248, 233);
+
+}
+main {
     max-width: 850px;
     margin: 0 auto;
 }
@@ -70,10 +74,6 @@ h1{
 }
 .main-nav ul.hide{
     display: none;
-}
-main{
-    background-color: rgb(247, 248, 233);
-
 }
 
 

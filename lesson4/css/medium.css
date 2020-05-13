@@ -1,5 +1,5 @@
 @media only screen and (min-width: 42em){
-    header{
+    header, footer{
     justify-content: center;
     align-items: center; 
 }
@@ -19,5 +19,8 @@
     .main-nav ul.hide{
     display: block;
 
+}
+footer{
+    display: flex;
 }
 }
