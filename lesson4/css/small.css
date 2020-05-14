@@ -20,10 +20,6 @@ footer {
 header, main{
     padding: 25px;
 } 
-main, footer{
-    max-width: 850px;
-    margin: 0 auto;
-}
 h1{
     font-family: 'Sacramento', cursive;
 }
@@ -76,7 +72,14 @@ h1, .header-text div{
 .main-nav ul.hide{
     display: none;
 }
+main{
+    max-width: 850px;
+}
+main, footer{
+     margin: 0 auto;
+}
 footer{
+    max-width: 895px;
     text-align: center;
     padding: 10px;
 
