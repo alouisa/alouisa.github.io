@@ -11,19 +11,16 @@ header{
     justify-content: flex-start;
     align-items: center;
     font-size: 1.5em;
-    color: #292c30; 
+    color: #292c30;
 }
 header,
 footer {
     background-color: rgb(175, 242, 245);
-    padding-top: 10px;
-    padding-bottom: 10px;
-
 }
-header, main, footer{
+header, main{
     padding: 25px;
 } 
-main {
+main, footer{
     max-width: 850px;
     margin: 0 auto;
 }
@@ -81,4 +78,6 @@ h1, .header-text div{
 }
 footer{
     text-align: center;
+    padding: 10px;
+
 }
