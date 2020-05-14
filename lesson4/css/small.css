@@ -6,11 +6,14 @@ body{
     background-color: rgb(247, 248, 233);
 
 }
+.logo{
+    width: 100px;
+    height: auto;
+}
 header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.5em;
     color: #292c30;
 }
 header,
@@ -22,6 +25,7 @@ header, main{
 } 
 h1{
     font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
 }
 .header-text{
     display: flex;
