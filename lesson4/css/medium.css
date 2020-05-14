@@ -1,4 +1,4 @@
-@media only screen and (min-width: 41em){
+@media only screen and (min-width: 42em){
    header{ 
        justify-content: center; 
    } 
@@ -8,7 +8,7 @@
     .main-nav ul li{
        flex: 1 1 100%;
     }
-    .main-nav ul li a{
+    .main-nav ul li a{ 
         text-align: center;
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
