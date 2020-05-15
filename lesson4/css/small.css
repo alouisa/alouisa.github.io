@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #292c30;
+    color: #251e10;
 }
 header,
 footer {
@@ -44,7 +44,7 @@ h1, .header-text div{
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    color: #555;
+    color: rgba(37, 30, 16, 0.75);
     
 }
 .main-nav{
