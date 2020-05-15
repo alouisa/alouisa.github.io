@@ -25,4 +25,10 @@
         display: flex;
         flex-direction: row;    
     }
+    .forecast5{
+        display: block;
+        background-color:rgba(175, 242, 245, 0.3);
+        padding: 10px 0;
+        text-align: center;
+    }
 }
