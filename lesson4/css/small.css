@@ -48,7 +48,7 @@ h1, .header-text div{
     
 }
 .main-nav{
-    background-color: #ccc;
+    background-color:rgba(255, 232, 53,0.2);
 }
 .main-nav, main, footer{
     font-family: 'Montserrat', sans-serif;
@@ -68,10 +68,10 @@ h1, .header-text div{
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 .main-nav ul li a:hover{
-    background-color:rgba(0,0,0,0.4); 
+    background-color:rgba(255, 232, 53,0.3);; 
 }
 .main-nav ul li.active a{
-    background-color: rgba(0,0,0,0.2); color: #fff;
+    background-color: rgba(255, 232, 53,0.4);
 }
 .main-nav ul.hide{
     display: none;
