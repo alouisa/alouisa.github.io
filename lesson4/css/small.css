@@ -71,7 +71,7 @@ h1, .header-text div{
     background-color:rgba(255, 232, 53,0.3);; 
 }
 .main-nav ul li.active a{
-    background-color: rgba(255, 232, 53,0.4);
+    background-color: rgba(255, 232, 53,0.5);
 }
 .main-nav ul.hide{
     display: none;
