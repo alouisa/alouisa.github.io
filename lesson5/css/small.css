@@ -22,12 +22,13 @@ header{
     justify-content: flex-start;
     align-items: center;
     color: #251e10;
+    padding: 10px 0px;
 }
 header,
 footer {
     background-color: rgb(175, 242, 245);
 }
-header, main{
+main{
     padding: 25px;
 } 
 h1{
@@ -88,6 +89,9 @@ main{
 }
 main, footer{
      margin: 0 auto;
+}
+.herodiv img{
+    max-width: 100%;
 }
 footer{
     max-width: 895px;
