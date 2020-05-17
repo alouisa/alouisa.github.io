@@ -11,7 +11,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color:rgba(255, 232, 53,0.8); 
     padding: 10px 20px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+}
+.weatherSummary{
+    border: 1px solid black;
 }
 .logo{
     width: 100px;
@@ -92,6 +95,11 @@ main, footer{
 }
 .herodiv img{
     max-width: 100%;
+}
+article img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 footer{
     max-width: 895px;
