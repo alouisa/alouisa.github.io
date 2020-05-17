@@ -41,5 +41,9 @@
     }
     article img{
     max-width: 45%;
-
+}
+.address img{
+    display: block;
+    max-width: 50%;
+}
 }

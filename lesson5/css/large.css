@@ -18,4 +18,9 @@
     h1{
         font-size: 3rem;
     }
+    .address img{
+        display: block;
+        max-width: 100%;
+
+}
 }
