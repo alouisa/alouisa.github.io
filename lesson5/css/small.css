@@ -96,6 +96,9 @@ main, footer{
 .herodiv img{
     max-width: 100%;
 }
+.weatherSummary, .contactInfo{
+    padding: 15px;
+}
 article img{
     display: block;
     max-width: 100%;
