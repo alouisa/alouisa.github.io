@@ -9,11 +9,9 @@ body{
 }
 .announcement{
     font-family: 'Montserrat', sans-serif;
-    padding:25px;
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
- 
+    background-color:rgba(255, 232, 53,0.8); 
+    padding: 10px 20px;
+    font-size: 0.95rem;
 }
 .logo{
     width: 100px;
@@ -77,7 +75,7 @@ h1, .header-text div{
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 .main-nav ul li a:hover{
-    background-color:rgba(255, 232, 53,0.4);; 
+    background-color:rgba(255, 232, 53,0.4); 
 }
 .main-nav ul li.active a{
     background-color: rgba(255, 232, 53, 0.6);
