@@ -42,6 +42,12 @@
     article img{
     max-width: 45%;
 }
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 .address img{
     display: block;
     max-width: 50%;
