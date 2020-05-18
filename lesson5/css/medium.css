@@ -39,10 +39,17 @@
         padding: 10px 0;
         text-align: center;
     }
+    article{
+        padding: 15px;
+    }
     article img{
     max-width: 45%;
+    float: right;
+    margin: 15px;
+    padding-top: 60px;
 }
 .contactInfo{
+    clear: right;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,5 +61,8 @@
 }
 .contactDiv{
     margin-left: 50px;
+}
+.clear{
+   clear: both; 
 }
 }

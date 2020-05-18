@@ -99,10 +99,14 @@ main, footer{
 .weatherSummary, .contactInfo{
     padding: 15px;
 }
+article{
+    background-color:rgba(255, 232, 53,0.07); 
+}
 article img{
     display: block;
     max-width: 100%;
     margin: 0 auto;
+
 }
 .contactInfo{
     background-color:rgba(255, 232, 53,0.2);
