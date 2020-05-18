@@ -35,9 +35,15 @@
     }
     .forecast5{
         display: block;
-        background-color:rgba(175, 242, 245, 0.4);
+        max-width: 500px;
+        margin: 0 auto;
         padding: 10px 0;
         text-align: center;
+    }
+    .cast5{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(175, 242, 245, 0.4);
     }
     article{
         padding: 15px;
