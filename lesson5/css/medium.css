@@ -45,6 +45,9 @@
         justify-content: center;
         background-color: rgba(175, 242, 245, 0.4);
     }
+    .cast5 div{
+        margin-right: 15px;
+    }
     article{
         padding: 15px;
     }
