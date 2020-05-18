@@ -50,12 +50,13 @@
     }
     article{
         padding: 15px;
+        line-height: 1.5;
     }
     article img{
     max-width: 45%;
     float: right;
-    margin: 15px;
-    padding-top: 60px;
+    margin: 10px;
+    padding-top: 100px;
 }
 .contactInfo{
     clear: right;
