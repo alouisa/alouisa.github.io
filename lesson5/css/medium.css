@@ -56,12 +56,8 @@
         padding: 15px;
         line-height: 1.5;
     }
-    .article-p{
-        text-align: justify;
-    }
     article img{
     float: right;
-    max-width: 45%;
     margin: 10px;
 
 }
