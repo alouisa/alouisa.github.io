@@ -133,9 +133,6 @@ article img{
 .mediaIcons a{
     margin-right: 7px;
 }
-.mediaIcons a img{
-    min-width: 100%;
-}
 footer{
     max-width: 895px;
     text-align: center;
