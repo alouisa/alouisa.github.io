@@ -7,6 +7,10 @@ body{
     font-size: 16px;
 
 }
+.main-grid{
+    display: grid;
+    grid-row-gap: 50px;
+}
 .announcement{
     font-family: 'Montserrat', sans-serif;
     background-color:rgba(255, 232, 53,0.8); 
@@ -22,7 +26,8 @@ body{
     left: 10px;
     background: white;
     border: 1px solid black;
-    opacity: 0.8;
+    opacity: 0.9;
+    font-size: 0.6rem;
 }
 .logo{
     width: 100px;
@@ -119,8 +124,17 @@ article img{
 .contactInfo{
     background-color:rgba(255, 232, 53,0.2);
 }
-.contactInfo img{
+.map{
     display: none;
+}
+.mediaIcons{
+    display: flex;
+}
+.mediaIcons a{
+    margin-right: 7px;
+}
+.mediaIcons a img{
+    min-width: 100%;
 }
 footer{
     max-width: 895px;

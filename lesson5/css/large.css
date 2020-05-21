@@ -15,6 +15,10 @@
     .main-nav ul li:first-child a{
         border-left: 1px solid rgba(0,0,0,0.3);
     }
+    .weatherSummary{
+    font-size: 1rem;
+    opacity: 0.8;
+}
     h1{
         font-size: 3rem;
     }
