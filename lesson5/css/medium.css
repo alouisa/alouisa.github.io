@@ -61,6 +61,7 @@
     }
     article img{
     float: right;
+    max-width: 45%;
     margin: 10px;
 
 }
