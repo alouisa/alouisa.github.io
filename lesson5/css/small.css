@@ -9,7 +9,7 @@ body{
 }
 .main-grid{
     display: grid;
-    grid-row-gap: 50px;
+    grid-row-gap: 25px;
 }
 .announcement{
     font-family: 'Montserrat', sans-serif;
