@@ -56,11 +56,13 @@
         padding: 15px;
         line-height: 1.5;
     }
+    .article-p{
+        text-align: justify;
+    }
     article img{
-    max-width: 45%;
     float: right;
     margin: 10px;
-    padding-top: 100px;
+
 }
 .contactInfo{
     clear: right;
