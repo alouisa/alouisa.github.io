@@ -1,6 +1,11 @@
-document.getElementsByClassName("list").addEventListener("mouseover");
-test.addEventListener("mouseover", function (event) {
-    event.target.style.color = "purple";})
+let button = document.getElementsByClassName("button");
+button.addEventListener("click", function () {
+    let answer = document.getElementsByClassName("newText");
+    answer.innerHTML = "I appear! I am the answer!!!";
+    answer.style.backgroundColor = "yellow";
+    answer.style.border = "1px solid blue";
+ 
+});
 
 // let newChild = document.createElement("p");
 // let parent = document.getElementById("p-container"); 
