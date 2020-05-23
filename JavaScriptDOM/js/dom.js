@@ -1,12 +1,6 @@
-
-
-
-
-//can't get this code to work:
-// let test = document.getElementsByClassName("list");
-// test.addEventListener("mouseover", function (event) {
-//     // highlight the mouseover target
-//     event.target.style.color = "purple";})
+document.getElementsByClassName("list").addEventListener("mouseover");
+test.addEventListener("mouseover", function (event) {
+    event.target.style.color = "purple";})
 
 // let newChild = document.createElement("p");
 // let parent = document.getElementById("p-container"); 
