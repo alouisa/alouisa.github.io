@@ -1,29 +1,25 @@
-body{
+main{
+   background-color: darkcyan;
+}
+main,h1, img, video, footer{
     max-width: 960px;
     margin: 0 auto;
 }
-h1{
-    background-color: black;
-    color: white;
-    padding: 10px;
+img, video{
+   display: block;
 }
- h2{
-    background-color: rgb(129, 238, 5);
-    color: rgb(17, 17, 17);
-    padding: 5px; 
-    width: 200px;     
- }
- p{
-    background-color: rgb(217, 255, 0);
-    color: rgb(0, 0, 0);
-    padding: 5px;   
- }
- #p-container{
-    background-color: rgb(236, 242, 247);
-    padding: 2px;   
- }
- footer{
-    background-color: rgb(255, 230, 0);
-    color: rgb(49, 49, 49);
-    padding: 5px;   
- }
+h1{
+    color: darkblue;
+    padding: 10px;
+    border-top: 1px solid orange;
+}
+h1, footer{
+   text-align: center;
+}
+footer p a{
+   color: orange;
+   text-decoration: none;
+}
+footer{
+     border-bottom: 1px solid orange;
+}

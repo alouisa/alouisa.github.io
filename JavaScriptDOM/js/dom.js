@@ -1,3 +1,9 @@
+let date = new Date;
+let year = date.getFullYear();
+document.getElementById("year").innerHTML = year
+
+
+
 // let button = document.getElementsByClassName("button");
 // button.addEventListener("click", function () {
 //     let answer = document.getElementsByClassName("newText");
