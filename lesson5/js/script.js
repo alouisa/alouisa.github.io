@@ -10,7 +10,7 @@ let day = date.getDate();
 let year = date.getFullYear();
 let todaysDate = `${daysOfTheWeek[d]}, ${day} ${monthsOfYear[m]} ${year}`;
 document.getElementById("todaysDate").innerHTML = todaysDate;
-
+document.querySelector(".copyright span").innerHTML = year;
 if (d == 5){
     announcement.setAttribute("style", "display: block");
 }
