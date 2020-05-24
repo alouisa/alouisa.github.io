@@ -1,11 +1,11 @@
 main{
    background-color: darkcyan;
 }
-main,h1, img, video, footer{
+main,h1, img, iframe, footer{
     max-width: 960px;
     margin: 0 auto;
 }
-img, video{
+img, iframe{
    display: block;
 }
 h1{
