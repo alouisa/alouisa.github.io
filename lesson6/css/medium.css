@@ -1,0 +1,82 @@
+@media only screen and (min-width: 42em){
+    .announcement{
+        padding: 25px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .announcement p{
+        display: inline;
+    }
+    .logo{
+        width: 110px;
+        height: auto;
+    }
+   header{ 
+       justify-content: center; 
+   }
+   h1{
+        font-size: 2.7rem;
+   } 
+    .main-nav button{
+        display: none;
+    }
+    .main-nav ul li{
+       flex: 1 1 100%;
+    }
+    .main-nav ul li a{ 
+        text-align: center;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        font-size: 0.75rem;
+    }
+     .main-nav ul.hide, .main-nav ul{
+        display: flex;
+        flex-direction: row;    
+    }
+    .weatherSummary{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+    .forecast5{
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cast5{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(175, 242, 245, 0.4);
+        padding: 0 20px;
+        border: 1px solid  rgba(248, 182, 45, 0.5);
+    }
+    .cast5 div{
+        margin-right: 15px;
+    }
+    article{
+        padding: 15px;
+        line-height: 1.5;
+    }
+    article img{
+    float: right;
+    margin: 10px;
+
+}
+.contactInfo{
+    clear: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.map{
+    display: block;
+    max-width: 50%;
+    border: 1px dashed rgb(142, 198, 201); 
+}
+.contactDiv{
+    margin-left: 50px;
+}
+.clear{
+   clear: both; 
+}
+}
