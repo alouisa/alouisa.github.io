@@ -1,0 +1,1 @@
+WebFont.load({ google: { families: ['Valera Round', 'Alegreya SC: 400, 700'] } });
