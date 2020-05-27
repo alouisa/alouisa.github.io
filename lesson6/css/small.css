@@ -127,7 +127,9 @@ article img{
     background-color:rgba(255, 232, 53,0.2);
 }
 .map{
-    display: none;
+    display: block;
+    max-width: 80%;
+    border: 1px dashed rgb(142, 198, 201); 
 }
 .mediaIcons{
     display: flex;
