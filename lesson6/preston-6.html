@@ -41,7 +41,12 @@
         <h2>Preston Idaho</h2>
         <div class="main-grid">
             <div class="herodiv">
-                <img src="images/hero.jpg" alt="Hero of the Month">
+                <!-- <img src="images/hero.jpg" alt="Hero of the Month"> -->
+                <picture>
+                    <source media="(max-width: 42em)" srcset="images/preston700px.jpg">
+                    <source media="(min-width: 43em, max-width: 55em)" srcset="images/preston900px.jpg">
+                    <img src="images/preston1200px.jpg" alt="Sunny day over grassy field">
+                </picture>
                 <section class="weatherSummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>
