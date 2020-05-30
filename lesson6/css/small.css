@@ -115,7 +115,9 @@ main, footer{
     padding: 15px;
 }
 article{
-    background-color:rgba(255, 232, 53,0.07); 
+    background-color:rgba(255, 232, 53,0.07);
+    padding: 15px;
+    line-height: 1.5; 
 }
 article img{
     display: block;
