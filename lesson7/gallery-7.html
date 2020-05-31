@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloud Catch Site weather forecast for Preston Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Cloud Catch- Preston Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside class="announcement" style="display:block;">
+        <p>Saturday= Preston <b>Pancakes</b> in the Park!</p>
+        <p><b>9:00a.m. Saturday</b> at the <b>park pavilion</b>.</p>
+    </aside>
+    <header>
+        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <section class="header-text">
+            <h1>Cloud Catch</h1>
+            <div>For Idahoans fishing the clouds</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+                <!-- <picture>
+                    <source media="(max-width: 500px)" srcset="images/preston500px.jpg 500w">
+                    <source media="(max-width: 700px)" srcset="images/preston700px.jpg 700w">
+                    <img src="images/preston900px.jpg" alt="Sunny day over grassy field">
+                </picture> -->
+            <div class="contactInfo clear">
+                <img class="map" src="images/prestonmap.png" alt="Map of Cloud Catch Office">
+                <div class="contactDiv">
+                    <section class="address">
+                        <h3>Cloud Catch</h3>
+                        <p>105N 1W</p>
+                        <p>Preston, Idaho, 83263</p>
+                    </section>
+                    <div class="emailPhone">
+                        <p>&#9742; (555)555-5555</p>
+                        <p>&#9993; idahoscloudcatch.com</p>
+                    </div>
+                    <div class="mediaIcons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="images/facebook.png" alt="facebook icon">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="images/twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img src="images/pinterest.png" alt="pinterest icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;<span></span> Cloud Catch | Attributions | Anna Astle </p>
+        <p id="todaysDate"></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+</body>
+
+</html>
