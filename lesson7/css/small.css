@@ -161,7 +161,9 @@ footer{
     grid-template-columns: 1fr;
     justify-content: center;
     gap: 20px;
+    background-color:rgba(255, 232, 53,0.07);
     margin-top: 20px;
+    padding: 10px;
 }
 .weatherFigures figure{
     margin: 0;
