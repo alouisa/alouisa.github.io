@@ -158,9 +158,9 @@ footer{
  }
 .weatherFigures{
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 1fr;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 20px;
 }
 .weatherFigures figure{
