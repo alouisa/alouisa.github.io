@@ -27,10 +27,10 @@
         max-width: 100%;
 
 }
-}
 
  /*    GALLERY Specific Id's and Classes   */
  .weatherFigures{
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 925px;
+}
 }

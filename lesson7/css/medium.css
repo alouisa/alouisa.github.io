@@ -75,7 +75,6 @@
 .clear{
    clear: both; 
 }
-}
 
  /*    GALLERY Specific Id's and Classes   */
 .weatherFigures h2{
@@ -85,4 +84,5 @@
  .weatherFigures{
      max-width: 640px;
     grid-template-columns: 1fr 1fr;
+}
 }
