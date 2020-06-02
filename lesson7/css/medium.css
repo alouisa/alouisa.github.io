@@ -83,6 +83,6 @@
  }
 
  .weatherFigures{
-     max-width: 925px;
+     max-width: 640px;
     grid-template-columns: 1fr 1fr;
 }
