@@ -44,7 +44,7 @@ header,
 footer {
     background-color: rgb(175, 242, 245);
 }
-main{
+.prestonMain{
     padding: 25px;
 } 
 h1{
@@ -149,5 +149,30 @@ footer{
     max-width: 895px;
     text-align: center;
     padding: 10px;
+}
 
+ /*    GALLERY Specific Id's and Classes   */
+ #galleryHeading{
+     text-align: center;
+     margin-top: 50px;
+ }
+.weatherFigures{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.weatherFigures figure{
+    margin: 0;
+}
+.weatherFigures figure img{
+    width: 100%;
+}
+.weatherFigures figure figcaption{
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+#galleryFooter{
+    margin-top: 150px;
 }

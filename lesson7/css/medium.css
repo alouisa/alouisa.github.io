@@ -76,3 +76,12 @@
    clear: both; 
 }
 }
+
+ /*    GALLERY Specific Id's and Classes   */
+.weatherFigures h2{
+    justify-self: center;
+ }
+
+ .weatherFigures{
+    grid-template-columns: 300px 300px;
+}
