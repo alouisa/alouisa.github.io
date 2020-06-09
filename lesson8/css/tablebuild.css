@@ -1,15 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+table{
+    margin: 25px auto;
+}
 caption, thead, tbody, tfoot{
     font-family: Ubuntu, sans-serif;
+}
+caption{
+   font-size: 1.3rem;
+   padding: 10px;
+   border-left: 2px solid white;
+   border-right: 2px solid white;
 }
 caption, tfoot{
     background-color: #7fb9c2 ;
 }
 thead{
-   background-color: #628ca6; 
+   background-color: #628ca6;
+   color: white;
 }
-tr:nth-child(3), tr:nth-child(5){
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+tbody tr:first-child, tr:nth-child(3), tr:nth-child(5){
     background-color: #e7f0ed;
 }
 tr:nth-child(2), tr:nth-child(4), tr:nth-child(6){
     background-color: #e7ffed ;
+}
+tfoot{
+    font-size: 0.6rem;
 }
