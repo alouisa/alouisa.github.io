@@ -10,7 +10,7 @@ thead, tbody, tfoot{
     font-family: Ubuntu, sans-serif;
 }
 thead tr:first-child{
-   font-size: 1.3rem;
+   font-size: 1.7rem;
    border-left: 2px solid lightgray;
    border-right: 2px solid lightgray;
    border-top: 2px solid lightgray;
@@ -21,18 +21,25 @@ thead:first-child, tfoot{
 thead tr:nth-child(2){
    background-color: #628ca6;
    color: white;
+   font-size: 1.1rem;
 }
 th, td{
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     border: 2px solid lightgray;
 }
 tbody tr:first-child, tr:nth-child(3), tr:nth-child(5){
     background-color: #e7f0ed;
+    font-size: 1rem;
 }
 tr:nth-child(2), tr:nth-child(4), tr:nth-child(6){
     background-color: #e7ffed ;
+    font-size: 1rem;
+}
+.salesGoalMet{
+     background-color: #628ca6;
+     color: white;
 }
 tfoot{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
