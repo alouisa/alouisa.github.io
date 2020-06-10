@@ -8,13 +8,20 @@ table{
     border-collapse: collapse;
     font-family: "Ubuntu", sans-serif;
 }
-th{
+caption{
+    box-shadow:8px 10px 10px #628ca6;
     font-size: 1.7rem;
+    font-weight: 700;
+    border-top:2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-left: 2px solid lightgray; 
+}
+caption, th, td{
+    padding: 10px;
 }
 th, td{
-    padding: 10px;
-    text-align: center;
     border: 2px solid lightgray;
+     text-align: center;
 }
 tr{
     background-color: #e7f0ed;
@@ -22,7 +29,7 @@ tr{
 tr:nth-child(even){
     background-color: #e7ffed;
 }
-th, tfoot tr td{
+caption, tfoot tr td{
     background-color: #7fb9c2;
 }
 .blueBackWhite, .blueBackWhite th{
@@ -35,6 +42,7 @@ th, tfoot tr td{
 tfoot{
     font-size: 0.8rem;
 }
+
 
 
 /* thead tr:first-child{
