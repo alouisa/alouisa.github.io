@@ -184,12 +184,12 @@ footer{
 }
 form fieldset{
     margin: 2rem 0;
-    border: 1px solid rgb(127, 174, 177);
+    border: 1px solid rgb(5, 140, 150);;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend{
-    color:rgb(109, 150, 153);
+    color:rgb(5, 140, 150);
     margin: 0 1rem;
     padding: 0 .5rem; 
 }
@@ -200,6 +200,7 @@ form label.top{
     font-size: .8rem;
 }
 form label.top input, form label.top select{
+    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -217,7 +218,7 @@ form label.sbs{
 }
 form input.submitBtn{
     border: none;
-    background-color: rgb(221, 134, 4);
+    background-color: rgb(221, 91, 4);
     margin: 0 0 2rem 2%;
     color: white;
     border-radius: 1rem;
@@ -226,7 +227,7 @@ form input.submitBtn{
     max-width: 20rem;
 }
 form label.top input:required{
-    border-left: 6px solid rgb(221, 120, 4);
+    border-left: 6px solid rgb(221, 91, 4);
 }
 form label.top input:required:valid{
     border-left: 6px solid rgb(4, 150, 155);
