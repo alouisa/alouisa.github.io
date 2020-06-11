@@ -94,4 +94,12 @@
 form label.sbs{
     padding: 0.4rem 0;
 }
+
+.thanksMain h2{
+    font-size: 3rem;
+}
+.thanksMain p{
+    font-size: 1.5rem;
+}
+
 }

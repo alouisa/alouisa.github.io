@@ -250,7 +250,7 @@ input[type=textarea]{
     padding: .5rem 2%;
 }
 .thanksMain h2{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .thanksMain h2{
     color: rgba(0,0,0,0.6);
@@ -259,7 +259,7 @@ input[type=textarea]{
    color: rgba(248, 182, 45); 
 }
 .thanksMain p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0 0 .8rem 0;
     color: rgba(0,0,0,0.6);
 }
