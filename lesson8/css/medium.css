@@ -85,4 +85,9 @@
      max-width: 640px;
     grid-template-columns: 1fr 1fr;
 }
+
+/* Storm Center */
+.stormMain{
+    margin: 0 auto;
+
 }

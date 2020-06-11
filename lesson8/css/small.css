@@ -181,6 +181,7 @@ footer{
 /* Storm Center */
 .stormMain{
     max-width: 850px;
+    margin: 0 2%;
 }
 form fieldset{
     margin: 2rem 0;
