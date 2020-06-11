@@ -87,7 +87,7 @@
 }
 
 /* Storm Center */
-.stormMain{
+.stormMain, .thanksMain{
     margin: 0 auto;
 
 }

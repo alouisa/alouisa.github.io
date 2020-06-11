@@ -46,7 +46,7 @@
             <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
             <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
             <label class="top">Phone Number<input type="tel" name="phone" placeholder="5551235432" required></label>
-            <label class="top">Zip Code*<input type="text" name="zip" pattern="[0-9]*" required></label>
+            <label class="top">Zip Code*<input type="number" name="zip" required></label>
         </fieldset>
         <fieldset>
             <legend>Storm Information</legend>
@@ -61,10 +61,9 @@
                     <option value="Tornado">
                 </datalist> 
             </label>
-            <label class="top">Storm Severity
+            <label class="top">Storm Severity = <span id="ratingvalue">5</span>
                 <input id="stormSeverity" type="range" name="range" value="5" min="0" max="10" list="tickmarks"
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
                 <datalist id="tickmarks">
                     <option value="0">
                     <option value="1">

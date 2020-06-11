@@ -186,7 +186,7 @@ footer{
 }
 form fieldset{
     margin: 2rem 0;
-    border: 1px solid rgb(5, 140, 150);;
+    border: 1px solid rgb(5, 140, 150);
     border-radius: 10px;
     padding: .5rem 2%;
 }
@@ -232,4 +232,32 @@ form label.top input:required{
 }
 form label.top input:required:valid{
     border-left: 6px solid rgb(4, 150, 155);
+}
+
+/* Thank you page */
+.thanksMain{
+    max-width: 896px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(136, 152, 153);
+    padding: .5rem 2%;
+    background-color: rgb(134, 179, 182);
+}
+.thanksMain h2{
+    font-size: 3rem;
+}
+.thanksMain h2{
+    color: rgba(0,0,0,0.6);
+}
+.thanksMain h2 span{
+   color: rgb(247, 241, 76); 
+}
+.thanksMain p{
+    font-size: 1.5rem;
+    margin: 0 0 .8rem 0;
+    color: rgba(0,0,0,0.6);
 }
