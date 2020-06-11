@@ -233,6 +233,10 @@ form label.top input:required{
 form label.top input:required:valid{
     border-left: 6px solid rgb(4, 150, 155);
 }
+input[type=textarea]{
+    height: 120px;
+}
+
 
 /* Thank you page */
 .thanksMain{
