@@ -247,9 +247,7 @@ input[type=textarea]{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid rgb(136, 152, 153);
     padding: .5rem 2%;
-    background-color: rgb(134, 179, 182);
 }
 .thanksMain h2{
     font-size: 3rem;
