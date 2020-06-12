@@ -20,7 +20,12 @@
             <p><b>9:00a.m. Saturday</b> at the <b>park pavilion</b>.</p>
         </aside>
     <header>
-        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <!-- <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo"> -->
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/preston500px.jpg 500w">
+            <source media="(max-width: 700px)" srcset="images/preston700px.jpg 700w">
+            <img src="images/preston900px.jpg" alt="Girl standing in front of a rock wall and a horse">
+        </picture>
         <section class="header-text">
         <h1>Cloud Catch</h1>
         <div>For Idahoans fishing the clouds</div>
