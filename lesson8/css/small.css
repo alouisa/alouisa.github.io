@@ -201,7 +201,7 @@ form label.top{
     color: rgb(221, 134, 4);
     font-size: .8rem;
 }
-form label.top input, form label.top select{
+form label.top input, form label.top select, form label.top textarea{
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
