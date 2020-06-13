@@ -185,14 +185,14 @@ footer{
     flex-direction: column;
     align-items: center;
     max-width: 850px;
-    /* margin: 0 2%; */
+    margin: 0 2%;
 }
 form fieldset{
     margin-bottom: 2rem;
     border: 1px solid rgb(5, 140, 150);
     border-radius: 10px;
     padding: .5rem 4%;
-    width: 350px;
+    max-width: 350px;
 }
 form legend{
     color:rgb(5, 140, 150);

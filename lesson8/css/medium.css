@@ -87,7 +87,9 @@
 }
 
 /* Storm Center */
-
+form fieldset{
+    width: 350px;
+}
 form label.sbs{
     padding: 0.4rem 0;
 }
