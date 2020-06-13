@@ -87,18 +87,12 @@
 }
 
 /* Storm Center */
-.stormMain{
-    margin: 0 auto;
-}
 
-/* Thank you page */
-.thanksMain{
-    margin: 0 auto;
-
-}
 form label.sbs{
     padding: 0.4rem 0;
 }
+
+/* Thank you page */
 
 .thanksMain h2{
     font-size: 3rem;
