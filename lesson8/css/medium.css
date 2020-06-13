@@ -87,7 +87,9 @@
 }
 
 /* Storm Center */
-
+.stormMain{
+    margin: 0 auto;
+}
 
 /* Thank you page */
 .thanksMain{
