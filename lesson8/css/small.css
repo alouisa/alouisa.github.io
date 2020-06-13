@@ -181,14 +181,17 @@ footer{
 
 /* Storm Center */
 .stormMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 850px;
-    margin: 0 2%;;
+    /* margin: 0 2%; */
 }
 form fieldset{
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     border: 1px solid rgb(5, 140, 150);
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem 4%;
     width: 350px;
 }
 form legend{
