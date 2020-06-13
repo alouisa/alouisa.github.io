@@ -189,7 +189,7 @@ form fieldset{
     border: 1px solid rgb(5, 140, 150);
     border-radius: 10px;
     padding: .5rem 2%;
-    max-width: 350px;
+    width: 350px;
 }
 form legend{
     color:rgb(5, 140, 150);
