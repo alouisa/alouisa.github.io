@@ -52,35 +52,37 @@
             <legend>Storm Information</legend>
             <label class="top">Storm Date <input type="date" name="completeDate"></label>
             <label class="top">Storm Type
-                <input type="text" list="stormtypes">
+                <input type="text" list="stormtypes"> 
+            </label>
                 <datalist id="stormtypes">
                     <option value="Flash flood">
                     <option value="Hail">
                     <option value="Hurricane">
                     <option value="Thunderstorm">
                     <option value="Tornado">
-                </datalist> 
-            </label>
+                </datalist>
+
             <label class="top">Storm Severity = <span id="ratingvalue">5</span> / 10
                 <input id="stormSeverity" type="range" name="range" value="5" min="0" max="10" list="tickmarks"
-                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 
             </label>
-                <datalist id="tickmarks">
-                <option value="0">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10">
-            </datalist>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
             <label class="top">Storm Region
                 <select name="region">
-                    <option value="" selected="true" disabled="disabled">Select Region</option>
+                    <option value="" selected disabled>Select Region</option>
                     <option value="fish haven">Fish Haven</option>
                     <option value="preston">Preston</option>
                     <option value="soda spring">Soda Springs</option>
