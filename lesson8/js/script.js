@@ -11,12 +11,6 @@ let year = date.getFullYear();
 let todaysDate = `${daysOfTheWeek[d]}, ${day} ${monthsOfYear[m]} ${year}`;
 document.getElementById("todaysDate").innerHTML = todaysDate;
 document.querySelector(".copyright span").innerHTML = year;
-if (d == 5){
-    announcement.setAttribute("style", "display: block");
-}
-else {
-    announcement.setAttribute("style", "display: none"); 
-}
 
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide"); 
