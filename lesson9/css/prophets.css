@@ -1,11 +1,25 @@
 main{
-    
+   margin: 2%;
+   background-color: rgb(239, 239, 250); 
 }
-main div.cards{ 
+main div.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    box-shadow: 2px 2px 20px 10px rgb(71, 68, 252);
+    border-radius: 2px;
 }
 section{
     background-color: rgb(214, 213, 253);
     border: 2px solid #999;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+h1{
+   color:  rgb(61, 58, 252);
+   text-align: center; 
 }
 section h2{
     color:  rgb(61, 58, 252);
@@ -18,5 +32,19 @@ section p:nth-child(2){
 
 }
 section img{
+    width: 50%;
+    height: auto;
+    box-shadow: 2px 2px 10px 5px #888;
+}
 
+@media(min-width: 38rem){
+   main div.cards{
+       grid-template-columns: 1fr 1fr;
+       grid-gap: .5rem;
+   }     
+}
+@media(min-width: 60rem){
+   main div.cards{
+       grid-template-columns: repeat(4, 1fr);
+   } 
 }
