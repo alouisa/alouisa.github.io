@@ -1,17 +1,17 @@
 main{
    margin: 2%;
-   background-color: rgb(239, 239, 250); 
+   background-color: rgb(241, 239, 250); 
 }
 main div.cards{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .5rem;
     padding: 15px;
-    box-shadow: 2px 2px 20px 10px rgb(71, 68, 252);
+    box-shadow: 2px 2px 20px 10px #888;
     border-radius: 2px;
 }
 section{
-    background-color: rgb(214, 213, 253);
+    background-color: #bab9cb;
     border: 2px solid #999;
     padding: 10px;
     display: flex;
@@ -19,11 +19,11 @@ section{
     align-items: center; 
 }
 h1{
-   color:  rgb(61, 58, 252);
+   color:  #585399;
    text-align: center; 
 }
 section h2{
-    color:  rgb(61, 58, 252);
+    color:  #585399;
     font-size: 1.5rem;
 }
 div section p:firstChild{
