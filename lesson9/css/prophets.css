@@ -1,0 +1,22 @@
+main{
+    
+}
+main div.cards{ 
+}
+section{
+    background-color: rgb(214, 213, 253);
+    border: 2px solid #999;
+}
+section h2{
+    color:  rgb(61, 58, 252);
+    font-size: 1.5rem;
+}
+div section p:firstChild{
+
+}
+section p:nth-child(2){
+
+}
+section img{
+
+}

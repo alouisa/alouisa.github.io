@@ -15,8 +15,8 @@ fetch(requestURL)
         let fullName = prophets[i].name + ' ' + prophets[i].lastname;
 
         h2.textContent = fullName;
-        p1.textContent = prophets[i].birthdate ;
-        p2.textContent = prophets[i].birthplace ;
+        p1.textContent = "Date of Birth: " + prophets[i].birthdate ;
+        p2.textContent = "Place of Birth: " + prophets[i].birthplace ;
         image.setAttribute('src', prophets[i].imageurl);
         image.setAttribute('alt', fullName +  " - " + prophets[i].order);
 
