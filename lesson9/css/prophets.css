@@ -5,6 +5,7 @@ main{
 main div.cards{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: .5rem;
     padding: 15px;
     box-shadow: 2px 2px 20px 10px rgb(71, 68, 252);
     border-radius: 2px;
@@ -40,7 +41,6 @@ section img{
 @media(min-width: 38rem){
    main div.cards{
        grid-template-columns: 1fr 1fr;
-       grid-gap: .5rem;
    }     
 }
 @media(min-width: 60rem){
