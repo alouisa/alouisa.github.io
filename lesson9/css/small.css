@@ -1,0 +1,270 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap'); */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 248, 233);
+}
+.main-grid{
+    display: grid;
+    grid-row-gap: 25px;
+}
+.announcement{
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgba(255, 232, 53,0.8); 
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+.herodiv{
+    position: relative;
+}
+.weatherSummary{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    border: 2px solid rgb(175, 242, 245);
+    opacity: 0.9;
+    font-size: 0.5rem;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #251e10;
+    padding: 10px 0px;
+}
+header,
+footer {
+    background-color: rgb(175, 242, 245);
+}
+.prestonMain{
+    padding: 25px;
+} 
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 2.3rem;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+}
+h1, .header-text div{
+     margin: 0;
+}
+ .header-text div{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+} 
+
+.main-nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    width: 96%;
+    text-align: left;
+    color: rgba(37, 30, 16, 0.75);
+    
+}
+.main-nav{
+    background-color:rgba(255, 232, 53,0.3);
+}
+.main-nav, main, footer{
+    font-family: 'Montserrat', sans-serif;
+    color: #251e10;
+}
+.main-nav ul{
+    max-width: 900px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a{
+    display: block;
+    padding: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.main-nav ul li a:hover{
+    background-color: rgba(248, 182, 45,0.2); 
+}
+.main-nav ul li.active a{
+    background-color: rgba(248, 182, 45,0.5);
+}
+.main-nav ul.hide, .forecast5{
+    display: none;
+}
+h2{
+    font-size: 1.8rem;
+}
+.prestonMain{
+    max-width: 850px;
+}
+main, footer{
+     margin: 0 auto;
+}
+.herodiv img{
+    max-width: 100%;
+}
+.weatherSummary, .contactInfo{
+    padding: 15px;
+}
+article{
+    background-color:rgba(255, 232, 53,0.07);
+    padding: 15px;
+    line-height: 1.5; 
+}
+article img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 5px 5px 5px 2px #888888;
+
+}
+.contactInfo{
+    background-color:rgba(255, 232, 53,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+.map{
+    display: block;
+    max-width: 80%;
+    border: 1px dashed rgb(142, 198, 201); 
+}
+.mediaIcons{
+    display: flex;
+    justify-content: center;
+}
+.mediaIcons a{
+    margin-right: 7px;
+}
+footer{
+    max-width: 895px;
+    text-align: center;
+    padding: 10px;
+}
+
+ /*    GALLERY Specific Id's and Classes   */
+ #galleryHeading{
+     text-align: center;
+     margin-top: 50px;
+ }
+.weatherFigures{
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 20px;
+    background-color:rgba(255, 232, 53,0.07);
+    padding: 15px;
+    margin: 0 auto;
+}
+.weatherFigures figure{
+    margin: 0;
+}
+.weatherFigures figure img{
+    width: 100%;
+}
+.weatherFigures figure figcaption{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Storm Center */
+.stormMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 2%;
+}
+form fieldset{
+    margin-bottom: 2rem;
+    border: 1px solid rgb(5, 140, 150);
+    border-radius: 10px;
+    padding: .5rem 4%;
+    width: 325px;
+    max-width: 96%;
+}
+form legend{
+    color:rgb(5, 140, 150);
+    margin: 0 1rem;
+    padding: 0 .5rem; 
+}
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(221, 134, 4);
+    font-size: .8rem;
+}
+form label.top input, form label.top select, form label.top textarea{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(148, 139, 68, 0.1);
+}
+form label.sbs{
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+}
+form input.submitBtn{
+    border: none;
+    background-color: rgb(221, 91, 4);
+    margin: 0 0 2rem 1%;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required{
+    border-left: 6px solid rgb(221, 91, 4);
+}
+form label.top input:required:valid{
+    border-left: 6px solid rgb(4, 150, 155);
+}
+textarea{
+    height: 120px;
+}
+
+
+/* Thank you page */
+.thanksMain{
+    max-width: 896px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem 2%;
+}
+.thanksMain h2{
+    font-size: 2rem;
+}
+.thanksMain h2{
+    color: rgba(0,0,0,0.6);
+}
+.thanksMain h2 span{
+   color: rgba(248, 182, 45); 
+}
+.thanksMain p{
+    font-size: 1rem;
+    margin: 0 0 .8rem 0;
+    color: rgba(0,0,0,0.6);
+}
