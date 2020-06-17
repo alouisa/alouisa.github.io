@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap');
 main{
    margin: 2%;
-   background-color: rgb(241, 239, 250); 
+   background-color: rgb(241, 239, 250);
+   font-family: cabrito-normal, sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 main div.cards{
     display: grid;
@@ -21,7 +23,10 @@ section{
 }
 h1{
    color:  #585399;
-   text-align: center; 
+   text-align: center;
+   font-family: cabrito-normal, sans-serif;
+   font-weight: 700;
+   font-style: normal;
 }
 section h2{
     color:  #585399;
