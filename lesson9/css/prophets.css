@@ -59,6 +59,7 @@ section img{
     } 
     div section p{
         font-size: .75rem;
+    }
 }
 @media(min-width: 62rem){
    main div.cards{
@@ -69,6 +70,6 @@ section img{
     }
    div section p{
        font-size: .7rem;
-     
+   }  
 
 }
