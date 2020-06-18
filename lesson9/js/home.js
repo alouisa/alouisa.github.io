@@ -8,7 +8,8 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         towns.forEach(town => {
             if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs"){
-                let card = document.createElement('section');
+                let card = document.createElement('section')
+                let div = document.createElement('div')
                 let h2 = document.createElement('h2');
                 let p1 = document.createElement('p');
                 let p2 = document.createElement('p');
@@ -16,6 +17,7 @@ fetch(requestURL)
                 let p4 = document.createElement('p');
                 let image = document.createElement('img');
 
+                div.setAttribute('class', 'townData')
                 h2.textContent = town.name;
                 p1.textContent = town.motto;
                 p2.textContent = "Year Founded: " + town.yearFounded;
@@ -24,12 +26,13 @@ fetch(requestURL)
                 image.setAttribute('src', `images/home/${town.photo}`);
                 image.setAttribute('alt', town.name);
 
-                card.appendChild(h2);
-                card.appendChild(p1);
-                card.appendChild(p2);
-                card.appendChild(p3);
-                card.appendChild(p4);
-                card.appendChild(image)
+                div.appendChild(h2);
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                card.appendChild(div);
+                card.appendChild(image);
 
                 document.querySelector('div.cards').appendChild(card);
             }
