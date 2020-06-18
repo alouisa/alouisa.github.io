@@ -152,7 +152,7 @@ footer{
     padding: 10px;
 }
 
- /*    GALLERY Specific Id's and Classes   */
+ /*   -----GALLERY Specific Id's and Classes -----  */
  #galleryHeading{
      text-align: center;
      margin-top: 50px;
@@ -179,7 +179,7 @@ footer{
     padding: 8px;
 }
 
-/* Storm Center */
+/* ------Storm Center----- */
 .stormMain{
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ textarea{
 }
 
 
-/* Thank you page */
+/* -----Thank you page----- */
 .thanksMain{
     max-width: 896px;
     height: 50vh;
@@ -267,4 +267,10 @@ textarea{
     font-size: 1rem;
     margin: 0 0 .8rem 0;
     color: rgba(0,0,0,0.6);
+}
+
+/* ----- HomePage-----   */
+.homeMain{
+    max-width: 896px;
+    margin: 2%;
 }
