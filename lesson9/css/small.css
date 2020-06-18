@@ -115,12 +115,12 @@ main, footer{
 .weatherSummary, .contactInfo{
     padding: 15px;
 }
-article{
+.prestonArticle{
     background-color:rgba(255, 232, 53,0.07);
     padding: 15px;
     line-height: 1.5; 
 }
-article img{
+.prestonArticle img{
     display: block;
     margin: 0 auto;
     width: 80%;
@@ -279,7 +279,7 @@ div.cards{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
 div.cards section{
     padding: 10px;
