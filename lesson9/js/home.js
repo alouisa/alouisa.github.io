@@ -17,7 +17,7 @@ fetch(requestURL)
                 let image = document.createElement('img');
 
                 h2.textContent = town.name;
-                h3.textContent = town.moto;
+                h3.textContent = town.motto;
                 p1.textContent = "Year Founded: " + town.yearFounded;
                 p2.textContent = "Population: " + town.currentPopulation;
                 p3.textContent = "Annual Rain Fall: " + town.averageRainfall;
