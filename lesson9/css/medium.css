@@ -109,14 +109,15 @@ form label.sbs{
 }
 div.cards section{
    display: grid;
-   grid-template-columns: 1fr 1fr; 
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr; 
 }
 section:nth-child(even) img{
-   grid-column: 2; 
+   grid-column: 1; 
 }
 section:nth-child(even) .townData{
-    grid-column: 1;
-    grid-row: 1
+    grid-column: 2;
+    grid-row: 2;
 }
 
 
