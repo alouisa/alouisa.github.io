@@ -279,6 +279,7 @@ div.cards{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 div.cards section{
     padding: 10px;
