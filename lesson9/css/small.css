@@ -272,7 +272,6 @@ textarea{
 /* ----- HomePage-----   */
 .homeMain{
     max-width: 896px;;
-    text-align: center;
     margin: 2%;
 }
 div.cards{
@@ -280,6 +279,7 @@ div.cards{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 15px;
+    text-align: center;
 }
 div.cards section{
     padding: 10px;
@@ -289,4 +289,10 @@ div.cards section div.townData img{
     max-width: 100%;
     height: auto;
 
+}
+    
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

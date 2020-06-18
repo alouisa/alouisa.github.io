@@ -107,6 +107,9 @@ form label.sbs{
 .homeMain{
     margin: 5% auto;
 }
+.homeArticle img{
+    float: right;
+}
 div.cards section{
    display: grid;
    grid-template-columns: 1fr 1fr;
