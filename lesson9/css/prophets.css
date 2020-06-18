@@ -25,6 +25,7 @@ h1{
    font-family: cabrito-normal, sans-serif;
    font-weight: 700;
    font-style: normal;
+   font-size: 1.85em;
 }
 section h2{
     color:  #537199;
@@ -52,6 +53,9 @@ footer{
 /* ---------- Media Queries ----------  */
 
 @media(min-width: 38rem){
+   h1{
+    font-size: 2em
+   }
    main div.cards{
        grid-template-columns: 1fr 1fr;
    }   
