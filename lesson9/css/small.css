@@ -290,9 +290,3 @@ div.cards section div.townData img{
     height: auto;
 
 }
-    
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
