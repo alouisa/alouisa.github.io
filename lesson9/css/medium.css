@@ -110,7 +110,8 @@ form label.sbs{
 div.cards section{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr; 
+   grid-template-rows: 1fr;
+   border: 1px dashed skyblue; 
 }
 section:nth-child(even) img{
    grid-column: 1; 
