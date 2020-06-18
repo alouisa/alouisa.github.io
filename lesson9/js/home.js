@@ -16,11 +16,11 @@ fetch(requestURL)
             let image = document.createElement('img');
 
             h2.textContent = town.name;
-            h3.innerHTML = ;
-            p1.textContent = "Date of Birth: " + prophet.birthdate;
-            p2.textContent = "Place of Birth: " + prophet.birthplace
-            p3.textContent = "Place of Birth: " + prophet.birthplace;
-            image.setAttribute('src', prophet.imageurl);
+            h3.textContent = town.moto;
+            p1.textContent = "Year Founded: " + town.yearFounded;
+            p2.textContent = "Population: " + town.currentPopulation;
+            p3.textContent = "Annual Rain Fall: " + town.averageRainfall;
+            image.setAttribute('src', town.photo);
             image.setAttribute('alt', town.name);
 
             card.appendChild(h2);
