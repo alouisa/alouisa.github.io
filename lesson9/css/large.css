@@ -62,6 +62,7 @@ div.cards{
    grid-template-rows: 1fr;
    border: 2px ridge skyblue;
    background-color: rgba(255, 232, 53,0.07);
+   border: none;
 }
 div.cards section{
     display: flex;

@@ -306,7 +306,7 @@ div.cards{
 div.cards section{
     padding: 10px;
 }
-div.cards section div.townData img{
+div.cards img{
     display: block;
     max-width: 100%;
     height: auto;
