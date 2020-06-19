@@ -287,6 +287,9 @@ textarea{
     margin: 0 auto;
     border-radius: 4px;
 }
+.articleText{
+    text-align: justify;
+}
 div.cards{
     display: grid;
     grid-template-columns: 1fr;
