@@ -293,6 +293,9 @@ textarea{
 .articleText{
     text-align: justify;
 }
+.homeArticle h3, .homeArticle p:nth-of-type(1){
+    text-align: center;
+}
 div.cards{
     display: grid;
     grid-template-columns: 1fr;
