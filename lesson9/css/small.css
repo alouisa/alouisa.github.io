@@ -279,7 +279,10 @@ textarea{
     text-align: center;
 }
 .homeArticle{
-    max-width: 700px;
+    max-width: 710px;
+    background-color: rgb(219, 240, 240);
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 .homeArticle img{
     max-width: 100%;
