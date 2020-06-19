@@ -57,5 +57,20 @@
     margin: 5% auto;
 }
 
+div.cards section{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   border: 2px ridge skyblue;
+   background-color: rgba(255, 232, 53,0.07);
+}
+section:nth-child(even) img{
+   grid-column: 2; 
+}
+section:nth-child(even) .townData{
+    grid-column: 1;
+    grid-row: 1;
+}
+
 
 }
