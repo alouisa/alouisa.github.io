@@ -104,9 +104,15 @@ form label.sbs{
 }
 
 /* ----- HomePage-----   */
+.homeArticle{
+    margin: 0 auto;
+}
 .homeArticle img{
     float: right;
+    width: 45%;
+    margin: 0 0 10px 10px;
 }
+
 div.cards section{
    display: grid;
    grid-template-columns: 1fr 1fr;
