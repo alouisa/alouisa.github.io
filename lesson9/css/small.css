@@ -52,6 +52,7 @@ h1{
 .header-text{
     display: flex;
     flex-direction: column;
+    margin-right: 128px;
 }
 h1, .header-text div{
      margin: 0;
