@@ -296,11 +296,7 @@ textarea{
     text-align: center;
 }
 .homeArticle h3{
-    margin-bottom: 10px;
-}
-.homeArticle:nth-child(2){
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 div.cards{
     display: grid;
