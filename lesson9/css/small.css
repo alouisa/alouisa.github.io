@@ -303,6 +303,9 @@ div.cards{
 div.cards section{
     padding: 10px;
 }
+div.townData p:nth-of-type(1){
+    font-style: italic;
+}
 div.cards img{
     display: block;
     max-width: 100%;
