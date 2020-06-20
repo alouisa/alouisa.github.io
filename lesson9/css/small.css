@@ -284,6 +284,9 @@ textarea{
     border-radius: 4px;
     text-align: center;
 }
+.articleText{
+    text-align: left;
+}
 .homeArticle img{
     max-width: 100%;
     display: block;

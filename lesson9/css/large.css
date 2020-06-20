@@ -75,6 +75,9 @@ section:nth-child(even) .townData{
     grid-column: 1;
     grid-row: 1;
 }
-
+section:nth-child(1) .townData, 
+section:nth-child(2) .townData{
+    margin-bottom: 1rem;
+}
 
 }
