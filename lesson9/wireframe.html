@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Small, Medium, and larger wireframes for town home page">
+    <title>HomePage Wireframe</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            background-color: rgba(148, 146, 146, 0.5);
+            position: fixed;
+            top: 0;
+            height: 100%;
+
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        a:hover{
+            background-color:  rgb(194, 190, 190);
+            color: black;
+        }
+        header{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+        }
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        h2{
+          margin-top: 0;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#small">Small</a></li>
+            <li><a href="#medium">Medium</a></li>
+            <li><a href="#large">Large</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Town HomePage Wireframes</h1>
+        <h2>Anna Astle</h2>
+    </header>
+    <main>
+        <img id="small" src="images/wireframe/smallView.jpg" alt="Town Home[age wireframe small view">
+        <img id="medium" src="images/wireframe/mediumView.jpg" alt="Town Homepage wireframe medium view">
+        <img id="large" src="images/wireframe/largeView.jpg" alt="Town Homepage wirefram large view">
+    </main>
+
+</body>
+</html>
