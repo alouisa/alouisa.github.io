@@ -10,7 +10,7 @@ fetch(requestURL)
             if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs"){
                 let card = document.createElement('section')
                 let div = document.createElement('div')
-                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
                 let p1 = document.createElement('p');
                 let p2 = document.createElement('p');
                 let p3 = document.createElement('p');
@@ -18,7 +18,7 @@ fetch(requestURL)
                 let image = document.createElement('img');
 
                 div.setAttribute('class', 'townData')
-                h2.textContent = town.name;
+                h3.textContent = town.name;
                 p1.textContent = town.motto;
                 p2.textContent = "Year Founded: " + town.yearFounded;
                 p3.textContent = "Population: " + town.currentPopulation;
@@ -26,7 +26,7 @@ fetch(requestURL)
                 image.setAttribute('src', `images/home/${town.photo}`);
                 image.setAttribute('alt', town.name);
 
-                div.appendChild(h2);
+                div.appendChild(h3);
                 div.appendChild(p1);
                 div.appendChild(p2);
                 div.appendChild(p3);

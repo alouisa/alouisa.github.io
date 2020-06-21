@@ -104,9 +104,11 @@ form label.sbs{
 }
 
 /* ----- HomePage-----   */
+.homeMain h2{
+    font-size: 2.2rem;
+}
 .homeArticle{
     margin: 0 auto 40px auto;
-    max-width: 700px;
 }
 .homeArticle img{
     float: right;
@@ -118,8 +120,6 @@ div.cards section{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
-   border: 2px ridge skyblue;
-   background-color: rgba(255, 232, 53,0.07);
 }
 div.townData p:nth-of-type(1){
     font-size: 0.85rem;
