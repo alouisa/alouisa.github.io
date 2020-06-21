@@ -19,7 +19,9 @@ fetch(requestURL)
 
                 div.setAttribute('class', 'townData')
                 h3.textContent = town.name;
+                h3.setAttribute('class', 'townName');
                 p1.textContent = town.motto;
+                p1.setAttribute('class', 'townMoto');
                 p2.textContent = "Year Founded: " + town.yearFounded;
                 p3.textContent = "Population: " + town.currentPopulation;
                 p4.textContent = "Annual Rain Fall: " + town.averageRainfall;

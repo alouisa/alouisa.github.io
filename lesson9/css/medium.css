@@ -120,6 +120,7 @@ div.cards section{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
+   box-shadow: 5px 8px 10px 3px #888888;
 }
 div.townData p:nth-of-type(1){
     font-size: 0.85rem;
@@ -130,6 +131,9 @@ section:nth-child(even) img{
 section:nth-child(even) .townData{
     grid-column: 2;
     grid-row: 1;
+}
+.townName{
+    font-size: 1.5rem;
 }
 
 
