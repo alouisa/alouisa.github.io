@@ -318,9 +318,9 @@ div.townData p:nth-of-type(1){
 }
 div.cards img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 8px  auto;
+    margin: 8px auto;
     box-shadow: 5px 8px 10px 1px #888888;
 
 }
