@@ -306,6 +306,9 @@ div.cards section{
     border: 2px ridge skyblue;
     background-color: rgba(255, 232, 53,0.07);
 }
+div.townData{
+   padding: 8px; 
+}
 div.townData p:nth-of-type(1){
     font-style: italic;
 }
