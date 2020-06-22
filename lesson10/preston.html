@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cloud Catch Site weather forecast for Preston Idaho"  >
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Cloud Catch- Preston Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+   
+<body>
+        <aside class="announcement" style="display:block;">
+            <p>Saturday= Preston <b>Pancakes</b> in the Park!</p>
+            <p><b>9:00a.m. Saturday</b> at the <b>park pavilion</b>.</p>
+        </aside>
+    <header>
+        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <section class="header-text">
+        <h1>Cloud Catch</h1>
+        <div>For Idahoans fishing the clouds</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="prestonMain">
+        <h2>Preston Idaho</h2>
+        <div class="main-grid">
+            <div class="herodiv">
+                <!-- <img src="images/hero.jpg" alt="Hero of the Month"> -->
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/preston500px.jpg">
+                <source media="(max-width: 700px)" srcset="images/preston700px.jpg">
+                <img src="images/preston900px.jpg" alt="Girl standing in front of a rock wall and a horse">
+            </picture>
+                <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="highTemp">50</span>&deg;F </p>
+                <p id="windchill-container">Wind Chill: <span id="windchill"></span>&deg;F</p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
+                </section>
+            </div>
+            <div class="forecast5">
+                <h3>5 day Forecast</h3>
+                <div class="cast5">
+                    <div class="day1">
+                        <p>Wed</p>
+                        <img src="images/sunny.png" alt="sunny weather icon">
+                        <p>63&deg;F</p>
+                    </div>
+                    <div class="day2">
+                        <p>Thu</p>
+                        <img src="images/sunny.png" alt="sunny weather icon">
+                        <p>63&deg;F</p>
+                    </div>
+                    <div class="day3">
+                        <p>Fri</p>
+                        <img src="images/cloudy.png" alt="cloudy weather icon">
+                        <p>54&deg;F</p>
+                    </div>
+                    <div class="day4">
+                        <p>Sat</p>
+                        <img src="images/sunny.png" alt="sunny weather icon">
+                        <p>61&deg;F</p>
+                    </div>
+                    <div class="day5">
+                        <p>Sun</p>
+                        <img src="images/sunny.png" alt="sunny weather icon">
+                        <p>69&deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <article class="prestonArticle">
+                <h3>Social Distancing</h3>
+                <p>by author</p>
+                <img src="images/article.jpg" alt="woman with mask covering nose and mouth">
+                <div class="article-p">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Consequat interdum varius sit amet mattis vulputate enim. Viverra justo nec ultrices dui. At imperdiet dui
+                accumsan sit amet nulla facilisi morbi tempus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Lorem
+                ipsum dolor sit amet consectetur. Auctor eu augue ut lectus arcu bibendum. Id neque aliquam vestibulum morbi blandit
+                cursus risus at ultrices. Lectus quam id leo in vitae turpis massa sed elementum. Facilisis magna etiam tempor orci eu
+                lobortis. Dictum sit amet justo donec enim diam vulputate ut pharetra. Accumsan tortor posuere ac ut.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Consequat interdum varius sit amet mattis vulputate enim. Viverra justo nec ultrices dui. At imperdiet dui
+                accumsan sit amet nulla facilisi morbi tempus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Lorem
+                ipsum dolor sit amet consectetur. Auctor eu augue ut lectus arcu bibendum. Id neque aliquam vestibulum morbi blandit
+                cursus risus at ultrices. Lectus quam id leo in vitae turpis massa sed elementum. Facilisis magna etiam tempor orci
+                eu
+                lobortis. Dictum sit amet justo donec enim diam vulputate ut pharetra. Accumsan tortor posuere ac ut.</p>
+                </div>
+            </article>
+            <div class="contactInfo clear">
+                <img class="map" src="images/prestonmap.png" alt="Map of Cloud Catch Office">
+                <div class="contactDiv">
+                    <section class="address">
+                    <h3>Cloud Catch</h3>
+                    <p>105N 1W</p>
+                    <p>Preston, Idaho, 83263</p>
+                    </section>
+                    <div class="emailPhone">
+                        <p>&#9742; (555)555-5555</p>
+                        <p>&#9993; idahoscloudcatch.com</p>
+                    </div>
+                    <div class="mediaIcons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="images/facebook.png" alt="facebook icon"> 
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="images/twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img src="images/pinterest.png" alt="pinterest icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;<span></span> Cloud Catch | Attribution: pexels.com, picsum.photos | Anna Astle </p>
+        <p id="todaysDate"></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/prestonpacakes.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+</body>
+
+</html>

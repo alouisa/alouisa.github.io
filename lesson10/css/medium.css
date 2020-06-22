@@ -1,0 +1,140 @@
+@media only screen and (min-width: 42em){
+    .announcement{
+        padding: 25px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .announcement p{
+        display: inline;
+    }
+    .logo{
+        width: 110px;
+        height: auto;
+    }
+   header{ 
+       justify-content: center; 
+   }
+   h1{
+        font-size: 2.7rem;
+   } 
+    .main-nav button{
+        display: none;
+    }
+    .main-nav ul li{
+       flex: 1 1 100%;
+    }
+    .main-nav ul li a{ 
+        text-align: center;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        font-size: 0.75rem;
+    }
+     .main-nav ul.hide, .main-nav ul{
+        display: flex;
+        flex-direction: row;    
+    }
+    .weatherSummary{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+    .forecast5{
+        display: block;
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cast5{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(175, 242, 245, 0.4);
+        padding: 0 20px;
+        border: 1px solid  rgba(248, 182, 45, 0.5);
+    }
+    .cast5 div{
+        margin-right: 15px;
+    }
+   .prestonArticle img{
+    float: right;
+    margin: 10px;
+    width: 350px;
+
+}
+.contactInfo{
+    clear: right;
+    flex-direction: row;
+    align-items: center;
+}
+.map{
+    display: block;
+    max-width: 50%;
+    border: 1px dashed rgb(142, 198, 201); 
+}
+.contactDiv{
+    margin-left: 50px;
+}
+.clear{
+   clear: both; 
+}
+
+ /*    GALLERY Specific Id's and Classes   */
+.weatherFigures h2{
+    justify-self: center;
+ }
+
+ .weatherFigures{
+     max-width: 640px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Storm Center */
+form fieldset{
+    width: 350px;
+}
+form label.sbs{
+    padding: 0.4rem 0;
+}
+
+/* Thank you page */
+
+.thanksMain h2{
+    font-size: 2.5rem;
+}
+.thanksMain p{
+    font-size: 1.25rem;
+}
+
+/* ----- HomePage-----   */
+.homeMain h2{
+    font-size: 2.2rem;
+}
+.homeArticle{
+    margin: 0 auto 40px auto;
+}
+.homeArticle img{
+    float: right;
+    width: 45%;
+    margin: 0 0 10px 10px;
+}
+
+div.cards section{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   box-shadow: 5px 8px 10px 3px #888888;
+}
+div.townData p:nth-of-type(1){
+    font-size: 0.85rem;
+}
+section:nth-child(even) img{
+   grid-column: 1; 
+}
+section:nth-child(even) .townData{
+    grid-column: 2;
+    grid-row: 1;
+}
+.townName{
+    font-size: 1.5rem;
+}
+
+
+}
