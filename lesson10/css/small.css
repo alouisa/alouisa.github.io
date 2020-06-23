@@ -241,7 +241,7 @@ form label.top input:required:valid{
 textarea{
     height: 120px;
 }
-#ratingvalue{
+input#stormSeverity{
     padding: 0;
 }
 
