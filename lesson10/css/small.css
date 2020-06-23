@@ -197,14 +197,13 @@ form fieldset{
     max-width: 96%;
 }
 form legend{
-    color:rgb(5, 140, 150);
     margin: 0 1rem;
-    padding: 0 .5rem; 
+    padding: 0 .5rem;
+    color: rgb(3, 97, 100); 
 }
 form label.top{
     display: block;
     padding-top: 1rem;
-    color: rgb(221, 134, 4);
     font-size: .8rem;
 }
 form label.top input, form label.top select, form label.top textarea{
@@ -216,7 +215,7 @@ form label.top input, form label.top select, form label.top textarea{
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(148, 139, 68, 0.1);
+    background-color: white;
 }
 form label.sbs{
     display: block;
@@ -242,7 +241,9 @@ form label.top input:required:valid{
 textarea{
     height: 120px;
 }
-
+#ratingvalue{
+    padding: 0;
+}
 
 /* -----Thank you page----- */
 .thanksMain{
