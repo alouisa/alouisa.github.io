@@ -6,10 +6,10 @@ fetch(requestURL)
         let t = jsObject.main.temp;
         let s = jsObject.wind.speed;
         let windchill = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-        const forecastfive = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        let i = 0;
+        // const forecastfive = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        // let i = 0;
 
-        document.getElementById('current-temp').textContent = t
+        document.getElementById('current-temp').textContent = Math.round(t);
         if (t <= 50 && s >= 3.0) {
             document.querySelector("#windchill").innerHTML = Math.round(windchill);
         }
@@ -22,9 +22,9 @@ fetch(requestURL)
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
 
-        forecastfive.forEach(forecast => {
+        // forecastfive.forEach(forecast => {
             
-        });
+        // });
         
     });
 
