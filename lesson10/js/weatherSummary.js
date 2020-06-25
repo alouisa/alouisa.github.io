@@ -5,8 +5,10 @@ fetch(requestURL)
         console.log(jsObject);
         let t = jsObject.main.temp;
         let s = jsObject.wind.speed;
-        document.getElementById('current-temp').textContent = t;
+        const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));;
         let windchill = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
+
+        document.getElementById('current-temp').textContent = t
         if (t <= 50 && s >= 3.0) {
             document.querySelector("#windchill").innerHTML = Math.round(windchill);
         }
@@ -18,8 +20,10 @@ fetch(requestURL)
         const desc = jsObject.weather[0].description;  
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
+
+
         
-    })
+    }
 
 
 
