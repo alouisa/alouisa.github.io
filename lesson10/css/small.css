@@ -29,13 +29,7 @@ body{
 }
 .weatherSummary h3{
     margin-top: 2px;
-    margin-bottom: 5px;
-}
-.weatherSummary img.icon{
-   display: block; 
-}
-.weatherSummary p:first-of-type{
-    margin-top: 0;
+    margin-bottom: 25px;
 }
 .logo{
     width: 100px;
