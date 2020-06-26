@@ -2,7 +2,6 @@ const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&A
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         let highT = jsObject.main.temp_max;
         let t = jsObject.main.temp;
         let s = jsObject.wind.speed;
