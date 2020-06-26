@@ -2,10 +2,13 @@ const requestURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&AP
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
+        console.log(jsObject)
+        let highT = jsObject.main.temp_max;
         let t = jsObject.main.temp;
         let s = jsObject.wind.speed;
         let windchill = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
         document.getElementById('current-temp').textContent = Math.round(t);
+        document.getElementById('highTemp').innerHTML = `${Math.round(highT)}&deg;F`;
         if (t <= 50 && s >= 3.0) {
             document.querySelector("#windchill").innerHTML = Math.round(windchill);
         }
@@ -29,7 +32,6 @@ fetch(forecastURL)
     const forecastfive = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
     let i = 1;
-console.log(forecastfive);
 
     forecastfive.forEach(forecast => {
     const day = forecast.dt_txt;
