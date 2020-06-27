@@ -9,6 +9,7 @@ fetch(requestURL)
         document.getElementById('weatherDescr').textContent = jsObject.weather[0].description;
         document.getElementById('current-temp').textContent = Math.floor(t);
         document.getElementById('highTemp').innerHTML = `${Math.floor(highT)}&deg;F`;
+        document.getElementById('humidity').textContent = `Humidity: ${jsObject.main.humidity}%`;
         document.getElementById('windSpeed').textContent = Math.floor(s);
         if (t <= 50 && s >= 3.0) {
             document.querySelector("#windchill").innerHTML = Math.floor(windchill);
