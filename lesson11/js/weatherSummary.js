@@ -40,3 +40,20 @@ fetch(forecastURL)
        i++; 
     });
     });
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);  // delete
+        const towns = jsonObject['towns'];
+        const activeTown =  document.querySelector(li.active a).textContent;
+            if(town.name == activeTown{
+                
+            }
+            // if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs") {
+            // 
+
+    });
