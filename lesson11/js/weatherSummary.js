@@ -1,5 +1,4 @@
-function(id){
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=${}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial';
+const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial";
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -22,7 +21,7 @@ fetch(requestURL)
     });
 
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=${}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial"
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -41,7 +40,3 @@ fetch(forecastURL)
        i++; 
     });
     });
-}
-fishhaven id = 
-preston id = 5604473
-sodaspring id = 5607916
