@@ -104,12 +104,18 @@ fetch(requestURL)
 
                 //Town Events
                 if(town.name == activeTown){
-                let eventHeader = createElement(h3);
+                let eventHeader = document.createElement('h3');
                 let events = town.events;
+                let eventList = document.createElement('ul');
                 let eventsDiv = document.querySelector("#upcomingEvents");
-
+                events.forEach(event => {
+                    let li =document.createElement('li');
+                    li.textContent = event;
+                    eventList.appendChild(li);
+                }); 
                 eventHeader.textContent= `${town.name} Upcomming events`;
                 eventsDiv.appendChild(eventHeader);
+                eventsDiv.appendChild(eventList)
                 }
 
             }
