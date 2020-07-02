@@ -105,6 +105,7 @@ fetch(requestURL)
                 //Town Events
                 if(town.name == activeTown){
                 let eventHeader = document.createElement('h3');
+                    eventHeader.style.color = "rgb(221, 91, 4)";
                 let events = town.events;
                 let eventList = document.createElement('ul');
                 let eventsDiv = document.querySelector("#upcomingEvents");
@@ -115,7 +116,7 @@ fetch(requestURL)
                 }); 
                 eventHeader.textContent= `${town.name} Upcomming events`;
                 eventsDiv.appendChild(eventHeader);
-                eventsDiv.appendChild(eventList)
+                eventsDiv.appendChild(eventList);
                 }
 
             }
