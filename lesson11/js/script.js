@@ -22,12 +22,12 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        // console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const towns = jsonObject['towns'];
+        const towns = jsonObject['towns'].filter(town => town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs");
+        console.log(towns); //delete after use
         const activeTown = document.querySelector('li.active a').textContent;
         towns.forEach(town => {
+            //Homepage town cards
             if (activeTown == "Home") {
-                if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs") {
                     let card = document.createElement('section')
                     let div = document.createElement('div')
                     let h3 = document.createElement('h3');
@@ -58,8 +58,8 @@ fetch(requestURL)
 
                     document.querySelector('div.cards').appendChild(card);
                 }
-            }
             else {
+            //Town Weather Summary
                 const requestURL = `https://api.openweathermap.org/data/2.5/weather?q=${activeTown}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(requestURL)
                     .then((response) => response.json())
@@ -81,7 +81,7 @@ fetch(requestURL)
 
                     });
 
-
+                //Weekly Forecast
                 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${activeTown}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(forecastURL)
                     .then((response) => response.json())
@@ -101,6 +101,17 @@ fetch(requestURL)
                             i++;
                         });
                     });
+
+                //Town Events
+                if(town.name == activeTown){
+                let eventHeader = createElement(h3);
+                let events = town.events;
+                let eventsDiv = document.querySelector("#upcomingEvents");
+
+                eventHeader.textContent= `${town.name} Upcomming events`;
+                eventsDiv.appendChild(eventHeader);
+                }
+
             }
         });
 
