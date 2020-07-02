@@ -108,6 +108,8 @@ fetch(requestURL)
                     eventHeader.style.color = "rgb(221, 91, 4)";
                 let events = town.events;
                 let eventList = document.createElement('ul');
+                eventList.style.fontSize = "1.15rem";
+                eventList.style.listStyle = "square";   
                 let eventsDiv = document.querySelector("#upcomingEvents");
                 events.forEach(event => {
                     let li =document.createElement('li');
