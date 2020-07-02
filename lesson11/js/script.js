@@ -23,7 +23,7 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         const towns = jsonObject['towns'].filter(town => town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs");
-        console.log(towns); //delete after use
+        // console.log(towns); //delete after use
         const activeTown = document.querySelector('li.active a').textContent;
         towns.forEach(town => {
             //Homepage town cards
