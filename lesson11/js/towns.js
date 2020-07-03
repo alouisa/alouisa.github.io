@@ -106,12 +106,8 @@ fetch(requestURL)
                 //Town Events
                 if(town.name == activeTown){
                 let eventHeader = document.createElement('h3');
-                    eventHeader.style.color = "rgb(221, 91, 4)";
-                    eventHeader.style.fontSize = "1.5rem";
                 let events = town.events;
-                let eventList = document.createElement('ul');
-                eventList.style.fontSize = "1.15rem";
-                eventList.style.listStyle = "square";   
+                let eventList = document.createElement('ul'); 
                 let eventsDiv = document.querySelector("#upcomingEvents");
                 events.forEach(event => {
                     let li =document.createElement('li');

@@ -340,8 +340,22 @@ div.cards img{
 /*   ------- Town Pages ------   */
 
 #upcomingEvents{
-    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 70px 1fr;
     border: 1px solid rgba(248, 182, 45, 0.5);
     background-color: rgba(175, 242, 245, 0.2);
-    padding: 0 100px;
+    padding: 2%;
+}
+#upcomingEvents h3{
+    color: rgb(221, 91, 4);
+    margin-bottom: 0;
+    font-size:  1.4rem;
+}
+#upcomingEvents ul{
+    margin-top: 5px;
+    list-style: square;
+    font-size: 1.25rem;
+ 
+}
+
 }

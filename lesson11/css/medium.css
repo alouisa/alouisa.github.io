@@ -137,4 +137,15 @@ section:nth-child(even) .townData{
 }
 
 
+
+/*   ------- Town Pages ------   */
+#upcomingEvents{
+    justify-items: center;
+    align-items: center;
+}
+#upcomingEvents h3{
+    padding: 0 100px;
+}
+
+
 }
