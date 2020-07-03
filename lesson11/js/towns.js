@@ -42,11 +42,28 @@ fetch(requestURL)
                 }
             else {
             //Town Weather Summary
-                const requestURL = `https://api.openweathermap.org/data/2.5/weather?q=${activeTown}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
+                let lon;
+                let lat;
+                switch(activeTown){
+                    case "Preston":
+                        lon = -111.876617;
+                        lat = 42.09631;
+                        break;
+                    case "Soda Springs":
+                        lon = -111.604668;
+                        lat = 42.654369;
+                        break;
+                    case "Fish Haven":
+                        lon = -111.3960;
+                        lat = 42.0372;
+                        break;
+                    
+                }
+                const requestURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(requestURL)
                     .then((response) => response.json())
                     .then((jsObject) => {
-                        console.log(jsObject);
+                        // console.log(jsObject);
                         let highT = jsObject.main.temp_max;
                         let t = jsObject.main.temp;
                         let s = jsObject.wind.speed;
@@ -66,7 +83,7 @@ fetch(requestURL)
                     });
 
                 //Weekly Forecast
-                const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${activeTown}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
+                const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(forecastURL)
                     .then((response) => response.json())
                     .then((jsObject) => {
