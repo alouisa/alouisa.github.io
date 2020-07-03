@@ -121,7 +121,6 @@ fetch(requestURL)
                 eventHeader.textContent= `${town.name} Upcomming events`;
                 eventsDiv.appendChild(eventHeader);
                 eventsDiv.appendChild(eventList);
-                eventsDiv.style.margin = "0 auto";
                 }
 
             }
