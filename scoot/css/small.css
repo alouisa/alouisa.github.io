@@ -8,10 +8,17 @@ header{
     display: flex;
     align-items: center;
     padding-bottom: 25px;
-    margin-left: 4%;
+    padding-left: 4%;
+    background-color: #029779;
 }
 h1{
     font-family: 'Henny Penny';
+    font-size: 2.5rem;
+    color: rgb(246, 230, 145);
+    margin-bottom: 0;
+}
+header div{
+    color: white;
 }
 .main-nav button{
     margin: .2rem 2%;
@@ -23,10 +30,7 @@ h1{
     
 }
 .main-nav{
-    background-color:rgba(255, 232, 53,0.3);
-}
-.main-nav, main, footer{
-    color: #251e10;
+    background-color:rgb(246, 230, 145);;;
 }
 .main-nav ul{
     max-width: 900px;
@@ -42,10 +46,10 @@ h1{
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 .main-nav ul li a:hover{
-    background-color: rgba(248, 182, 45,0.2); 
+    background-color: rgba(251, 142, 41, 0.5); 
 }
 .main-nav ul li.active a{
-    background-color: rgba(248, 182, 45,0.5);
+    background-color:rgba(251, 142, 41);
 }
 .main-nav ul.hide{
     display: none;
@@ -55,6 +59,7 @@ main, footer{
 }
 h2{
     font-family: 'Risque';
+    color: #029779;
 }
 figure{
     margin: 0;
