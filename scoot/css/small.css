@@ -79,6 +79,7 @@ picture img{
    position: absolute;
    top: 5px;
    left: 50%;
-   margin-left: -90px; 
+   margin-left: -90px;
+   color: #029779; 
 }
 
