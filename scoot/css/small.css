@@ -1,11 +1,17 @@
 *{
     box-sizing: border-box;
 }
+body{
+    font-family: 'Dosis';
+}
 header{
     display: flex;
     align-items: center;
     padding-bottom: 25px;
     margin-left: 4%;
+}
+h1{
+    font-family: 'Henny Penny';
 }
 .main-nav button{
     margin: .2rem 2%;
@@ -47,6 +53,10 @@ header{
 main, footer{
     margin: 0 3%;
 }
+h2{
+    font-family: 'Risque';
+}
 figure{
     margin: 0;
 }
+
