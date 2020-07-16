@@ -1,3 +1,41 @@
 *{
     box-sizing: border-box;
 }
+.main-nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    width: 96%;
+    text-align: left;
+    color: rgba(37, 30, 16, 0.75);
+    
+}
+.main-nav{
+    background-color:rgba(255, 232, 53,0.3);
+}
+.main-nav, main, footer{
+    font-family: 'Montserrat', sans-serif;
+    color: #251e10;
+}
+.main-nav ul{
+    max-width: 900px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a{
+    display: block;
+    padding: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.main-nav ul li a:hover{
+    background-color: rgba(248, 182, 45,0.2); 
+}
+.main-nav ul li.active a{
+    background-color: rgba(248, 182, 45,0.5);
+}
+.main-nav ul.hide{
+    display: none;
+}
