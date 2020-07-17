@@ -135,6 +135,9 @@ footer a:hover{
     max-width: 900px;
 
 }
+.rentalOfferings img{
+    width: 1rem;
+}
 .rentalOfferings ul li{
     list-style-type: square;
 }
