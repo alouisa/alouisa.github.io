@@ -15,5 +15,17 @@
         margin: 0 auto; 
 
     }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footertext{
+        display: flex;
+    }
+
+    .mediaIcons{
+        align-self: flex-end;
+        padding-bottom: 1%;
+    }
 
 }
