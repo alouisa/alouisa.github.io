@@ -171,12 +171,15 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
 }
+.infoAndServices ul{
+    list-style-type: square;
+}
 .scootReservations form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.scootReservations form input, .scootContact form textarea{
+.scootReservations form input, .scootReservations form textarea{
     display: block;
     padding: 10px;
     margin-bottom: 10px;
