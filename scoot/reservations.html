@@ -56,16 +56,16 @@
                 <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
                 <label class="top">Phone Number<input type="tel" name="phone" placeholder="5551235432" required></label>
-                <label class="top">State<input type="number" name="text" required></label>
-                <label class="top">Country<input type="number" name="text" required></label>
+                <label class="top">State<input type="text" name="text" required></label>
+                <label class="top">Country<input type="text" name="text" required></label>
             </fieldset>
             <fieldset>
                 <legend>Rental Information</legend>
-                <label class="top">Rental Date <input type="date" name="completeDate"></label>
+                <label class="top">Rental Date* <input type="date" name="completeDate" required></label>
 
-                <label class="top">Total Rental Days <input type="num" name="totalrentaldays"></label>
-                <label class="top">Rental Type
-                    <select name="rentaltype">
+                <label class="top">Total Rental Days* <input type="num" name="totalrentaldays" required></label>
+                <label class="top">Rental Type*
+                    <select name="rentaltype" required>
                         <option value="" selected disabled>Select Rental Type</option>
                         <option value="honda metropolitan">Honda Metropolitan</option>
                         <option value="honda dio">Honda Dio</option>
