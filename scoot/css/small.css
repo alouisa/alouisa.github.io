@@ -119,4 +119,7 @@ footer a:hover{
     display: grid;
     justify-content: center;
 }
+.rentalOfferings ul li{
+    list-style-type: square;
+}
 
