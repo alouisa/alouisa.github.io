@@ -36,7 +36,7 @@ header div{
     width: 96%;
     text-align: left;
     color: rgba(37, 30, 16, 0.75);
-   font-size: 1.3rem; 
+    font-size: 1.3rem; 
 }
 .main-nav{
     background-color:rgb(246, 230, 145);
@@ -58,7 +58,7 @@ header div{
     background-color: rgba(251, 142, 41, 0.5); 
 }
 .main-nav ul li.active a{
-    background-color:rgba(251, 142, 41);
+    background-color:rgb(251, 142, 41);
 }
 .main-nav ul.hide{
     display: none;
@@ -88,6 +88,9 @@ footer a{
     color: white;
     text-decoration: none;
 }
+footer a:hover{
+    color: rgb(246, 230, 145); 
+}
 
 
 /* ----------Home Page---------- */
@@ -100,5 +103,17 @@ footer a{
    left: 50%;
    margin-left: -90px;
    color: #029779; 
+}
+#rentaltravelvehicle{
+    text-align: center;
+}
+#rentaltravelvehicle a{
+     color:rgb(251, 142, 41);
+     text-decoration: none;
+     font-size: 1.25rem;
+}
+#rentaltravelvehicle a:hover{
+    color:#029779; 
+
 }
 
