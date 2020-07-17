@@ -151,3 +151,11 @@ footer a:hover{
 
 
 /* ----------  Rentals  ---------- */
+.rentalfigures figure img{
+    display: block;
+    margin: 0 auto;
+
+}
+.rentalfigures figure figcaption{
+   text-align: center;
+}

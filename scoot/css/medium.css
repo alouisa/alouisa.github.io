@@ -35,6 +35,15 @@
 .rentalOfferings{
 
 }
-    
+   
+/* ---------- Rentals ---------- */
+.rentalfigures{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.rentalfigures figure img{
+    max-width: 100%;
+}
 
 }
