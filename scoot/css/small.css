@@ -63,6 +63,10 @@ header div{
 .main-nav ul.hide{
     display: none;
 }
+main{
+    margin: 0 auto;
+    max-width: 900px;
+}
 h2{
     font-family: 'Risque';
     color: #029779;
@@ -168,8 +172,6 @@ footer a:hover{
 /* ----------  Tours  ---------- */
 .scootTours{
     text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
 }
 .sitesToVisit a{
     display: block;
@@ -178,10 +180,6 @@ footer a:hover{
 }
 
 /* ----------  Contact  ---------- */
-.scootContact{
-    margin: 0 auto;
-    max-width: 900px;
-}
 .scootContact form{
     display: flex;
     flex-direction: column; 
