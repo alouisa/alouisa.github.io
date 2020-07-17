@@ -114,6 +114,9 @@ footer a:hover{
 }
 #rentaltravelvehicle a:hover{
     color:#029779; 
-
+}
+.rentalOfferings {
+    display: grid;
+    justify-content: center;
 }
 
