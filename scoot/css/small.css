@@ -85,11 +85,11 @@ footer{
 footer a{
     color: white;
     text-decoration: none;
+    padding: 5px
 }
 footer a:hover{
     color: rgb(246, 230, 145); 
 }
-
 
 
 
