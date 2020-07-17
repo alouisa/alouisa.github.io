@@ -63,9 +63,6 @@ header div{
 .main-nav ul.hide{
     display: none;
 }
-main{
-    padding: 0 3%;
-}
 h2{
     font-family: 'Risque';
     color: #029779;
@@ -104,6 +101,10 @@ footer a:hover{
    margin-left: -90px;
    color: #029779; 
 }
+.cast5{
+    max-width: 900px;
+    background-color: rgba(2, 151, 121, 0.7);
+}
 #rentaltravelvehicle{
     text-align: center;
 }
@@ -118,6 +119,10 @@ footer a:hover{
 .rentalOfferings {
     display: grid;
     justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(246, 230, 145, 0.3);
+    max-width: 900px;
+
 }
 .rentalOfferings ul li{
     list-style-type: square;
