@@ -176,3 +176,16 @@ footer a:hover{
     text-decoration: none;
     color: black;
 }
+
+/* ----------  Contact  ---------- */
+.scootContact{
+    margin: 0 auto;
+    max-width: 900px;
+}
+.scootContact form{
+    display: flex;
+    flex-direction: column; 
+}
+.scootContact form input, .scootContact form textarea{
+    display: block;
+}
