@@ -36,10 +36,10 @@ header div{
     width: 96%;
     text-align: left;
     color: rgba(37, 30, 16, 0.75);
-    
+   font-size: 1.3rem; 
 }
 .main-nav{
-    background-color:rgb(246, 230, 145);;;
+    background-color:rgb(246, 230, 145);
 }
 .main-nav ul{
     max-width: 900px;
@@ -63,7 +63,7 @@ header div{
 .main-nav ul.hide{
     display: none;
 }
-main, footer{
+main{
     padding: 0 3%;
 }
 h2{
@@ -81,7 +81,8 @@ picture img{
 }
 footer{
      background-color: #029779;
-     color: white;
+     color: rgb(246, 230, 145);
+      padding: 1% 3%;
 }
 footer a{
     color: white;
