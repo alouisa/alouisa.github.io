@@ -131,11 +131,15 @@ footer a:hover{
     max-width: 900px;
 
 }
+.rentalOfferings p{
+    padding-left: 2.5rem;
+    color:  #029779;
+}
 .rentalOfferings img{
     width: 1.5rem;
 }
 .rentalOfferings ul li{
-    list-style-type: square;
+    list-style-type: none;
 }
 .locations{
  text-align: center;
