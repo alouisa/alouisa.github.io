@@ -93,7 +93,7 @@ footer a:hover{
 
 
 
-/* ----------Home Page---------- */
+/* ----------  Home Page  ---------- */
 .weatherSummary{
    position: relative;
 }
@@ -148,3 +148,6 @@ footer a:hover{
 .locations{
  text-align: center;
 }
+
+
+/* ----------  Rentals  ---------- */
