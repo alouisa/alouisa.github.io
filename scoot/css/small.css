@@ -182,8 +182,11 @@ footer a:hover{
 /* ----------  Contact  ---------- */
 .scootContact form{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center; 
 }
 .scootContact form input, .scootContact form textarea{
     display: block;
+    padding: 10px;
+    margin-bottom: 10px;
 }
