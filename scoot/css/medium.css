@@ -1,7 +1,4 @@
 @media only screen and (min-width: 42em){
-    header{
-        justify-content: center;
-    }
     .main-nav button{
        display: none;
     }
@@ -17,9 +14,6 @@
         flex-direction: row;
         margin: 0 auto; 
 
-    }
-    h2{
-        text-align: center;
     }
 
 }

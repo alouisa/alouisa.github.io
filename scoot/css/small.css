@@ -10,12 +10,21 @@ header{
     padding-bottom: 25px;
     padding-left: 4%;
     background-color: #029779;
+    justify-content: center;
+    
 }
 h1{
     font-family: 'Henny Penny';
     font-size: 2.5rem;
     color: rgb(246, 230, 145);
     margin-bottom: 0;
+}
+.logo{
+    width: 50px;
+    padding-right: 3px;
+}
+.header-text{
+    margin-right: 80px;
 }
 header div{
     color: white;
@@ -60,6 +69,7 @@ main, footer{
 h2{
     font-family: 'Risque';
     color: #029779;
+    text-align: center;
 }
 figure{
     margin: 0;
