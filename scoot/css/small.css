@@ -166,7 +166,23 @@ footer a:hover{
 
 
 /* ----------  Reservations  ---------- */
-
+.infoAndServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scootReservations form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scootReservations form input, .scootContact form textarea{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 20rem;
+    max-width: 96%;
+}
 
 
 /* ----------  Tours  ---------- */
