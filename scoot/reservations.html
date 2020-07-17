@@ -48,7 +48,46 @@
                </ul>
            </label> 
         <h2>Reservations</h2>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>
+                    Renter's Information
+                </legend>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+                <label class="top">Phone Number<input type="tel" name="phone" placeholder="5551235432" required></label>
+                <label class="top">State<input type="number" name="text" required></label>
+                <label class="top">Country<input type="number" name="text" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top">Rental Date <input type="date" name="completeDate"></label>
 
+                <label class="top">Rental Type
+                    <select name="rentaltype">
+                        <option value="" selected disabled>Select Rental Type</option>
+                        <option value="honda metropolitan">Honda Metropolitan</option>
+                        <option value="honda dio">Honda Dio</option>
+                        <option value="honda PCX150">Honda PCX150</option>
+                    </select>
+                </label>
+
+    
+            </fieldset>
+            <fieldset>
+                <legend>Danger Level</legend>
+                <div>Are you in Danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+        
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">What else should we know? <textarea name="comment"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Report this Storm" class="submitBtn">
+        </form>
         </div>
     </main>
     <footer>
