@@ -179,7 +179,7 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
 }
-.scootReservations form input, .scootReservations form textarea{
+.scootReservations form input, .scootReservations form textarea, .scootReservations form select{
     display: block;
     padding: 10px;
     margin-bottom: 10px;
