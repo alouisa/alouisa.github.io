@@ -134,9 +134,13 @@ footer a:hover{
 .rentalOfferings p{
     padding-left: 2.5rem;
     color:  #029779;
+    margin-bottom: 5px;
 }
 .rentalOfferings img{
     width: 1.5rem;
+}
+.rentalOfferings ul{
+    margin-top: 0;
 }
 .rentalOfferings ul li{
     list-style-type: none;
