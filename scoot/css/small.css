@@ -102,8 +102,12 @@ footer a:hover{
    color: #029779; 
 }
 .cast5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     max-width: 900px;
+    margin: 0 auto;
     background-color: rgba(2, 151, 121, 0.7);
+    padding: 1% 3%;
 }
 #rentaltravelvehicle{
     text-align: center;
