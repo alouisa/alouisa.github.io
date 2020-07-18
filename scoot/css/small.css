@@ -64,7 +64,6 @@ header div{
     display: none;
 }
 main{
-    margin: 0 auto;
     max-width: 900px;
 }
 h2{
@@ -120,18 +119,18 @@ footer a:hover{
     text-align: center;
 }
 #rentaltravelvehicle a{
-     color:#029779;
+     color: rgb(251, 142, 41);
      text-decoration: none;
      font-size: 1.25rem;
 }
 #rentaltravelvehicle a:hover{
-    color:rgb(251, 142, 41); 
+    text-decoration: underline; 
 }
 .rentalOfferings {
     display: grid;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgba(246, 230, 145, 0.3);
+    background-color: rgba(246, 230, 145, 0.2);
     max-width: 900px;
 
 }
@@ -169,19 +168,20 @@ footer a:hover{
 
 
 /* ----------  Reservations  ---------- */
-.infoAndServices{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
-}
-.infoAndServices ul{
-    list-style-type: none;
-}
 .scootReservations form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.scootReservations form fieldset{
+    border-radius: 4px;
+    background-color: rgba(246, 230, 145, 0.15);
+}
+.scootReservations form legend{
+    color:rgb(1, 104, 83);
+}
+.scootReservations form label{
+    font-size: 0.8rem;
 }
 .scootReservations form input, .scootReservations form textarea, .scootReservations form select{
     display: block;
@@ -190,16 +190,38 @@ footer a:hover{
     width: 20rem;
     max-width: 96%;
 }
+.infoAndServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19.2rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+.infoAndServices ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
 
 
 /* ----------  Tours  ---------- */
 .scootTours{
     text-align: center;
+    margin: 3%;
+}
+.scootTours p:first-of-type, .islandFeatures{
+    color: rgb(1, 112, 90);
 }
 .sitesToVisit a{
     display: block;
     text-decoration: none;
-    color: black;
+    color:rgb(214, 121, 34);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.sitesToVisit a:hover{
+    text-decoration: underline;
 }
 
 /* ----------  Contact  ---------- */
