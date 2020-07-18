@@ -163,6 +163,9 @@ footer a:hover{
 .rentalfigures figure figcaption{
    text-align: center;
 }
+#rentalPricesTable{
+    margin: 3%;
+}
 
 
 /* ----------  Reservations  ---------- */

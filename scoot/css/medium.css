@@ -45,7 +45,9 @@
 .rentalfigures figure img{
     max-width: 100%;
 }
-
+#rentalPricesTable{
+    margin: 25px auto 50px auto;
+}
 
 /* ----------  Reservations  ---------- */
 
