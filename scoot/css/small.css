@@ -79,6 +79,9 @@ picture img{
     max-width: 100%;
     margin: 0 auto;
 }
+figure img, img{
+    max-width: 100%;
+}
 footer{
     background-color: #029779;
     color: rgb(246, 230, 145);
@@ -163,7 +166,8 @@ footer a:hover{
    text-align: center;
 }
 #rentalPricesTable{
-    margin: 3%;
+    padding: 3%;
+    margin: 0 auto;
 }
 
 
@@ -208,7 +212,9 @@ footer a:hover{
 /* ----------  Tours  ---------- */
 .scootTours{
     text-align: center;
-    margin: 3%;
+}
+.scootTours p:first-of-type{
+    padding: 3%;
 }
 .scootTours p:first-of-type, .islandFeatures{
     color: rgb(1, 112, 90);
