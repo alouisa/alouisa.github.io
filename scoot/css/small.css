@@ -222,10 +222,10 @@ input[type=button]{
 .scootTours{
     text-align: center;
 }
-.scootTours p:first-of-type{
+.tourGrid p:first-child{
     padding: 3%;
 }
-.scootTours p:first-of-type, .islandFeatures{
+.tourGrid p:first-child, .islandFeatures{
     color: rgb(1, 112, 90);
 }
 .sitesToVisit a{
