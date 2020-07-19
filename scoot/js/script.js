@@ -10,7 +10,6 @@ let day = date.getDate();
 let year = date.getFullYear();
 let todaysDate = `${daysOfTheWeek[d]}, ${day} ${monthsOfYear[m]} ${year}`;
 document.getElementById("modifiedDate").innerHTML = todaysDate;
-document.querySelector(".copyright span").innerHTML = year;
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
