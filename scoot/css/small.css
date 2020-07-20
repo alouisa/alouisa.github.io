@@ -110,7 +110,7 @@ form label input:required, form label select:required {
    position: absolute;
    top: 5px;
    left: 50%;
-   margin-left: -90px;
+   margin-left: -150px;
    color: #029779; 
 }
 .cast5{
