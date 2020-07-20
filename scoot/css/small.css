@@ -97,7 +97,7 @@ footer a:hover{
     color: rgb(246, 230, 145); 
 }
 
-form label input:required {
+form label input:required, form label select:required {
     border-left: 6px solid rgb(221, 91, 4);
 }
 
@@ -259,7 +259,7 @@ form label input:required {
     align-items: center;
 }
 .scootContact form label{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .scootContact form input, .scootContact form textarea{
     display: block;
