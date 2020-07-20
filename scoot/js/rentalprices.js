@@ -2,5 +2,6 @@ const requestURL = `https://raw.githubusercontent.com/alouisa/alouisa.github.io/
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        // console.log(jsObject);
+        
     });
