@@ -34,7 +34,10 @@
 
 
 
-/* ----------Home Page---------- */  
+/* ----------Home Page---------- */ 
+.rentalOfferings{
+    display: flex;
+} 
 .locations{
     display: flex;
 }
