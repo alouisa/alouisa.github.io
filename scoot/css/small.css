@@ -179,7 +179,12 @@ form label input:required, form label select:required {
 th, td{
   padding: 0.5rem;
 }
-
+td{
+    text-align: center;
+}
+td:first-child{
+    text-align: left;
+}
 
 /* ----------  Reservations  ---------- */
 .scootReservations form{
@@ -295,3 +300,4 @@ th, td{
     margin-right: 2%;
 }
 
+/* ----------  Thank You & Confirmation Pages  ---------- */

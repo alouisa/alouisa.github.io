@@ -5,22 +5,28 @@ fetch(requestURL)
         console.log(jsObject);
         let rentalData = jsObject['rentalData'];
         let tbody = document.querySelector('#rentalPricesTable tbody');
-        rentalData.forEach(element => {
+        rentalData.forEach(rental => {
             const newRow = document.createElement('tr');
-            const rentaltype = document.createElement('td');
-            const maxpersons = document.createElement('td');
-            const halfdayRes = document.createElement('td');
-            const fulldayRes = document.createElement('td');
-            const halfdayNoRes = document.createElement('td');
-            const fulldayNoRes = document.createElement('td');
+            const td1 = document.createElement('td');
+            const td2 = document.createElement('td');
+            const td3 = document.createElement('td');
+            const td4 = document.createElement('td');
+            const td5 = document.createElement('td');
+            const td6 = document.createElement('td');
 
-            newRow.appendChild(rentaltype);
-            newRow.appendChild(maxpersons);
-            newRow.appendChild(rentaltype);
-            newRow.appendChild(halfdayRes);
-            newRow.appendChild(fulldayRes);
-            newRow.appendChild(halfdayNoRes)
-            newRow.appendChild(fulldayNoRes)
+            td1.textContent = rental.rentalType;
+            td2.textContent = rental.maxPersons;
+            td3.textContent = `$ ${rental.halfDayRes}`;
+            td4.textContent = `$ ${rental.fullDayRes}`;
+            td5.textContent = `$ ${rental.halfDayWalkIn}`;
+            td6.textContent = `$ ${rental.fullDayWalkIn}`;
+
+            newRow.appendChild(td1);
+            newRow.appendChild(td2);
+            newRow.appendChild(td3);
+            newRow.appendChild(td4);
+            newRow.appendChild(td5);
+            newRow.appendChild(td6)
                               
             tbody.appendChild(newRow);
            ;
