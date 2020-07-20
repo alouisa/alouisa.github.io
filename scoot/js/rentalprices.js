@@ -5,6 +5,11 @@ fetch(requestURL)
         console.log(jsObject);
         let tbody = document.querySelector('#rentalPricesTable tbody');
         jsObject.prices.forEach(element => {
-            
+            let rentaltype = ;
+            let maxpersons = ;
+            let halfdayRes = ;
+            let fulldayRes = ;
+            let halfdayNoRes = ;
+            let fulldayNoRes = ;
         });
     });
