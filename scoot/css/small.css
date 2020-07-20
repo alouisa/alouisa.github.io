@@ -200,7 +200,6 @@ form label input:required {
 }
 .scootReservations form input, .scootReservations form textarea, .scootReservations form select{
     display: block;
-    padding: 10px;
     margin-bottom: 10px;
     width: 20rem;
     max-width: 96%;
