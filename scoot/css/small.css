@@ -213,6 +213,7 @@ form label input:required {
     background-color: rgb(251, 104, 41);
     color: white;
     border: none;
+    border-radius: 1rem;
 }
 .infoAndServices{
     display: flex;
@@ -262,7 +263,6 @@ form label input:required {
 }
 .scootContact form input, .scootContact form textarea{
     display: block;
-    padding: 10px;
     margin-bottom: 10px;
     width: 20rem;
     max-width: 96%;
