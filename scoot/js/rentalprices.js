@@ -2,7 +2,5 @@ const requestURL = `https://raw.githubusercontent.com/alouisa/alouisa.github.io/
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        // console.log(jsObject);
-       let rentalData  = jsObject.rentalData;
-       console.log(rentalData);
+        console.log(jsObject);
     });
