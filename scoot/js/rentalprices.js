@@ -3,4 +3,8 @@ fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        let tbody = document.querySelector('#rentalPricesTable tbody');
+        jsObject.prices.forEach(element => {
+            
+        });
     });
