@@ -214,7 +214,6 @@ form label input:required {
     background-color: rgb(251, 104, 41);
     color: white;
     border: none;
-    margin-top: 5px;
 }
 .infoAndServices{
     display: flex;
