@@ -323,3 +323,16 @@ td:first-child{
 }
 
 /* ----------  Thank You & Confirmation Pages  ---------- */
+.scootThankyou, .scootConfirmation{
+    text-align: center;
+}
+.scootThankyou p:first-child, .scootConfirmation p:first-child{
+    color:  rgb(1, 112, 90);
+    font-size: 1.8rem;
+    font-family: 'Risque';
+    margin-bottom: 0;
+}
+.scootThankyou p:nth-of-type(2), .scootConfirmation p:nth-of-type(2){
+    color: red;
+    margin-top: 0;
+}
