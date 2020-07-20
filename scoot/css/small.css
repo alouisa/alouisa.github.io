@@ -221,6 +221,7 @@ input[type=button]{
 /* ----------  Tours  ---------- */
 .scootTours{
     text-align: center;
+    margin-bottom: 35px;
 }
 .tourGrid p:first-child{
     padding: 3%;
