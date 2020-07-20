@@ -328,11 +328,7 @@ td:first-child{
 }
 .scootThankyou p:first-child, .scootConfirmation p:first-child{
     color:  rgb(1, 112, 90);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: 'Risque';
     margin-bottom: 0;
-}
-.scootThankyou p:nth-of-type(2), .scootConfirmation p:nth-of-type(2){
-    color: red;
-    margin-top: 0;
 }
