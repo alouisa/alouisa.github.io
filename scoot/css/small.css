@@ -181,15 +181,18 @@ thead tr:first-of-type{
     font-size: 1.2rem;
 }
 thead tr:nth-of-type(2){
-    color: #029779;
+    color: #017c63;
 }
-tbody{
-    font-size: 0.83rem;
+.pricetypes{
+    background-color: rgba(153, 153, 153, 0.158);
 }
 thead tr:nth-child(3){
     font-size: 0.9rem;
     background-color: #017c63;
     color: white;
+}
+tbody{
+    font-size: 0.83rem;
 }
 tbody tr:nth-child(even){
     background-color: rgba(246, 229, 145, 0.3);
