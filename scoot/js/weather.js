@@ -1,4 +1,4 @@
-const requestURL = `https://api.openweathermap.org/data/2.5/weather?lat=86.9223&lon=20.4230&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
+const requestURL = `https://api.openweathermap.org/data/2.5/weather?id=3530103&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(requestURL)
                     .then((response) => response.json())
                     .then((jsObject) => {
@@ -14,7 +14,7 @@ const requestURL = `https://api.openweathermap.org/data/2.5/weather?lat=86.9223&
                     });
 
                 //Weekly Forecast
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=86.9223&lon=20.4230&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=3530103&APPID=afbcf6ac456ba0edf76d17cd9722668b&units=imperial`;
                 fetch(forecastURL)
                     .then((response) => response.json())
                     .then((jsObject) => {
@@ -33,4 +33,3 @@ const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=86.922
                             i++;
                         });
                     });
-
