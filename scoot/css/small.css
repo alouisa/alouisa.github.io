@@ -175,7 +175,9 @@ form label input:required, form label select:required {
 #rentalPricesTable{
     padding: 3%;
     margin: 0 auto;
-    max-width: 350px;
+}
+th, td{
+  padding: 0.5rem;
 }
 
 
