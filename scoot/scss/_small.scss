@@ -1,3 +1,4 @@
+/* ----------  Styles Consistent Across Pages---------- */
 *{
     box-sizing: border-box;
 }
@@ -104,7 +105,6 @@ form label input:required, form label select:required {
 form label input:required:valid, form label select:required:valid{
     border-left: 6px solid #029779;
 }
-
 
 /* ----------  Home Page  ---------- */
 .weatherSummary{
