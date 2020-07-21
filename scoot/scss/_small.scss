@@ -364,12 +364,10 @@ td:first-child{
      color: rgba(1, 112, 90, 0.75);
      font-size: 0.9rem;
      color: #999;
+     margin-bottom: 10px;
 }
-.resourceWebsites li{
-    margin-bottom: 5px;
-}
-.resourceImages li{
-    margin-bottom: 10px;
+.resourceWebsites, .resourceImages{
+    margin-bottom: 50px;
 }
 .scootResources ul li a{
     padding: 0.75rem 0;
