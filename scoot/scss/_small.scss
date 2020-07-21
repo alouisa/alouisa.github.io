@@ -144,7 +144,7 @@ form label input:required:valid, form label select:required:valid{
 #rentaltravelvehicle a{
      color: rgb(251, 142, 41);
      text-decoration: none;
-     font-size: 1.25rem;
+     font-size: 1.7rem;
 }
 #rentaltravelvehicle a:hover{
     text-decoration: underline; 
@@ -156,7 +156,7 @@ form label input:required:valid, form label select:required:valid{
     background-color: rgba(246, 230, 145, 0.2);
     max-width: 900px;
     margin-bottom: 35px;
-
+    padding-right: 27px;
 }
 .rentalOfferings p{
     padding-left: 2.5rem;
@@ -168,6 +168,7 @@ form label input:required:valid, form label select:required:valid{
 }
 .rentalOfferings ul{
     margin-top: 0;
+    padding-left: 27px;
 }
 .rentalOfferings ul li{
     list-style-type: none;
