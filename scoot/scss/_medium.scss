@@ -33,7 +33,11 @@
 
 
 
-/* ----------Home Page---------- */ 
+/* ----------Home Page---------- */
+.weatherSummary p{
+   font-size: 1.15rem; 
+} 
+
 .rentalOfferings{
     display: flex;
 } 

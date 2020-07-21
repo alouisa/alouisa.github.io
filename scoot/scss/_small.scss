@@ -138,17 +138,6 @@ form label input:required:valid, form label select:required:valid{
     margin-top: 0;
 }
 
-#rentaltravelvehicle{
-    text-align: center;
-}
-#rentaltravelvehicle a{
-     color: rgb(251, 142, 41);
-     text-decoration: none;
-     font-size: 1.7rem;
-}
-#rentaltravelvehicle a:hover{
-    text-decoration: underline; 
-}
 .rentalOfferings {
     display: grid;
     justify-content: center;
@@ -172,6 +161,18 @@ form label input:required:valid, form label select:required:valid{
 }
 .rentalOfferings ul li{
     list-style-type: none;
+}
+#rentaltravelvehicle{
+    text-align: center;
+}
+#rentaltravelvehicle a{
+     color: rgb(251, 142, 41);
+     text-decoration: none;
+     font-size: 1.7rem;
+     display: block;
+}
+#rentaltravelvehicle a:hover{
+    text-decoration: underline; 
 }
 .locations{
  text-align: center;
