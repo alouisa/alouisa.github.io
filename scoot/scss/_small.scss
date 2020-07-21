@@ -364,6 +364,7 @@ td:first-child{
 .scootResources ul li{
      color: rgba(1, 112, 90, 0.75);
      font-size: 0.9rem;
+     color: #999;
 }
 .resourceWebsites li{
     margin-bottom: 5px;
@@ -376,6 +377,13 @@ td:first-child{
     text-decoration: none;
     color: rgb(1, 112, 90);
     font-size: 1rem; 
+}
+.scootResources ul li:nth-of-type(even) a:hover, 
+.scootResources ul li:nth-of-type(odd) a:hover{
+    background-color:#029779; 
+}
+.scootResources a:hover{
+    color: white;
 }
 
 .scootResources ul li:nth-of-type(even) a{
