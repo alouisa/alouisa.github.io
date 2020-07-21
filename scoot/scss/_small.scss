@@ -101,6 +101,9 @@ footer a:hover{
 form label input:required, form label select:required {
     border-left: 6px solid rgb(221, 91, 4);
 }
+form label input:required:valid, form label select:required:valid{
+    border-left: 6px solid #029779;
+}
 
 
 /* ----------  Home Page  ---------- */
