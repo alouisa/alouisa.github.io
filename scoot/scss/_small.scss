@@ -125,14 +125,14 @@ form label input:required:valid, form label select:required:valid{
     grid-template-columns: repeat(5, 1fr);
     max-width: 900px;
     background-color: #029779;
-    color: white;
+    color: black;
     margin-bottom: 35px;
 }
 .cast5 div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .cast5 div p:first-of-type{
     margin-bottom: 0;
