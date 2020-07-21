@@ -277,7 +277,7 @@ td:first-child{
 }
 .infoAndServices ul{
     list-style-type: none;
-    padding-inline-start: 0;
+    padding: 0;
 }
 
 
@@ -296,8 +296,8 @@ td:first-child{
     display: block;
     text-decoration: none;
     color:rgb(214, 121, 34);
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 .sitesToVisit a:hover{
     text-decoration: underline;
