@@ -347,3 +347,36 @@ td:first-child{
     font-family: 'Risque';
     margin-bottom: 0;
 }
+
+/* ----------  Resource Page  ---------- */
+.scootResources{
+    padding: 3%;
+    text-align: center;
+}
+.scootResources ul{
+    padding-left: 0;
+}
+.scootResources ul li, .scootResources li a{
+    display: block;
+}
+.scootResources ul li{
+     color: rgba(1, 112, 90, 0.65);
+}
+.scootResources ul li a{
+    padding: 0.75rem 0;
+    text-decoration: none;
+    color: rgb(1, 112, 90); 
+}
+
+.scootResources ul li:nth-of-type(even) a{
+    background-color:rgba(251, 142, 41, 0.5);
+}
+.scootResources ul li:nth-of-type(odd) a{
+    background-color:rgba(251, 142, 41, 0.25); 
+}
+.resourceWebsites li{
+    margin-bottom: 5px;
+}
+.resourceImages li{
+    margin-bottom: 15px;
+}
