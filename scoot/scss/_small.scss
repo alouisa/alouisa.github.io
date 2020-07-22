@@ -239,6 +239,9 @@ td:first-child{
     margin-bottom: 2rem;
     padding: .5rem 4%;
 }
+.scootReservations fieldset:last-of-type{
+    margin-bottom: 10px;
+}
 .scootReservations form legend{
     color:#036350;
     margin: 0 1rem;
@@ -265,6 +268,7 @@ td:first-child{
     color: white;
     border: none;
     border-radius: 1rem;
+    margin-bottom: 25px;
 }
 .infoAndServices{
     display: flex;
