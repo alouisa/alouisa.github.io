@@ -243,7 +243,6 @@ td:first-child{
     margin-bottom: 10px;
 }
 .scootReservations form legend{
-    color:#036350;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -290,6 +289,9 @@ td:first-child{
 .infoAndServices ul{
     list-style-type: none;
     padding: 0;
+}
+.infoAndServices ul li{
+    padding: 5px 0;
 }
 
 
