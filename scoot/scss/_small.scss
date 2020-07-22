@@ -272,6 +272,7 @@ td:first-child{
     border: none;
     border-radius: 1rem;
     margin-bottom: 25px;
+    font-size: 1.2rem;
 }
 .infoAndServices{
     display: flex;
@@ -281,6 +282,10 @@ td:first-child{
     background-color: white;
     padding: 10px;
     border-radius: 4px;
+}
+.infoAndServices div{
+    color: rgb(251, 104, 41);
+    font-size: 1.2rem;
 }
 .infoAndServices ul{
     list-style-type: none;
@@ -344,6 +349,7 @@ td:first-child{
     border: none;
     margin-top: 5px;
     max-width: 20rem;
+    font-size: 1.2rem;
 
 }
 .googlemaps{
