@@ -45,7 +45,7 @@
                 <legend>Rental Information</legend>
                 <label class="top">Rental Date* <input type="date" name="completeDate" required></label>
 
-                <label class="top">Total Rental Days* <input type="num" name="totalrentaldays" required></label>
+                <label class="top">Total Rental Days* <input type="number" name="totalrentaldays" required></label>
                 <label class="top">Rental Type*
                     <select name="rentaltype" required>
                         <option value="" selected disabled>Select Rental Type</option>
@@ -63,9 +63,9 @@
             <fieldset>
                 <legend>Additional Information</legend>
                 <label class="top">Cruise Line
-                    <input type="text" list="cruiselines">
+                    <input type="text" list="cruiselines" name="cruiseline">
                 </label>
-                <datalist id="cruiselines" name="cruiseline">
+                <datalist id="cruiselines">
                     <option value="Carnival">
                     </option>
                     <option value="Celebrity">
@@ -99,7 +99,6 @@
                         <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
                         <li>Rentals may be returned to either location.</li>
                     </ul>
-                    </label>
                 </div>
             </fieldset>
             
@@ -109,7 +108,7 @@
     <footer>
         <div class="footertext">
             <p><a href="contact.html">Contact Us </a><a href="resource.html"> | Resource
-                    Page</a> | Page Last Modified:&nbsp
+                    Page</a> | Page Last Modified:&nbsp;
             <p id="modifiedDate"></p>
         </div>
         <div class="mediaIcons">
