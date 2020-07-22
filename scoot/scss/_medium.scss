@@ -115,6 +115,6 @@ tbody{
 .scootThankyou h2, .scootConfirmation h2{
     font-size: 2rem;
 }
-.scootThankyou p, .scootConfirmation p{
+.scootThankyou p:first-of-type, .scootConfirmation p:first-of-type{
     font-size: 1.1rem;
 }
