@@ -263,7 +263,7 @@ td:first-child{
     padding: .75rem;
     color: #555;
 }
-.scootReservations form select{
+.scootReservations form select, .scootReservations form input[type=date]{
     background-color: white;
 }
 .scootReservations form input[type=submit]{
