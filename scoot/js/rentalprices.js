@@ -2,7 +2,6 @@ const requestURL = `https://raw.githubusercontent.com/alouisa/alouisa.github.io/
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         let rentalData = jsObject['rentalData'];
         let tbody = document.querySelector('#rentalPricesTable tbody');
         rentalData.forEach(rental => {
