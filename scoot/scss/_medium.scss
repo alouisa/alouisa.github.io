@@ -85,13 +85,24 @@ tbody{
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
 }
+.scootTours h2{
+    margin-bottom: 0px;
+}
 .tourGrid p:first-child{
     grid-column: 1/3;
     grid-row: 1/2;
+    font-size: 1.15rem;
+    margin-top: 0;
 
 }
 .tourGrid figure{
     margin: 0;
+}
+.islandFeatures h3, .sitesToVisit h3{
+    font-size: 1.5rem;
+}
+.islandFeatures p, .sitesToVisit a{
+    font-size: 1.1rem;
 }
 
 
