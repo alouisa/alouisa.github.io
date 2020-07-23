@@ -266,12 +266,12 @@ td:first-child{
     background-color: white;
 }
 .scootReservations form input[type=submit]{
-    background-color: rgb(221, 91, 35);
+    background-color: rgb(216, 74, 14);
     color: white;
     border: none;
-    border-radius: 1rem;
+    border-radius: 8px;
     margin-bottom: 25px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .infoAndServices{
     display: flex;
@@ -346,12 +346,13 @@ td:first-child{
     max-width: 20rem;
 }
 .scootContact form input[type=submit]{
-    background-color: rgb(221, 91, 35);
+    background-color: rgb(216, 74, 14);
     color: white;
     border: none;
     margin-top: 5px;
     max-width: 20rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
 
 }
 .googlemaps{
