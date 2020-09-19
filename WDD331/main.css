@@ -1,5 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
-h1{
+body{
+   font-family: Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color:#6495ED;
+    text-align: right;
+    padding: 2rem;
+}
+h1 a{
     font-family: "Lora";
+    font-weight: 500;
+    color: white;
+}
+header nav ul{
+    padding: 0;
+}
+header nav ul li{
+    list-style: none;
+     padding: 10px 0;
+}
+header nav ul li a{
+    color: white;
+}
+.post-date{
+    color: #555;
+}
+h2 a{
+    font-family: "Lora";
+    color: black;
+}
+main{
+    background-color:#FAEBD7;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-gap: 2rem;
+
+}
+article{
+    background-color: white;
+    padding: 1rem;
+}
+section img{
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    body div{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    main{
+        padding: 3rem 4rem;
+        grid-gap: 3rem;
+    }
+
 }
