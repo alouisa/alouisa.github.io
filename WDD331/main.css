@@ -32,6 +32,7 @@ main{
 article{
     background-color: white;
     padding: 1rem;
+    box-shadow: 2px 2px 5px 0px rgba(153, 153, 153, 0.712);
 }
 section img{
     display: block;
