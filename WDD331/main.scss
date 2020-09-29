@@ -29,14 +29,14 @@ $break-large: 60em;
 
 //mixims
 @mixin breakpoint($break) {
-@if $break == large {
-@media (max-width: $break-large) { @content; }
+@if $break == small {
+@media (min-width: $break-small) { @content; }
 }
 @else if $break == medium {
-@media (max-width: $break-medium) { @content; }
+@media (min-width: $break-medium) { @content; }
 }
-@else if $break == small {
-@media (max-width: $break-small) { @content; }
+@else if $break == large {
+@media (min-width: $break-large) { @content; }
 } @else {
 @media ($break) { @content; }
 }
@@ -140,6 +140,5 @@ article{
         text-decoration: underline;
 }
 }
-
 
 
