@@ -32,6 +32,7 @@ header nav ul li {
 main {
   background-color: #FAEBD7;
   padding: 2rem 1rem;
+  display: grid;
   grid-gap: 2rem;
 }
 @media (width: 42em) {
