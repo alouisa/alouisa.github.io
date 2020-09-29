@@ -40,7 +40,12 @@ $break-large: 72em;
 } @else {
 @media ($break) { @content; }
 }
-} 
+}
+
+@mixin center-img {
+    display: block;
+    margin: 0 auto;
+}
 
 //selectors
 body{
@@ -90,8 +95,7 @@ article{
     box-shadow: 2px 2px 5px 0px rgba(153, 153, 153, 0.712);
 }
 section img{
-    display: block;
-    margin: 0 auto;
+    @include center-img();
 }
 
 /* LINKS */
