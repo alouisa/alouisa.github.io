@@ -18,6 +18,9 @@ $article-background-color: white;
 $article-link-default-color: $lightblue;
 $article-link-active-color: $sand;
 
+$primary-font-family:  Helvetica, Arial, sans-serif;
+$secondary-font-family: "Lora";
+
 //media sizes
 $break-small: 32em;
 $break-medium: 42em;
@@ -41,7 +44,7 @@ $break-large: 60em;
 
 //selectors
 body{
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: $primary-font-family;
    margin: 0;
    div{
        display: grid;
@@ -92,7 +95,7 @@ section img{
 /* LINKS */
 /*  ----- H1 Link ----- */
 h1 a{
-    font-family: "Lora";
+    font-family: $secondary-font-family;
     font-weight: 500;
     color: white;
 }
@@ -112,7 +115,7 @@ header {
 /*  ----- Article Title Links ----- */
 h2{
     a, a:visited{
-        font-family: "Lora";
+        font-family: $secondary-font-family;
          color: $header2-default-color 
     }
     a:hover{
