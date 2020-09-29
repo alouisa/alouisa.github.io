@@ -35,7 +35,7 @@ main {
   display: grid;
   grid-gap: 2rem;
 }
-@media (60em) {
+@media (min-width: 32em) {
   main {
     padding: 3rem 4rem;
     grid-gap: 3rem;
