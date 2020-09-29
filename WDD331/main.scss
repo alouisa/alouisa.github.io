@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
-//media sizes
-$break-small: 42em;
-
 //colors
 $lightblue: #6495ED;
 $beige: #FAEBD7;
@@ -21,7 +18,28 @@ $article-background-color: white;
 $article-link-default-color: $lightblue;
 $article-link-active-color: $sand;
 
+//media sizes
+$break-small: 32em;
+$break-medium: 42em;
+$break-small: 60em;
 
+
+//mixims
+@mixin breakpoint($break) {
+@if $break == large {
+@media (max-width: $break-large) { @content; }
+}
+@else if $break == medium {
+@media (max-width: $break-medium) { @content; }
+}
+@else if $break == small {
+@media (max-width: $break-small) { @content; }
+} @else {
+@media ($break) { @content; }
+}
+} 
+
+//selectors
 body{
    font-family: Helvetica, Arial, sans-serif;
    margin: 0;
@@ -55,10 +73,9 @@ main{
     padding: 2rem 1rem;
     display: grid;
     grid-gap: 2rem;
-
-    @media(width: $break-small){
+    @include breakpoint($break-small){
         padding: 3rem 4rem;
-        grid-gap: 3rem;
+        grid-gap: 3rem 
     }
 
 }
