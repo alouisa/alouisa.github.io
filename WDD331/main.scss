@@ -21,7 +21,7 @@ $article-background-color: white;
 $article-link-default-color: $lightblue;
 $article-link-active-color: $sand;
 
-@mixin grid-columns($grid-template-columns: 1, $grid-template-rows: 1, $grid-gap: 0) {
+@mixin grid-columns($grid-template-columns: 1, $grid-template-rows: 1, $grid-gap: 2rem) {
    display: grid;
    grid-template-columns: $grid-template-columns;
    grid-template-rows: $grid-template-rows;
