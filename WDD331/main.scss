@@ -75,7 +75,7 @@ main{
     grid-gap: 2rem;
     @include breakpoint(small){
         padding: 3rem 4rem;
-        grid-gap: 3rem 
+        grid-gap: 3rem; 
     }
 
 }
