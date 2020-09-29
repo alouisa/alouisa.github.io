@@ -21,7 +21,7 @@ $article-link-active-color: $sand;
 //media sizes
 $break-small: 32em;
 $break-medium: 42em;
-$break-small: 60em;
+$break-large: 60em;
 
 
 //mixims
@@ -73,7 +73,7 @@ main{
     padding: 2rem 1rem;
     display: grid;
     grid-gap: 2rem;
-    @include breakpoint($break-small){
+    @include breakpoint(small){
         padding: 3rem 4rem;
         grid-gap: 3rem 
     }
