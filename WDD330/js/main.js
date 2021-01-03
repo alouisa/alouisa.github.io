@@ -3,6 +3,6 @@ let htmlList = document.getElementById("linkList");
 
 for(let i=0; i < linkList.length -1; i++){
     let li = document.createElement('li');
-    li.createTextNode(i); 
+    li.innerHTML(i); 
     htmlList.appendChild(li);
 }
