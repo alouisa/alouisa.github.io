@@ -9,9 +9,9 @@ let htmlList = document.getElementById("linkList");
 
 for(let i=0; i < links.length; i++){
     let li = document.createElement('li');
-    let a = document.createElement('a');
+    let a = document.createElement('a'); 
     a.setAttribute("href", links[i]["url"])
-    a.innerHTML = links[i]["label"];
+    a.textContent = links[i]["label"];
     li.innerHTML = a; 
     htmlList.appendChild(li);
 }
