@@ -2,7 +2,12 @@ body {
   margin: 0;
 }
 
-h1 {
+a {
+  transition: 0.5s all;
+  text-decoration: none;
+  color: #0e1d25;
+}
+a h1 {
   text-align: center;
   text-shadow: white 1.5px 1.5px;
   margin: 0;
@@ -11,13 +16,8 @@ h1 {
   font-size: 2rem;
   background-image: url("../images/spring-bird-2295431_1280.jpg");
 }
-h1 a {
-  transition: 0.5s all;
-  text-decoration-style: dotted;
-}
-h1 a:hover {
-  color: #0e1d25;
-  text-decoration: none;
+a h1:hover {
+  opacity: 0.9;
 }
 
 main {
