@@ -3,13 +3,22 @@ body{
 }
 h1{
     text-align: center;
-    color: rgb(14, 29, 37);
     text-shadow: white 1.5px 1.5px;
     margin: 0;
     padding: 2rem;
     letter-spacing: 0.1rem;
     font-size: 2rem;
     background-image: url("../images/spring-bird-2295431_1280.jpg");
+
+    a{
+        transition: 0.5s all;
+        text-decoration-style: dotted;
+
+        &:hover{
+            color: rgb(14, 29, 37);
+            text-decoration: none;
+        }
+    }
 }
 main{
     margin: 0 auto;
