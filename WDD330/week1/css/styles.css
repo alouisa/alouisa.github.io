@@ -4,8 +4,8 @@ body {
 
 a {
   transition: 0.5s all;
-  text-decoration: none;
   color: #0e1d25;
+  display: block;
 }
 a h1 {
   text-align: center;
