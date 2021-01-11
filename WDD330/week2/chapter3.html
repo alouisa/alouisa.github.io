@@ -21,7 +21,41 @@
 
         <h3>Ch3: Arrays, Logic, and Loops</h3>
         <ul>
-            <li><span>Comment</span> in your code concisely explaining what it should do.</li>
+            <li><span>Array</span>: created by = [] or new Array()</li>
+            <ul>
+                <li>typeOf = "object"</li>
+                <li><span>delete</span>= to remove item <i>value</i> from array- does not remove space of now "undefined" item</li>
+                <li><span>Destructuring Arrays</span>
+                <ul>
+                    <li>const [x, y] = [1, 2];</li>
+                    <li>ex/ [x, y] = [y, x];</li>
+                </ul>
+                <li><span>Array Properties & Methods</span>
+                <ul>
+                    <li><span>.length</span> - if you set array = to length < original, other items with be removed</li>
+                    <li><span>pop(), shift(), unshift(), push()</span> </li>
+                    <li><span>concat()</span>, spread operator: <span>...</span> can also be used to flatten arrays</li>
+                    <li><span>join()</span>: separates array by "," by default</li>
+                    <li><span>slice(), splice()</span>: same as slice(), but actually removes items from array and returns it as a subarray</li>
+                    <li><span>reverse(), sort()</span> - change order of array permanately</li>
+                    <li><span>indexOf()</span></li>
+                    <li><span>include()</span></li>
+                </ul>
+                </li>
+                </li>
+            </ul>
+            <li><span>Sets</span> - cannot include duplicate values
+                <ul>
+                    <li>Do not have index notation</li>
+                    <li>create = new Set()</li>
+                    <li>list.<span>add(num)</span></li>
+                    <li><span>.size()</span></li>
+                    <li><span>.has()</span> -works faster than indexOf and includes methods</li>
+                    <li><span>.delete()</span></li>
+                    <li><span>.clear()</span>= removes all values</li>
+                    <li>can be converted into an array using <span>spread operator</span> or <span>Array.from()</span></li>
+                </ul>
+            </li>
         </ul>
         </section>
 </main>
