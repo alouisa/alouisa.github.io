@@ -21,7 +21,95 @@
 
         <h3>Ch4: Functions</h3>
         <ul>
-            <li><span>Comment</span> in your code concisely explaining what it should do.</li>
+            <li>function in javaScript considered to "first-class objects"</li>
+            <li><span>Defining a function</span>
+                <ul>
+                    <li>Function x(){}</li>
+                    <li><span>Function expressions</span> anonymous function set to variable- has semincolon afer }</li>
+                    <li>each function has "name" property</li>
+                    <li><span>Function constructor</span> new Function();
+                        <ul>
+                            <li>NOT recommended</li>
+                        </ul>
+                    </li>
+                </ul>
+                <li><span>Invoking Functions</span>
+                    <ul>
+                        <li>Keep code DRY</li>
+                    </ul>
+                </li>
+                <li><span>Return values</span>
+                    <ul>
+                        <li>function returns "undefined" by default</li>
+                    </ul>
+                </li>
+                <li><span>Parameters and Arguments</span>
+                    <ul>
+                        <li><span>default parameters</span></li>
+                        <li>Default parameters should always come after non-default parameters</li>
+                    </ul>
+                </li>
+                <li><span>Variable Numbers of Arguments</span>
+                    <ul>
+                        <li><span>argument variable</span> available to all functions- cannot use array properties</li>
+                        <li><span>rest(..args)</span> an array of arguments</li>
+                    </ul>
+                </li>
+                <li><span>Arrow Functions</span>
+                    <ul>
+                        <li>Arrow functions make perfect candidates for short, anonymous functions</li>
+                        <li>Single parameters don't need putting into parentheses.</li>
+                        <li>The body of the function doesn't need placing inside a block if it's only one line.</li>
+                        <li>The return keyword isn't required if the return statement is the only statement in the body of the function.</li>
+                        <li>They don't bind their own value of this to the function</li>
+                    </ul>
+                </li>
+            </li>
+            <li><span>Function Hoisting</span>
+                <ul>
+                    <li>functions can be called before they are defined</li>
+                </ul>
+            </li>
+            <li><span>Variable Hoisting</span>
+                <ul>
+                    <li>var keyword hoists variable but not variable assignment</li>
+                    <li>something to consider when deciding how to declare functions</li>
+                </ul>
+            </li>
+            <li><span>Callbacks</span>
+                <ul>
+                    <li>a function passed as a parameter to another function</li>
+                    <li>when passed as argument no parenthesis are used</li>
+                    <li>anonymous function can also be passed as argument</li>
+                    <li><span>Sorting Arrays With A Callback</span>
+                        <ul>
+                            <li>creating function to help sort nums since sort normally converts to string before sorting</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Array Iterators</span>
+                <ul>
+                    <li>utilize callback functions</li>
+                    <li><span>forEach()</span></li>
+                    <li><span>map()</span></li>
+                    <li><span>reduce()</span></li>
+                    <li><span>Filter()</span></li>
+                    <li><span>reduceRight() , every() , find(), some()</span></li>
+                </ul>
+            </li>
+            <li><span>Chaining Iterators Together</span></li>
+            <li><span>Improving the mean() Function</span>
+                <ul>
+                    <li><code>function mean(array,callback) {
+                    if (callback) {
+                    array.map( callback );
+                    }
+                    const total = array.reduce((a, b) => a + b);
+                    return total/array.length;
+                    }</code></li>
+                </ul>
+            </li>
         </ul>
         </section>
 </main>
