@@ -54,6 +54,66 @@
                     <li><span>.delete()</span></li>
                     <li><span>.clear()</span>= removes all values</li>
                     <li>can be converted into an array using <span>spread operator</span> or <span>Array.from()</span></li>
+                    </li>
+                </ul>
+            <li><span>Weak Sets</span>
+                <ul>
+                    <li>object in set exists in set even if original reference removed</li>
+                    <li><span>garbage-collection</span> automatically removing items no longer required by the program</li>
+                    <li>weak sets <span>garbage collect</span> any references to a 'dead object' w/ orginal reference removed</li>
+                    <li><span>new WeakSet()</span></li>
+                    <li>only non-primitive data types</li>
+                    <li>cannot access list of values in weak set</li>
+                </ul>
+            </li>
+            <li><span>Maps</span>
+                <ul>
+                    <li>key, value pairs</li>
+                    <li>key can be of any type</li>
+                    <li>use <span>get()</span>to retrieve values</li>
+                    <li><span>new Map()</span></li>
+                    <li><span>set()</span> can be used to add key, value pairs</li>
+                    <li><span>has(), size(), get(), delete(), clear()</span></li>
+                    <li>can be converted to array using spread operator or <span>Array.from()</span></li>
+                </ul>
+            </li>
+            <li><span>Weak Maps</span>
+                <ul>
+                    <li>work the same as weak sets</li>
+                    <li><span>new WeakMap()</span></li>
+                    <li>can all same methods except size()</li>
+                </ul>
+            </li>
+            <li><span>Logic</span>
+                <ul>
+                    <li><span>if/else</span></li>
+                    <li><span>ternary operator</span>
+                       <ul><li>condition ? (//code to run if condition is true) : (//code to run if condition is false)</li>
+                    <li>even shorter by placing the ternary operator inside a template string</li>
+                    </ul>
+                <li><span>switch()</span></li>
+                <li><span>while() loops</span></li>
+                <li><span>infinte loops</span></li>
+                <li><span>do while()</span></li>
+                <li><span>for() loops</span></li>
+                <li><span>looping over arrays</span>
+                    <ul>
+                        <li>ES6 introduced an improved iterator function for arrays called a for-of loop that uses a slightly different syntax</li>
+                        <li>ex/ for(const value of avengers){
+                        console.log(value);
+                        }</li>
+                        <li>needs to be "const"</li>
+                    </ul>
+                </li>
+                <li><span>looping over maps</span>
+                    <ul>
+                        <li><span>.keys()</span></li>
+                        <li><span>.values()</span></li>
+                        <li><span>.entries()</span>= access both key and value</li>
+                        <li>CANNOT loop over weak maps</li>
+                    </ul>
+                </li>
+                    </li>
                 </ul>
             </li>
         </ul>
