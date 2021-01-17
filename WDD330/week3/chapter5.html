@@ -30,7 +30,7 @@
                  <li>key with a space needs ""</li>
                  <li>it is better just follow rules for naming variables when naming keys</li>
                  <li>mutable even while using <span>const</span></li>
-            </ul>
+                </ul>
             </li>
             <li>Object can also be created with "new Object()"- not recommended</li>
             <li><span>Shorthand method of creating objects</span> if a property key is the same as a variable name that the property value is
@@ -40,6 +40,71 @@
                 <ul><li>Using "[]" is preferer over "." if you want to concat to create property</li></ul>
             </li>
             <li>A value of a property can be a <span>ternary operator</span> that returns true or false </li>
+            <li>The <span>Symbol data type</span> can also be used as a computed property key
+                <ul><li>The symbols used for property keys are not limited to being used by only one object - they can be reused by any other
+                object</li>
+            <li>using them as property keys avoids any naming clashes if you mistakenly use the same value for two different property
+            keys</li></ul>
+            </li>
+            <li><span>Checking if Properties or Methods Exist</span>
+                <ul>
+                 <li>city <span>"in"</span> superman</li>
+                 <li>see if does not returned "undefined"</li>
+                 <li><span>hasOwnProperty()</span>
+                    <ul><li>will check whether an object has a property that is its own, rather than one that has been inherited from another object (which are included in above methods)</li>
+                    </ul>
+                 </li>
+                </ul>
+                </li>
+            <li><span>Finding all the Properties of an Object</span>
+                <ul>
+                    <li><span>"for in"</span> loop</li>
+                    <li>To make sure that only an object’s own properties are returned, a quick check can be implemented beforehand:
+                        <ul><li><span>for(const key in superman) {
+                        if(superman.hasOwnProperty(key)){
+                        console.log(key + ": " + superman[key]);
+                        }
+                        }</span></li></ul>
+                        <li><span>Object.keys()</span> returns an array of all the keys of any object that is provided as an argument</li>
+                        <li><span>Object.values()</span></li>
+                        <li><span>Object.entries()</span> returns array of key/value pairs</li>
+                    </li>
+                </ul>
+            </li>
+            <li><span>delete</span> keyword used to remove property</li>
+            <li><span>Nested Objects</span> objects within objects</li>
+            <li>objects are assigned by <span>reference</span>
+                <ul>
+                    <li>if a variable is assigned to an object that already exists, it will simply point to the exact same space in memory</li>
+                    <li>any changes made usingeitherreference will affect the same object</li>
+                </ul>
+            </li>
+            <li><span>Objects as Parameters to Functions</span>
+                <ul>
+                    <li>useful when there are a large number of parameters</li>
+                    <li>also order of arguments doesn't matter</li>
+                    <li>parameters can have default values</li>
+                    <li><span>named parameters</span></li>
+                </ul>
+            </li>
+            <li><span>"this"</span></li>
+            <li><span>Namespacing</span> 
+                <ul>
+                    <li>help solve <span>naming collisions problems</span></li>
+                    <li><span>object literal pattern</span>
+                        <ul>
+                            <li>creates namespace for groups of related functions</li>
+                            <li>This is done by creating an object literal that serves as the namespace, then adding any values as properties of that
+                            object, and any functions as methods.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>JSON</span>
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
         </ul>
 </main>
 <script src="js/main.js"></script>
