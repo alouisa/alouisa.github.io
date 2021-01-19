@@ -200,7 +200,23 @@
             <hr>
             <li><span>RegExp Object</span>
                 <ul>
-                    <li></li>
+                    <li>create
+                        <ul>
+                            <li><span>literal notation</span> const pattern = /[a-zA-Z]+ing$/; <i>*preferred method</i></li>
+                            <li>const pattern = new RegExp('[a-zA-Z]+ing');
+                                <ul>
+                                    <li>lets you create regular expressions using strings, which can be useful when the regular expression is provided from user input</li>
+                                    <li>constructors also have the advantage of letting you create a regular expression using a variable</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Methods</span>
+                        <ul>
+                            <li>test()</li>
+                            <li>exec()</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
