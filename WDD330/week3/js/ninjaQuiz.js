@@ -4,6 +4,20 @@ const quiz = [
     { name: "Batman", realName: "Bruce Wayne" },
 ];
 
+// View Object
+const view = {
+    score: document.querySelector('#score strong'),
+    question: document.getElementById('question'),
+    result: document.getElementById('result'),
+    info: document.getElementById('info'),
+    render(target, content, attributes) {
+        for (const key in attributes) {
+            target.setAttribute(key, attributes[key]);
+        }
+        target.innerHTML = content;
+    }
+};
+
 const game = {
     start(quiz) {
         this.questions = [...quiz];
@@ -37,19 +51,6 @@ const game = {
     gameOver() {
         view.render(view.info, `Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
     }
-
-// View Object
-const view = {
-    score: document.querySelector('#score strong'),
-    question: document.getElementById('question'),
-    result: document.getElementById('result'),
-    info: document.getElementById('info'),
-    render(target, content, attributes) {
-        for (const key in attributes) {
-            target.setAttribute(key, attributes[key]);
-        }
-        target.innerHTML = content;
-    }
-};
+}
 
 game.start(quiz);
