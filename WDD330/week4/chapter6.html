@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDD 330 Week 3</title>
+    <meta name="description" content="WDD330 notes, exercises, challenges">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>Anna Astle WDD 330</h1>
+        </header>
+    </a>
+    <main>
+        <h2><a href="index.html">Week 3</a></h2>
+
+        <h3>Ch6: Document Object Model</h3>
+        <ul>
+            <li><span>DOM</span>
+                <ul>
+                    <li>treats everything as node</li>
+                    <li>html tag <span>root</span></li>
+                    <li>since Internet Explorer 8, DOM support has been much more consistent, and modern browsers now implement the current DOM
+                    level 3. They’re also implementing more of the new DOM level 4 features with every update.</li>
+                    <li>DOM also stores any whitespace that is in the HTML document as <span>text nodes</span></li>
+                   <hr>
+                    <li><span>Legacy DOM Shortcut Methods</span>
+                        <ul>Document
+                            <hr>
+                            <li>.body</li>
+                            <li>.images</li>
+                            <li>.links</li>
+                            <li>.anchors</li>
+                            <li>.forms</li>
+                        </ul>
+                        <li>node list !use slice , splice and join</li>
+                        <li>use <span>Array.from()</span> or <span>spread ...</span> to change to array</li>
+                    </li>
+                    <hr>
+                    <li>getElementById()</li>
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>document.querySelector()</li>
+                    <li>document.querySelectorAll()</li>
+                    <hr>
+                    <li><span>Properties</span>
+                        <ul>
+                            <li>.childNodes</li>
+                            <li>.children</li>
+                            <li>.firstChild</li>
+                            <li>.lastChild</li>
+                            <li>.parentNode</li>
+                            <li>.nextSibling</li>
+                            <li>.previousSibling</li>
+                            <li>.nodeValue</li>
+                            <li>.textContent (does not work in E8), can use .innerText</li>
+                            <hr>
+                            <li>.style (related method <span>getComputedStyle()</span>)</li>
+                        </ul>
+                    </li>
+
+                    <hr>
+                    <li><span>Methods</span>
+                        <ul>
+                        <li><i>Attributes</i>
+                            <ul >
+                                <li>.getAttribute()</li>
+                                <li>.setAttribute()</li>
+                                <li><span>Dot Notation</span>
+                                    <ul><li>attributes can be accessed this way</li></ul>
+                                </li>   
+                            </ul>
+                        </li>
+
+                        <li>objectName
+                            <ul>
+                                <li>.appendChild()</li>
+                                <li>.insertBefore()</li>
+                                <li>.removeChild()</li>
+                                <li>.replaceChild()</li>
+                                <li>.innerHTML</li>
+                            </ul>
+                        <li>document
+                            <ul>
+                                <li>.createElement()</li>
+                                <li>.className</li>
+                                <li>.classList</li>
+                                <li>.createTextNode()</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <hr>
+                    <li><span>Camel Case Properties</span></li>
+                    <li>view.render()</li>
+                </ul>
+            </li>
+        </ul>
+<script src="js/main.js"></script>
+</body>
+
+</html>

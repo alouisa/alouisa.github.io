@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDD 330 Week 3</title>
+    <meta name="description" content="WDD330 notes, exercises, challenges">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>Anna Astle WDD 330</h1>
+        </header>
+    </a>
+    <main>
+        <h2><a href="index.html">Week 3</a></h2>
+
+        <h3>Ch7: Events</h3>
+            <ul>
+                <li><span>.addEventListener()</span>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">Event Listeners</a></li>
+                        <li><span>click</span> clicks with the mouse, presses the Enter key, or taps the screen, making it a very useful all-round event covering many
+                    types of interaction</li>
+                    <li>if no node reference preceding it added to whole page</li>
+                    <li>Note that the parentheses are not placed after the function when it's used as the argument to an event listener;
+                    otherwise, the function will actually be called when the event listener is set, instead of when the event happens!</li>
+                </ul>
+                </li>
+                <li><span>.type</span> returns type of event</li>
+                <li><span>.target</span> returns refernces to node that fired event</li>
+                <li><span>Coordinated of an Event</span>
+                    <ul>
+                        <li>screenX, screenY</li>
+                        <li>clientX, clientY</li>
+                        <li>pageX, pageY</li>
+                    </ul>
+                </li>
+                <li><span>Mouse Events</span>
+                    <ul>
+                        <li>mousedown, mouseup</li>
+                        <li>mouseover, mouseout</li>
+                        <li>mousemove</li>
+                    </ul>
+                </li>
+                <li><span>Keyboard Events</span>
+                    <ul>
+                        <li>keydown , keypress, keyup</li>
+                        <li>event.key
+                            <ul><li><a href="https://github.com/nostrademons/keycode.js/blob/master/keycode.js">keycode.js library</a></li></ul>
+                        </li>
+                        <li><span>Modifier Keys</span>
+                            <ul>
+                                <li>Shift,Ctrl,Alt and meta(Cmdon Mac)
+                                    <ul>
+                                        <li>will fire the keydown and keyup events, but not the keypress event as they don't produce any characters on the screen</li>
+                                    </ul>
+                                </li>
+                                <li>shiftKey , ctrlKey , altKey , and metaKey</li>
+                                <li>Modifier keys can often already have a purpose assigned in the browser or operating system. And although it’s possible
+                                to prevent the default behavior in the browser (see later in this chapter), it’s not considered best practice to do so.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>Touch Events</span>
+                    <ul>
+                        <li>It’s important to support mouse events as well as touch events, so non-touch devices are also supported</li>
+                        <li>touchstart
+                            <ul><li>better to use: click event- can be thought of as a "tap" in the context of a touch event</li></ul>
+                        </li>
+                        <li>touchend, touchmove, touchenter, touchleave, touchcancel</li>
+                        <li><span>swipe</span> created by using a combination of touchstart , touchmove , and touchleave events that</li>
+                        <li><span>Touch Event Properties</span>
+                            <ul>
+                                <li>touches
+                                    <ul>
+                                        <li>also has length property</li>
+                                        <ul><li>tells how many touch points</li></ul>
+                                        <li>Each touch object has a number of properties, many similar to the event object</li>
+                                    </ul>
+                                </li>
+                                <li>.identifier</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>Removing Event Listeners</span>
+                    <ul>
+                        <li>removeEventListener()</li>
+                        <li>Note that you shouldn't use anonymous functions as an argument to addEventListener() if you want to remove it later.
+                        This is because there needs to be a reference to the same function name in the arguments of removeEventListener() .</li>
+                    </ul>
+                </li>
+                <li>preventDefault()</li>
+                <li><span>Event Propagation</span>
+                    <ul>
+                        <li><span>Bubbling</span>
+                            <ul><li>event.stopPropagation()</li></ul>
+                        </li>
+                        <li><span>Capturing</span></li>
+                    </ul>
+                </li>
+                <li><span>Event Delegation</span>
+                    <ul>
+                        <li>can be used to attach an event listener to a parent element in order to capture events that are triggered by its child
+                    elements.</li>         
+                </ul>
+                </li>
+            </ul>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
