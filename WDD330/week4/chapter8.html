@@ -40,6 +40,7 @@
                     <li><span>elements</span><ul><li>returns an HTML collection of all the elements contained in the form</li></ul> </li>
                     <li><span>Form Properties and Methods</span>
                         <ul>
+                            <li><span>.action</span></li>
                             <li><span>.submit()</span>
                                 <ul>
                                     <li>will submit the form automatically</li>
@@ -59,11 +60,93 @@
                     <li><span>Form only Events</span>
                         <ul>
                             <li><span>focus</span></li>
-                            <li></li>
+                            <li><span>blur</span></li>
+                            <li><span>submit</span>
+                                <ul>
+                                    <li>A form can be submitted manually by the user employing a button or input element with a type attribute of submit , or
+                                        even an input element with a type attribute of image</li>
+                                    <li>use JavaScript to intercept the form before it’s sent by adding a <span>submit event listener</span></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li> 
-
-
+                    <li><span>Retrieving and Changing Values From a Form</span>
+                        <ul>
+                            <li><span>value</span> property that can be used to retrieve the text inside the field</li>
+                            <li><span>placeholder</span> attribute</li>
+                        </ul>
+                    </li>
+                    <li><span>Form Controls</span>
+                        <ul>
+                            <li>form</li>
+                            <li>textarea</li>
+                            <li>select</li>
+                            <li>button</li>
+                        </ul>
+                    </li>
+                    <li><span>autofocus</span>
+                        <ul>
+                         <li>give focus to this element when a page loads</li>
+                        </ul>
+                    </li>
+                    <li><span>maxlength</span> 
+                        <ul>
+                            <li>will limit the number of characters that can be entered in the field to the value given</li>
+                        </ul>
+                    </li>
+                    <ul>
+                        <li><span>Input Fields</span>
+                            <ul>
+                                <li>Text Input Fields</li>
+                                <li>Password Input Fields</li>
+                                <li>Checkbox Input Fields</li>
+                                <li>Radio Button Input Fields</li>
+                                <li>Hidden Input Fields</li>
+                                <li>File Input Fields</li>
+                                <li>Other Input Types
+                                    <ul>
+                                        <li>number</li>
+                                        <li>tel</li>
+                                        <li>color</li>
+                                    </ul>
+                                </li>
+                                <li>Select Drop-Down List</li>
+                                <li>Text Areas</li>
+                            </ul>
+                        </li>
+                        <li><span>Buttons Types</span>
+                            <ul>
+                            <li>submit = default</li>
+                            <li>reset</li>
+                            <li>button
+                                <ul>
+                                    <li>doesn’t need to be inside a form element and has no default behavior.</li>
+                                </ul>
+                            </li>
+                            <li>There is also a type of 'menu' that can be combined with menu ,
+                                menuitem and li tags to create a dropdown menu when it’s clicked on, although support for this is fairly patchy
+                                    at present.</li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <li><span>JSON.stringify()</span> method to convert the object into a JSON representation of the object, which could then be stored in a
+                    database or exported to an external web service</li>
+                    <li><span>Form Validation</span>
+                        <ul>
+                            <li>A required field is completed
+                                <ul><li><span>required</span></li></ul>
+                            </li>
+                            <li>An email address is valid</li>
+                            <li>A number is entered when numerical data is required</li>
+                            <li>A password is at least a minimum number of characters</li>
+                        </ul>
+                    </li>
+                    <li>It is advisable to use both client-side and server-side validation.</li>
+                    <li><span>Disabling the Submit Button</span>
+                        <ul>
+                            <li><span>disabled</span> property</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
