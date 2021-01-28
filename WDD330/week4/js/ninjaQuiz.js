@@ -8,6 +8,7 @@ const quiz = [
 const view = {
     score: document.querySelector('#score strong'),
     question: document.getElementById('question'),
+    response: document.querySelector('#response'),
     result: document.getElementById('result'),
     info: document.getElementById('info'),
     render(target, content, attributes) {
@@ -22,13 +23,7 @@ const game = {
     start(quiz) {
         this.questions = [...quiz];
         this.score = 0;
-        // main game loop
-        for (const question of this.questions) {
-            this.question = question;
-            this.ask();
-        }
-        // end of main game loop
-        this.gameOver();
+        this.ask();
     },
     ask() {
         const question = `What is ${this.question.name}'s real name?`;
