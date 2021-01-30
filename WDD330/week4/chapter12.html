@@ -22,11 +22,166 @@
         <h3>Ch12: Object Oriented Programming</h3>
 
         <ul>
-            <li><span>Encapsulation</span></li>
-            <li><span>Polymorphism</span></li>
-            <li><span>Inheritance</span></li>
-            <li><span>Classes</span></li>
-            <li><span>Constructor Functions</span></li>
+            <li><span>Encapsulation</span>
+                <ul>
+                    <li>inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user</li>
+                    <li>keeping all the programming logic inside an object</li>
+                </ul>
+            </li>
+            <li><span>Polymorphism</span>
+                <ul>
+                    <li>various objects can share the same method, but also have the ability to override shared methods</li>
+                </ul>
+            </li>
+            <li><span>Inheritance</span>
+                <ul>
+                    <li>take an object that already exists and inherit all its properties and methods. We can then improve on its functionality
+                    by adding new properties and methods.</li>
+                </ul>
+            </li>
+            <li><span>Classes</span>
+                <ul>
+                    <li>blueprint for an object</li>
+                </ul>
+            </li>
+            <li><span>Constructor Functions</span>
+                <ul>
+                    <li>function that defines the properties and methods of an object.</li>
+                    <li><span>this</span> is used to represent the object that will be returned by the constructor function</li>
+                    <li>can check if instance of class by using <span>instanceOf</span></li>
+                    <li><span>Built-In Constructor Functions</span>
+                        <ul>
+                            <li>Array</li>
+                            <li>Object</li>
+                            <li>Function</li>
+                            <li>...& more</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>ES6 Class Declarations</span>
+                <ul>
+                    <li>Before ES6, constructor functions were the only way of achieving class-like behavior in JavaScript.</li>
+                    <li>constructor functions or class declarations are capitalized</li>
+                    <li>The ES6 class declarations are preferable to the constructor function syntax because they are more succinct, easier to
+                    read and all code in a class definition is implicitly in strict mode</li>
+                </ul>
+            </li>
+            <li><span>The Constructor Property</span>
+                <ul>
+                    <li>property that returns the constructor function that created it</li>
+                    <li>can use to instantiate a copy of an object, without having to reference the actual constructor
+                    function or class declaration directly.</li>
+                </ul>
+            </li>
+            <li><span>Static Methods</span>
+                <ul>
+                    <li>called by the class directly rather than by instances of the class</li>
+                    <li>Static methods are not available to instances of the class</li>
+                </ul>
+            </li>
+            <li><span>Prototypal Inheritance</span>
+                <ul>
+                    <li>any properties or methods of a class’s prototype can be accessed by every object instantiated by that class</li>
+                    <li><span>The Prototype Property</span>
+                        <ul>
+                            <li>augment the class with extra methods and properties after it has been created</li>
+                            <li>Ex/ Object.prototype.property = 'propertyValue'</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+                                <li><span>Finding Out the Prototype</span>
+                        <ul>
+                            <li>One way is to go via the constructor function’s prototype property</li>
+                            <li><span>Object.getPrototypeOf()</span> method, which takes the object as a parameter</li>
+                            <li><span>__proto__</span>
+                                <ul>
+                                    <li>better to use getPrototypeOf(), and setProtoypeOf()</li>
+                                </ul>
+                            </li>
+                            <li><span>isPrototypeOf()</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Own Properties and Prototype Properties</span>
+                        <ul>
+                            <li><span>hasOwnProperty()</span> used to check if a method is its own property, or is inherited from the prototype</li>
+                        </ul>
+                    </li>
+                    <li>prototype properties are shared by every instance of the class whereas a class' own properties are not</li>
+                    <li>if a new property or method is added to the prototype, any instances of its class will inherit the new properties and
+                    methods automatically, even if that instance has already been created</li>
+                    <li>It is not possible to overwrite the prototype by assigning it to a new object literal if class declarations are used</li>
+                    <li>Itispossible to do this if constructor functions are used, and it can cause a lot of headaches if you accidentally
+                    redefine the prototype</li>
+                    <li><span>Finding Out the Prototype</span>
+                        <ul>
+                            <li>One way is to go via the constructor function’s prototype property</li>
+                            <li><span>Object.getPrototypeOf()</span> method, which takes the object as a parameter</li>
+                            <li><span>__proto__</span>
+                                <ul>
+                                    <li>better to use getPrototypeOf(), and setProtoypeOf()</li>
+                                </ul>
+                            </li>
+                            <li><span>isPrototypeOf()</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Own Properties and Prototype Properties</span>
+                        <ul>
+                            <li><span>hasOwnProperty()</span> used to check if a method is its own property, or is inherited from the
+                                prototype</li>
+                            <li>prototype properties are shared by every instance of the class whereas a class' own properties are not</li>
+                            <li>if a new property or method is added to the prototype, any instances of its class will inherit the new properties
+                                and
+                                methods automatically, even if that instance has already been created</li>
+                            <li>It is not possible to overwrite the prototype by assigning it to a new object literal if class declarations are used
+                            </li>
+                            <li>Itispossible to do this if constructor functions are used, and it can cause a lot of headaches if you accidentally
+                                redefine the prototype</li>
+                        </ul>
+                    </li>
+                    <li><span>Overwriting Prototype Properties</span>
+                        <ul>
+                            <li>An object instance can overwrite any properties or methods inherited from its prototype by simply assigning a new value
+                            to them</li>
+                            <li>These properties will now become an 'own property' of the instance object</li>
+                            <li>Methods are likely to be the same for all instances of a constructor, so it's fine to add methods to the prototype</li>
+                        </ul>
+                    </li>
+                    <li><span>Public and Private Methods</span>
+                        <ul>
+                            <li>getter and setter methods</li>
+                        </ul>
+                    </li>
+                    <li><span>The Prototype Chain</span></li>
+                    <li><span>The Object Constructor</span>
+                        <ul>
+                            <li>Object()</li>
+                            <li>Object constructor function has a large number of methods that are inherited by all objects. The reason why the
+                            prototype appears as an empty object literal is because all of its methods are not enumerable</li>
+                        </ul>
+                    </li>
+                    <li><span>Enumerable Properties</span>
+                        <ul>
+                            <li><span>propertyIsEnumerable()</span></li>
+                            <li>all properties and methods that are created by assignment are enumerable</li>
+                            <li>Good practice is for all built-in methods to be non-enumerable, and any user-defined methods to be made enumerable.</li>
+                        </ul>
+                    </li>
+                    <li><span>Inheritance Using extends</span>
+                        <ul>
+                            <li><span>super</span> refers to the parent class</li>
+                        </ul>
+                    </li>
+                    <li><span>Polymorphism</span></li>
+                    <li><span>monkey-patching</span>
+                        <ul>
+                            <li>current consensus in the JS community is that this shouldn't be done</li>
+                            <li>An alternative way to avoid causing problems is to use extends to subclass a built class and create your own class</li>
+                        </ul>
+                    </li>
         </ul>
 
 <script src="js/main.js"></script>
