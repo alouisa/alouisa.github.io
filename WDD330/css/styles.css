@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -15,22 +19,42 @@ h1 {
 
 main {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 400px;
   padding: 2%;
+}
+
+.list-header {
+  max-width: 342px;
+  font-size: 1.75rem;
+  color: #123d7e;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e1fae6;
 }
 
 #linkList {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#linkList li {
+  padding-right: 5px;
+  padding-bottom: 40px;
 }
 #linkList a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #2d617e;
+  background-color: #f5f5e4;
+  padding: 1rem 3rem;
   transition: 0.5s color;
+  border: 1.4px solid pink;
+  border-radius: 5px;
 }
 #linkList a:hover {
-  color: #0e1d25;
+  color: #fafbfc;
+  background-color: #f862a1;
 }
 
 /*# sourceMappingURL=styles.css.map */
