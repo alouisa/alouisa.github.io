@@ -20,7 +20,7 @@ a h1:hover {
   opacity: 0.9;
 }
 
-main {
+.toDoContent {
   margin: 0 auto;
   max-width: 900px;
   padding: 2%;
