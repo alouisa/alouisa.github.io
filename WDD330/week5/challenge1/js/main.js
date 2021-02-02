@@ -1,12 +1,13 @@
 const toDoList = document.querySelector(".toDoList"); 
-const todoItemInput = document.querySelector(".todoItemInput");
 
 function addListItem(){
+    const toDoItem = document.querySelector("#todoItemInput").value;
     const checkbox = document.createElement("INPUT");
     const toDoDiv = document.createElement("div");
-    const labelText = document.createTextNode("text");
+    const labelText = document.createTextNode(toDoItem);
     const xBtn = document.createElement("button");
     xBtn.type = "button";
+    xBtn.class = "XBtn";
     xBtn.textContent = "X";
     checkbox.setAttribute("type", "checkbox");
 
@@ -14,4 +15,6 @@ function addListItem(){
     toDoDiv.appendChild(labelText);
     toDoDiv.appendChild(xBtn);
     toDoList.appendChild(toDoDiv);
+    document.querySelector("#todoItemInput").value = "";
 }
+
