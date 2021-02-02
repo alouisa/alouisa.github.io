@@ -1,14 +1,15 @@
 const todoItemInput = document.querySelector(".todoItemInput");
-const toDoList = document.querySelector(".toDoList"); 
+const toDoForm = document.querySelector(".toDoForm"); 
 
 function addListItem(){
-    checkbox = document.createElement("INPUT");
-    label = document.createElement("LABEL");
+    const checkbox = document.createElement("INPUT");
+    const label = document.createElement("LABEL");
+    const labelText = document.createTextNode("text");
     checkbox.setAttribute("type", "checkbox");
     checkbox.setAttribute("id", "checkbox1");
-    label.innerHTML = "test";
     label.setAttribute("for", "checkbox1");
 
-    toDoList.appendChild(checkbox);
-    toDoList.appendChild(label)
+    label.appendChild(checkbox);
+    label.appendChild(labelText);
+    toDoForm.appendChild(label);
 }

@@ -26,28 +26,32 @@ body{
     padding: 2%;
 
 }
-#linkList{
-    list-style-type: none;
-    padding: 0;
-
-    a{
-        text-decoration: none;
-        font-size: 1.3rem;
-        color:  rgb(45, 97, 126);
-        transition: 0.5s color;
-        &:hover{
-            color: rgb(14, 29, 37);
-        }
-
-    }
+.toDoForm{
+    display: flex;
+    flex-direction: column;
 }
+// #linkList{
+//     list-style-type: none;
+//     padding: 0;
+
+//     a{
+//         text-decoration: none;
+//         font-size: 1.3rem;
+//         color:  rgb(45, 97, 126);
+//         transition: 0.5s color;
+//         &:hover{
+//             color: rgb(14, 29, 37);
+//         }
+
+//     }
+// }
 h2{
     color: #E91E63;
 }
-h3{
-    color: #163a2f;
-}
-li > span{
-     color: #E91E63;
-     font-size: 1.2rem;
-}
+// h3{
+//     color: #163a2f;
+// }
+// li > span{
+//      color: #E91E63;
+//      font-size: 1.2rem;
+// }
