@@ -1,3 +1,5 @@
+//create instance of todo class
+
 const toDoList = document.querySelector(".toDoList"); 
 
 function addListItem(){
@@ -18,3 +20,6 @@ function addListItem(){
     document.querySelector("#todoItemInput").value = "";
 }
 
+function removeTodo(){
+
+}
