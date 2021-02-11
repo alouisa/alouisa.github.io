@@ -1,4 +1,5 @@
 import utilites from 'utilites.js';
+
 //add variable to store list of tasks
 class Todos { 
     constructor(){
@@ -9,21 +10,8 @@ class Todos {
        this.todoList.append(toDoInput); 
     }
 
-    saveToDo(task, key){
-        
-    }
-
-    getToDos(key){
-       return this.todoList; 
-    }
-
-    renderToDoList(list, element){
-        list.forEach(element => {
-           createListItem(element); 
-        });
-     }
     completeTodos(){
-        
+
     }
     removeTodos(){
 
