@@ -1,8 +1,8 @@
 //DOM Manipulation Helper Functions
-const toDoList = document.querySelector(".toDoList");
-const toDoInput = document.querySelector("#todoInput").value; 
+export const toDoList = document.querySelector(".toDoList");
+export const toDoInput = document.querySelector("#todoInput").value; 
 
-function createListItem(text){ 
+export function createListItem(text){ 
 
     const checkbox = document.createElement("INPUT");
     checkbox.setAttribute("type", "checkbox");

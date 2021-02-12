@@ -1,4 +1,4 @@
-import uts from 'utilites.js';
+import uts from '/utilites.js';
 
 //add variable to store list of tasks
 export default class Todos { 

@@ -1,5 +1,5 @@
 //create localStorage helper functions here
-import uts from 'utilities.js';
+import uts from '/utilities.js';
 // let todo: { 
 //     id: timestamp, 
 //     content: string, 
@@ -7,11 +7,11 @@ import uts from 'utilities.js';
 
 // let toDoList = [toDo];
 
-function saveToDo(task, key){
+export function saveToDo(task, key){
     let listName = uts.toDoInput;
     let listHTML = localStorage.getItem(listName);
 }
 
-function getToDos(key){
+export function getToDos(key){
     return this.todoList;
 }
