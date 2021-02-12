@@ -10,17 +10,22 @@ class Todos {
        this.todoList.append(toDoInput); 
     }
 
+    listTodoList(list, element){
+        pass
+    }
+
     completeTodos(){
 
     }
     removeTodos(){
 
     }
-   filterTodos(){
+    filterTodos(){
 
    } 
 
 }
+
 
 
 
