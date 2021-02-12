@@ -1,27 +1,29 @@
-import utilites from 'utilites.js';
+import uts from 'utilites.js';
 
 //add variable to store list of tasks
-class Todos { 
+export default class Todos { 
     constructor(){
-        this.todoList = null;
+        this.todoList = [];
     }
 
     addToDo(){
        this.todoList.append(toDoInput); 
     }
 
-    listTodoList(list, element){
-        pass
+    renderToDoList() {
+        this.todoListlist.forEach(element => {
+            uts.createListItem(element);
+        });
     }
 
     completeTodos(){
-
+        pass
     }
     removeTodos(){
-
+        pass
     }
     filterTodos(){
-
+        pass
    } 
 
 }

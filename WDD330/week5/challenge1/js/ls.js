@@ -15,9 +15,3 @@ function saveToDo(task, key){
 function getToDos(key){
     return this.todoList;
 }
-
-function renderToDoList(list, element){
-    list.forEach(element => {
-        createListItem(element);
-    });
-}
