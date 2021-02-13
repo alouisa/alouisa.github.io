@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+a {
+  transition: 0.5s all;
+  color: #0e1d25;
+  display: block;
+}
+a h1 {
+  text-align: center;
+  text-shadow: white 1.5px 1.5px;
+  margin: 0;
+  padding: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  background-image: url("../images/spring-bird-2295431_1280.jpg");
+}
+a h1:hover {
+  opacity: 0.9;
+}
+
+.toDoContent {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2%;
+}
+
+.toDoForm {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #E91E63;
+}
+
+/*# sourceMappingURL=styles.css.map */
