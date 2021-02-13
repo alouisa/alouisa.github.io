@@ -11,7 +11,7 @@ export default class Todos {
     }
 
     renderToDoList() {
-        this.todoListlist.forEach(element => {
+        this.todoList.forEach(element => {
             uts.createListItem(element);
         });
     }
