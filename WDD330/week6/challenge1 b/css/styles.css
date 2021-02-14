@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.bordered {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
 body {
   background-image: linear-gradient(45deg, #77c9e4, #58e958);
   min-height: 100vh;
