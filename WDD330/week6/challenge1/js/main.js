@@ -65,6 +65,7 @@ function filterTodos(e) {
     if (todoList.childElementCount > 0){
         const todos = todoList.childNodes;
         console.log(todoList);
+        console.log(todos);
         todos.forEach(todo => {
             switch(e.target.innerText){
                 case "All.":
