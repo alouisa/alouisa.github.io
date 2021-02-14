@@ -16,6 +16,7 @@
 
 .filterContainer p {
   transition: all 0.25s;
+  font-size: 1.1rem;
 }
 
 .filterContainer p:nth-child(n+2):hover {
