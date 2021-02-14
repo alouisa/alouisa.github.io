@@ -2,8 +2,11 @@
 const todoInput = document.querySelector(".todoInput");
 const todoBtn = document.querySelector(".todoBtn");
 const todoList = document.querySelector(".todoList");
-const filterSelect = document.querySelector("#filterTodo");
-const tasksLeft = document.querySelector(".tasksLeft")
+const tasksLeft = document.querySelector(".tasksLeft");
+
+const filterAll = document.querySelector(".filterContainer p:nth-child(2)")
+const filterActive = document.querySelector(".filterContainer p:nth-child(3)");
+const filterChecked = document.querySelector("..filterContainer p:last-child");
 
 //Event listeners
 document.addEventListener('DOMContentLoaded', getTodos);
