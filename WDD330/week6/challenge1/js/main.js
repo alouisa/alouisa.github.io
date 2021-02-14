@@ -62,31 +62,37 @@ function deleteOrCheck(e) {
 }
 
 function filterTodos(e) {
-    const todos = todoList.childNodes;
-    todos.forEach(todo => {
-        switch(e.target.innerText){
-            case "All.":
-                todo.style.display = "flex";
-                break;
-
-            case "Completed":
-                if(todo.classList.contains("completed")){
-                   todo.style.display = "flex"; 
-                } 
-                else{
-                    todo.style.display = "none";
-                }
-                break;
-
-            case "Active.":
-                if (!todo.classList.contains("completed")) {
+    if (todoList.childElementCount > 0){
+        const todos = todoList.childNodes;
+        console.log(todoList);
+        todos.forEach(todo => {
+            switch(e.target.innerText){
+                case "All.":
                     todo.style.display = "flex";
-                }
-                else {
-                    todo.style.display = "none";
-                } 
-        }
-    });
+                    break;
+
+                case "Completed":
+                    if(todo.classList.contains("completed")){
+                    todo.style.display = "flex"; 
+                    } 
+                    else{
+                        todo.style.display = "none";
+                    }
+                    break;
+
+                case "Active.":
+                    if (!todo.classList.contains("completed")) {
+                        todo.style.display = "flex";
+                    }
+                    else {
+                        todo.style.display = "none";
+                    } 
+            }
+        });
+}
+    else{
+        return;
+    }
 }
 
 
