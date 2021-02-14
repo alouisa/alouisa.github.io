@@ -1,27 +1,23 @@
-import uts from '/utilites.js';
-
-//add variable to store list of tasks
 export default class Todos { 
+    //Functions
 
-//Functions
-    addToDo(event) {
+    addToDo(event, element) {
         //prevent form from submitting:
         event.preventDefault();
         //create html for each toDo list item:
         const text =
             `<li class="todo">
                 <i class="completeBtn far fa-square"></i>
-                <p class="todoText">${todoInput.value}</p>
+                <p class="todoText">${element.value}</p>
                 <i class="trashBtn far fa-trash-alt"></i>
             </li>`;
-        // class for checked <i class="fas fa-check-square"></i>
 
         //Add html in text variable to the end of the list if value not empty:
-        todoList.insertAdjacentHTML("beforeend", text);
+        element.insertAdjacentHTML("beforeend", text);
         //Add to localStorage
         toDoCount();
-        saveTodos(todoInput.value);
-        todoInput.value = "";
+        saveTodos(element.value);
+        element.value = "";
 }
 
     deleteOrCheck(e) {

@@ -1,11 +1,4 @@
 //create localStorage helper functions here
-import { todoList, toDoInput, createListItem } from '/utilities.js';
-// let todo: { 
-//     id: timestamp, 
-//     content: string, 
-//     completed: bool };
-
-// let toDoList = [toDo];
 
 //Local Storage
 export function saveTodos(todo) {
@@ -33,7 +26,7 @@ export function getTodos(key) {
     toDoCount();
 }
 
-export function renderToDoList(list) {
+export function renderToDoList(list, element) {
     list.forEach(todo => {
         const text =
             `<li class="todo">
@@ -42,8 +35,8 @@ export function renderToDoList(list) {
             <i class="trashBtn far fa-trash-alt"></i>
         </li>`;
 
-        todoList.insertAdjacentHTML("beforeend", text);
-        todoInput.value = "";
+        element.insertAdjacentHTML("beforeend", text);
+        element.value = "";
         toDoCount();
     });
 }
