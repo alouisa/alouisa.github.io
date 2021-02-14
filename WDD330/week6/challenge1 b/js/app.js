@@ -1,26 +1,5 @@
-//Selectors
-const todoInput = document.querySelector(".todoInput");
-const todoBtn = document.querySelector(".todoBtn");
-const todoList = document.querySelector(".todoList");
-const filterSelect = document.querySelector("#filterTodo");
-const tasksLeft = document.querySelector(".tasksLeft")
 
-//Event listeners
-document.addEventListener('DOMContentLoaded', getTodos);
-todoBtn.addEventListener('click', addToDo);
-todoList.addEventListener('click', deleteOrCheck);
-filterSelect.addEventListener('click', filterTodos);
 
-function toDoCount(){
-    let todoCount;
-    if (!todoList.childElementCount){
-        todoCount = 0;
-    }
-    else{
-        todoCount = todoList.childElementCount;
-    }
-    tasksLeft.textContent = todoCount;
-}
 //Functions
 function addToDo(event){
     //prevent form from submitting:
@@ -66,58 +45,3 @@ function filterTodos(e){
 }
 
 
-//Local Storage
-
-function saveTodos(todo){
- let todos;
- if(localStorage.getItem('todos') == null){
-     todos = [];
- }
- else{
-     todos = JSON.parse(localStorage.getItem('todos'));
- }
-
- todos.push(todo);
- localStorage.setItem('todos', JSON.stringify(todos))
-}
-
-function getTodos(key){
-    let todos;
-    if (localStorage.getItem('todos') == null) {
-        todos = [];
-    }
-    else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-    renderToDoList(todos);
-    toDoCount();
-}
-
-function renderToDoList(list){
-    list.forEach(todo => {
-        const text =
-            `<li class="todo">
-            <i class="completeBtn far fa-square"></i>
-            <p class="todoText">${todo}</p>
-            <i class="trashBtn far fa-trash-alt"></i>
-        </li>`;
-
-        todoList.insertAdjacentHTML("beforeend", text);
-        todoInput.value = "";
-        toDoCount();
-    });
-}
-
-function removeLocalToDo(todo){
-    let todos;
-    if (localStorage.getItem('todos') == null) {
-        todos = [];
-    }
-    else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    };
-    todoText = todo.children[1].innerText; 
-    todoIndex = todos.indexOf(todoText);
-    todos.splice(todos[todoIndex], 1);
-    localStorage.setItem('todos', JSON.stringify(todos));
-}

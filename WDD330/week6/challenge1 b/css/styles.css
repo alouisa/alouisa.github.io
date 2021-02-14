@@ -4,9 +4,17 @@
   box-sizing: border-box;
 }
 
-.bordered {
+.filterContainer p {
+  transition: all 0.25s;
+}
+
+.filterContainer p:nth-child(n+2):hover {
   border: 1px solid black;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  background-color: #f74a67;
+  color: white;
+  transform: scale(1.1);
 }
 
 body {
