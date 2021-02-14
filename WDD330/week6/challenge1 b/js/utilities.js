@@ -6,7 +6,7 @@ const tasksLeft = document.querySelector(".tasksLeft");
 
 const filterAll = document.querySelector(".filterContainer p:nth-child(2)")
 const filterActive = document.querySelector(".filterContainer p:nth-child(3)");
-const filterChecked = document.querySelector("..filterContainer p:last-child");
+const filterChecked = document.querySelector(".filterContainer p:last-child");
 
 //Event listeners
 document.addEventListener('DOMContentLoaded', getTodos);

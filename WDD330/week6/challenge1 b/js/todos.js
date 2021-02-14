@@ -2,9 +2,6 @@ import uts from '/utilites.js';
 
 //add variable to store list of tasks
 export default class Todos { 
-    constructor(){
-        this.todoList = [];
-    }
 
 //Functions
     addToDo(event) {
