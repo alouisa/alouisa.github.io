@@ -16,17 +16,29 @@
             <h1>Anna Astle WDD 330</h1>
         </header>
     </a>
-    <div class="toDoContent">
         <main>
-            <h2><a href="../index.html">Week 6</a></h2>
-            <h2>Todos</h2>
-            <ul class="toDoList"></ul>
-    
+            <h2>Todo List</h2>
+            <ul class="todoList">
+            
+            </ul>
+            <div class="filterContainer">
+                <p><span class="tasksLeft"></span> tasks left</p>
+                <div class="select">
+                    <select name="todos" id="filterTodo">
+                        <option value="all">All</option>
+                        <option value="uncompleted">Not</option>
+                    </select>
+                    <p>Active.</p>
+                </div>
+                <p>Completed</p>
+            </div>
         </main>
         <footer>
-            <form action="" class="taskForm"></form>
-                <input type="text" id="todoInput" name="todoItem"/>
-                <button class="addItemBtn" type="button" onclick="createListItem()">+</button> 
+            <form>
+                <input type="text" class="todoInput">
+                <button class="todoBtn" type="submit">
+                    <i class="fas fa-plus"></i>
+                </button>
             </form>
         </footer>
     </div>
@@ -34,3 +46,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
