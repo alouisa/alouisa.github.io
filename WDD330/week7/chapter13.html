@@ -21,9 +21,156 @@
 
         <h3>Ch13: AJAX</h3>
         <ul>
-            <li><span>System error</span>
+            <li>allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading</li>
+            <li><span>Clients & Servers</span>
                 <ul>
-                    <li>there’s a problem with the system or external devices with which the program is interacting.</li>
+                    <li>A client, such as a web browser, will request a resource (usually a web page) from a server, which processes the request
+                    and sends back a response to the client.</li>
+                </ul>
+            </li>
+            <li>Cross-origin resource sharing <span>(CORS)</span></li>
+            <li><span>Ajax</span> allows JavaScript to request resources from a server on behalf of the client.
+                <ul>
+                    <li>enabled JavaScript to send requests and receive responses from a server, allowing content to be updated in
+                        real time</li>
+                    <li><span>XML</span> at first used most often to return data now <span>JSON</span>
+                        <ul>
+                            <li>more lightweight and easier to parse than XML.</li>
+                            <li><span>AJAJ</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>API</span> application programming interface
+                <ul>
+                    <li>collection of methods that allows external access to another program or service</li>
+                    <li>The information that’s returned by APIs is often serialized as JSON. Since the data is being provided by an external
+                    site, CORS will have to be enabled in order to access information from an API. Some services may also require
+                    authentication in order to access their APIs.</li>
+                </ul>
+            </li>
+            <li><span>Fetch API</span>
+                <ul>
+                    <li>living standard for requesting and sending data asynchronously across a network</li>
+                    <li>uses promises to avoid callback hell</li>
+                    <li><span>fetch()</span>
+                        <ul>
+                            <li>1 arg = <span>URL</span></li>
+                            <li><span>.then</span></li>
+                            <li><span>.catch</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Response Interface</span>
+                <ul>
+                    <li>deals with the object that’s returned when the promise is fulfilled</li>
+                    <li><span>ok</span> property
+                        <ul><li>return true if the status property is between 200 and 299</li></ul>
+                    </li>
+                    <li><span>staus</span> property
+                        <ul>
+                            <li>successful= <span>200</span></li>
+                            <li>resource was created= <span>201</span></li>
+                            <li>request is successful but no content is returned= <span>204</span></li>
+                        </ul>
+                    </li>
+                    <li><span>.statusText</span></li>
+                    <li><span>headers</span></li>
+                    <li><span>url</span></li>
+                    <li><span>redirected</span></li>
+                    <li><span>type</span></li>
+                </ul>
+            </li>
+            <li><span>Redirects</span>
+                <ul>
+                    <li><span>redirect()</span>
+                        <ul>
+                            <li>redirects to another URL</li>
+                            <li>creates a new promise that resolves to the response from the redirected URL.</li>
+                            <li>At the present time, there is no support for the redirect() method in any browser</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Text Responses</span>
+                <ul>
+                    <li><span>.text()</span>
+                        <ul><li>transforms the text stream into a JavaScript string</li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>File Responses</span>
+                <ul>
+                    <li><span>blob()</span>
+                        <ul>
+                            <li>used to read a file of raw data</li>
+                            <li>returns a promise that resolves with a <span>blob</span> object</li>
+                            <li>transforms the data into a blob object</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>JSON Responses</span>
+                <ul>
+                    <li>most common format for AJAX responses</li>
+                    <li><span>JSON()</span>
+                        <ul>
+                            <li>transforms a stream of JSON data into a promise that resolves to a JavaScript object</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Creating Response Objects</span>
+                <ul>
+                    <li><span>new Response</span></li>
+                    <li>The first argument is the data that is to be returned (for example a text stream, file or JSON data). The second
+                    argument is an object that can be used to provide values for any of the properties listed above</li>
+                </ul>
+            </li>
+            <li><span>Request Interface</span>
+                <ul>
+                    <li><span>Request()</span> constructor
+                        <ul>
+                            <li>url</li>
+                            <li>method
+                                <ul>
+                                    <li>GET</li>
+                                    <li>POST</li>
+                                    <li>PUT</li>
+                                    <li>PATCH</li>
+                                    <li>DELETE</li>
+                                </ul>
+                            </li>
+                            <li>headers</li>
+                            <li>mode</li>
+                            <li>cache</li>
+                            <li>credentials</li>
+                            <li>redirect</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Headers Interface</span>
+                <ul>
+                    <li><span>headers</span> include
+                        <ul>
+                            <li>the file-type of the resource 
+                            <li>cookie information </li>
+                            <li>authentication information and when the resource was last
+                            modified</li>
+                        </ul>
+                    </li>
+                    <li><span>new Headers()</span>
+                        <ul>
+                            <li>.has()</li>
+                            <li>.get()</li>
+                            <li>.set()</li>
+                            <li>.append()</li>
+                            <li>.delete()</li>
+                            <li>keys() , values() and entries()</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         <ul>
