@@ -21,9 +21,176 @@
 
         <h3>Ch11: Further Functions</h3>
         <ul>
-            <li><span>System error</span>
+            <li>Functions are <span>first-class objects</span></li>
+            <li><span>.length</span>
                 <ul>
-                    <li>there’s a problem with the system or external devices with which the program is interacting.</li>
+                    <li>returns # parameters</li>
+                </ul>
+            </li>
+            <li><span>call()</span>
+                <ul>
+                    <li><span>set</span> value of <span>this</span> inside a function <span>to an obj</span> provided as 1st arg</li>
+                </ul>
+            </li>
+            <li><span>apply()</span>
+                <ul>
+                    <li>works in same way as call(), except <span>argument(s)</span> of function <span>as array</span> </li>
+                </ul>
+            </li>
+            <li><span>.description</span>
+                <ul>
+                    <li>allows to describes what func does</li>
+                </ul>
+            </li>
+            <li><span>memoization</span>
+                <ul>
+                    <li>"result caching"</li>
+                    <li><span>cache</span> property</li>
+                </ul>
+            </li>
+            <li><span>Immediately Invoked Function Expression– IIFE</span>
+                <ul>
+                    <li>() at end to envoke func immediately</li>
+                    <li><span>temp</span>
+                        <ul>
+                            <li>uses <span>IIFE</span></li>
+                            <li>not needed in ES6 for swapping
+                                <ul>
+                                    <li>let [a,b] = [1,2];
+                                        [a,b] = [b,a];</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>can be used to set up any <span>initialization code</span> that there’ll be no need for again
+                        <ul>
+                            <li>can set up any variables, objects and event handlers when the page loads.</li>
+                            <li>much of this can be achieved in <span>ES6</span> by simply placing the code inside a <span>block</span></li>
+                        </ul>
+                    </li>
+                    <li>recommended way to use <span>strict mode</span> is to place all your code inside an IIFE</li>
+                    <li>can be used to enclose a block of code inside its own <span>private scope</span></li>
+                </ul>
+            </li>
+
+            <li>Functions that <span>Define and Rewrite</span> Themselves
+                <ul><li>Ex/ function party(){
+                console.log('Wow this is amazing!');
+                party = function(){
+                console.log('Been there, got the T-Shirt');
+                }
+                }</li></ul>
+            </li>
+            <li><span>Init-Time Branching</span>
+                <ul>
+                    <li>we can define a function based on whether certain methods are supported</li>
+                    <li>function is invoked twice the first time, although it becomes more efficient each subsequent time it’s invoked</li>
+                </ul>
+            </li>
+            <li><span>Recursive Functions</span>
+                <ul>
+                    <li>invokes itself until a certain condition is met</li>
+                </ul>
+            </li>
+            <li><span>Event-driven Asynchronous Programming</span>
+                <ul>
+                    <li>Instead of waiting for an event to occur, a callback can be created that’s invoked when the event happens</li>
+                    <li><span>event-loop</span></li>
+                    <li>a callback always has to wait for the current execution stack to complete before it’s invoked</li>
+                    <li><span>Callback Hell</span>
+                        <ul><li>too many callbacks in same func</li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>promise</span> represents the future result of an asynchronous operation
+                <ul>
+                    <li><i>pending</i>
+                        <ul>
+                            <li><i>unsettled</i></li>
+                        </ul>
+                    </li>
+        
+                    <li><i>settled</i>
+                        <ul>
+                            <li>Resolved</li>
+                            <li>Rejected</li>
+                        </ul>
+                    </li>
+                    <li><span>Creating A Promise</span>
+                        <ul>
+                            <li>constructor function</li>
+                            <li>func called <span>executor</span> as arg </li>
+                            <li>also accepts <span>resolve()</span> or <span>reject()</span> as args</li>
+                        </ul>
+                    </li>
+                    <li><span>Settled Promise</span>
+                        <ul>
+                            <li><span>.then()</span></li>
+                            <li><span>.catch()</span></li>
+                        </ul>
+                    </li>
+                    <li><span>Chaining Multiple Promises</span></li>
+                </ul>
+            </li>
+
+            <li><span>Async Functions</span>
+                <ul>
+                    <li><span>async</span> keyword</li>
+                    <li><span>await</span> operator</li>
+                </ul>
+            </li>
+            <li><span>Generalized</span> Functions</li>
+            <li>Functions That <span>Return Functions</span></li>
+            <li><span>Closures</span></li>
+            <li>Function<span> Scope</span>
+                <ul>
+                    <li><span>closure</span>
+                        <ul>
+                            <li>when the inner function is returned by the outer function, maintaining access to any variables declared inside the
+                            enclosing function.</li>
+                            <li>variable kept alive outside of its scope</li>
+                            <li>whenever a function is defined inside another function, the inner function will have access to any variables that are
+                            declared in the outer function's scope</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Generators</span>
+                <ul>
+                    <li><span>function*</span>
+                        <ul>
+                            <li><span>next()</span></li>
+                            <li><span>yield</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Functional Programming
+                <ul>
+                    <li><span>Pure Functions</span>
+                        <ul>
+                            <li>MUST HAVE:
+                                <ul>
+                                    <li>return value only depend on the values provided as arguments.</li>
+                                    <li>doesn't change any values or data elsewhere in the program</li>
+                                    <li>Given the same arguments, a pure function will always return the same result</li>
+                                    <li>At least one argument</li>
+                                    <li>return value</li>
+                                    <li>perform a single task</li>
+                                </ul>
+                            </li>
+                            <li><span>Higher-Order Functions</span>
+                                <ul>
+                                    <li>:functions that accept another function as an argument, or return another function as a result, or both</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Currying</span>
+                <ul>
+                    <li>involves the partial application of functions</li>
                 </ul>
             </li>
         <ul>
