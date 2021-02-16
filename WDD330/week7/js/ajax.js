@@ -22,7 +22,7 @@
             .then(text => outputDiv.innerText = text)
             .catch(error => console.log('There was an error:', error))
     }, false);
-
+  
     //Chuck Norris Fact Btn
     apiButton.addEventListener('click', () => {
         fetch(apiURL)
