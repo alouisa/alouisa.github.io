@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDD 330 Week 7</title>
+    <meta name="description" content="WDD330 notes, exercises, challenges">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>Anna Astle WDD 330</h1>
+        </header>
+    </a>
+    <main>
+        <h2><a href="index.html">Week 7</a></h2>
+
+        <h3>Ch10: Testing and Debugging</h3>
+        <ul>
+            <li><span>System error</span>
+                <ul>
+                    <li>there’s a problem with the system or external devices with which the program is interacting.</li>
+                </ul>
+            </li>
+            <li><span>Programmer error</span>
+                <ul>
+                    <li>the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.</li>
+                </ul>
+            </li>
+            <li><span>User error</span>
+                <ul>
+                    <li>the user has entered data incorrectly, which the program is unable to handle.</li>
+                </ul>
+            </li>
+            <li><span>Exceptions</span>
+                <ul>
+                    <li>an error that produces a return value that can then be used by the program to deal with the error</li>
+                    <li><span>Stack Traces</span> 
+                        <ul><li>a sequence of functions or method calls that lead to the point where the error occurred</li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Warnings</span>
+                <ul><li>occur if there’s an error in the code that isn't enough to cause the program to crash</li></ul>
+            </li >
+            <li><span>Strict Mode</span>
+                <ul>
+                    <li><span>'use strict';</span></li>
+                    <li>Not using strict mode is often referred to as 'sloppy mode' as it’s forgiving of sloppy programming practices. Strict
+                    mode encourages a better quality of JavaScript to be written that befits a ninja programmer, so its use is recommended.</li>
+                    <li><span>*</span>the recommended way to invoke strict mode is to place all your code into a self-invoking function</li>
+                </ul>
+            </li>
+            <li><span>Linting Tools</span>
+                <ul>
+                    <li>used to test the quality of JavaScript code, beyond simply using strict mode.</li>
+                    <li><a href="http://jslint.com/">js Lint</a></li>
+                    <li><a href="https://jshint.com/">js Hint</a></li>
+                    <li><a href="https://eslint.org/">ES Lint</a></li>
+                </ul>
+            </li>
+            <li><span>Feature Detection</span>
+                <ul>
+                    <li>This is done using an if statement to check whether an object or method exists before trying to actually call the method</li>
+                    <li><a href="https://modernizr.com/docs">Modernizr</a></li>
+                    <li><a href="https://caniuse.com/">Can I Use?</a></li>
+                </ul>
+            </li>
+            <li><span>Debugging with breakpoints</span>
+                <ul><li><span>debugger</span> keyword</li></ul>
+            </li>
+            <li><span>alert()</span>
+                <ul><li>allows us to effectively put breakpoints in the code that let us check the value of variables at that point to see if
+                they’re what we expect them to be</li></ul>
+            </li>
+            <li><span>console.log()</span></li>
+            <li><span>console.trace()</span>
+                <ul><li>will log an interactive stack trace in the console</li></ul>
+            </li>
+            <li><span>Error Objects</span> can be used as constructors to create custom error objects
+                <ul>
+                    <li>Error</li>
+                    <li>EvalError</li>
+                    <li>RangeError</li>
+                    <li>ReferenceError</li>
+                    <li>SyntaxError</li>
+                    <li>TypeError</li>
+                    <li>URIError</li>
+                    <li>InternalError</li>
+                </ul>
+            </li>
+            <li><span>Error Properties</span>
+                <ul>
+                    <li>name</li>
+                    <li>message</li>
+                    <li>stack
+                        <ul><li>not safe to use in production sites</li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Throwing Exceptions</span>
+                <ul>
+                    <li><span>throw</span> statement</li>
+                    <li>Best practice to throw an <span>error object</span>. This can then be caught in a <span>catch block</span></li>
+                </ul>
+            </li>
+            <li><span>Exception Handling</span>
+                <ul>
+                    <li>If we suspect a piece of code will result in an exception, we can wrap it in a <span>try</span> block.</li>
+                    <li><span>catch</span>
+                        <ul><li>will only run if an exception is thrown inside the try block</li></ul>
+                    </li>
+                    <li><span>finally</span>
+                        <ul><li>ran whether or not exception occured</li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Test-driven Development (TDD)</span>
+                <ol>
+                    <li>Write tests (that initially fail)</li>
+                    <li>Write code to pass the tests</li>
+                    <li>Refactor the code</li>
+                    <li>Test refactored code</li>
+                    <li>Write more tests for new features</li>
+                </ol>
+            </li>
+            <li><span>Testing Frameworks</span>
+                <ul>
+                    <li><a href="https://jestjs.io/">Jest</a></li>
+                </ul>
+            </li>
+        </ul>
+</main>
+<script src="js/main.js"></script>
+</body>
+
+</html>
