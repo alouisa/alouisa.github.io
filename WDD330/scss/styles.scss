@@ -33,6 +33,7 @@ main{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    min-width: 350px;
     li{
         padding-right: 5px;
         padding-bottom: 40px;

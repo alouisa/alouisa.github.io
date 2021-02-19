@@ -37,6 +37,7 @@ main {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  min-width: 350px;
 }
 #linkList li {
   padding-right: 5px;
