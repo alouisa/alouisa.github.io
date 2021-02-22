@@ -21,8 +21,48 @@
 
         <h3>Ch8: Transforms and Transitions</h3>
         <ul>
-            <li>Functions are <span>first-class objects</span></li>
-       
+            <li><span>Translation</span>
+                <ul>
+                    <li><span>IE9 and older mobile WebKit browsers,</span></li>
+                    <li>-webkit-transform: translate(45px,-45px); /* iOS8, Android
+                    ↵4.4.3, BB10 */
+                    -ms-transform: translate(45px,-45px); /* IE9 only */
+                    transform: translate(45px,-45px);</li>
+                </ul>
+            </li>
+            <li>Transforms don’t work on inline elements</li>
+            <li>Rotating an ellipseis more noticeable if the <span>transform-origin</span> is set to something other than the default 50% 50%
+                <ul>
+                    <li>Browser support for the transform-origin property is the same as for transform —prefixing being required when the
+                    transform property requires it:
+                    
+                    transform-origin: 0 0;</li>
+                </ul>
+            </li>
+            <li>Animation has certainly been possible for some time with JavaScript, but native CSS transitions generally require less
+            client-side processing, so they’ll usually appear smoother</li>
+            <li><span>Transition</span>
+                <ul>
+                    <li><span>“if there is a valid midpoint, it can be transitioned”</span></li>
+                    <li>be selective in the properties you specify, and only use or default to <span>all</span> if you really want to animate every property.</li>
+                    <li>the properties in the shorthand syntax can be in any order, however, if a delay is included, you must also include a
+                    duration, and the duration must precede the delay</li>
+                </ul>
+            </li>
+            <li><span>Animations</span>
+                <ul>
+                    <li><span>keyframes</span>
+                        <ul>
+                            <li>@-webkit-keyframes myAnimation {
+                            /* put animation keyframes here */
+                            }
+                            @keyframes myAnimation {
+                            /* put animation keyframes here */
+                            }</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
 </main>
 <script src="js/main.js"></script>
