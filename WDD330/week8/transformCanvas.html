@@ -46,10 +46,17 @@
         <canvas id="myCanvas" class="myCanvas" width="200" height="200">
             Sorry! Your browser doesn’t support Canvas.
         </canvas>
+        <button name="saveButton" id="saveButton1">Save Drawing</button>
+        <canvas id="myCanvasCircle" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn’t support Canvas.
+        </canvas>
+        <button name="saveButton" id="saveButton2">Save Drawing</button>
     </main>
     <script>
 
             var canvas = document.getElementById("myCanvas");
+            var canvasCircle = document.getElementById("myCanvasCircle");
+
             var context = canvas.getContext("2d");
             context.strokeStyle = "red";
 
@@ -61,6 +68,27 @@
                 context.fillRect(10, 10, 100, 100);
                 context.strokeRect(10, 10, 100, 100);
             };
+
+            circleContext = canvasCircle.getContext("2d");
+            circleContext.beginPath();
+            circleContext.arc(100, 100, 50, 0, Math.PI * 2, true);
+            circleContext.closePath();
+            circleContext.strokeStyle = "red";
+            circleContext.fillStyle = "rgb(75,50,50, .6)";
+            circleContext.lineWidth = 3;
+            circleContext.fill();
+            circleContext.stroke(); 
+
+            function saveDrawing(elementId) {
+                    var canvas5 = document.getElementById(elementId);
+                    window.open(canvas5.toDataURL("image/png"));
+                }
+
+            var button1 = document.getElementById("saveButton1");
+                button1.addEventListener("click", saveDrawing("myCanvas"), false);
+
+            var button2 = document.getElementById("saveButton2");
+                button2.addEventListener("click", saveDrawing("myCanvasCircle"), false);
     </script>
 </body>
 
