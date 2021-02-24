@@ -26,6 +26,10 @@
             color: #484848;  
             transform: rotate(10deg) translateX(40px) scale(1.5);
         }
+        /*    Canvas  */
+        .myCanvas {
+            border: dotted 2px black;
+}
         
      </style>
 </head>
@@ -39,8 +43,25 @@
     <main>
         <h2><a href="index.html">Week 8</a></h2>
         <h3 class="ad">Put <br/>your<br/> <span>dukes</span></br> up, sire</h3>
-
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn’t support Canvas.
+        </canvas>
     </main>
+    <script>
+
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.strokeStyle = "red";
+
+            var img = new Image();
+            img.src = "./images/coralRock.jpg";
+            img.onload = function () {
+                var pattern = context.createPattern(img, "repeat");
+                context.fillStyle = pattern;
+                context.fillRect(10, 10, 100, 100);
+                context.strokeRect(10, 10, 100, 100);
+            };
+    </script>
 </body>
 
 </html>
