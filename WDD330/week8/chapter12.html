@@ -77,6 +77,33 @@
                             </li>
                         </ul>
                     </li>
+                    <li><span>Canvas vs SVG</span>
+                        <ul>
+                            <li>Canvas allows for pixel manipulation</li>
+                            <li>One downside of canvas is that it operates in what’s known asimmediate mode
+                                <ul><li>This means that if you ever want to add more to the canvas, you’re unable to simply add to what’s already there.</li></ul>
+                            </li>
+                            <li>There’s also no access to what’s drawn on the canvas via the DOM. Because of this, canvas is much faster than SVG and canvas is generally the better choice if you’re looking to design a game requiring lots of animations.</li>
+                            <li>SVG also has, at this time, a more complete set of tools to help you work with it, such as the Raphaël library and
+                            Inkscape</li>
+                            <li>ince SVG is a file format—rather than a set of methods that allows you to dynamically draw on a surface—you can’t
+                            manipulate SVG images the way you can manipulate pixels on canvas</li>
+                            <li>In <span>summary</span>, if you need to paint pixels to the screen and have no concerns about the ability to retrieve and modify your
+                            shapes, canvas is probably the better choice. If, on the other hand, you need to be able to access and change specific
+                            aspects of your graphics, SVG might be more appropriate.</li>
+                        </ul>
+                    </li>
+                    <li><span>Drag and Drop</span>
+                        <ul>
+                            <li>draggable
+                                <ul>
+                                    <li>nota Boolean attribute, so you have to explicitly set it to true</li>
+                                </ul>
+                            </li>
+                            <li>dragstart</li>
+                            <li>dragover & drop</li>
+                        </ul>
+                    </li>
                 </ul>
 </main>
 <script src="js/main.js"></script>
