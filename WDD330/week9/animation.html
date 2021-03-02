@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .square {
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background: #d16;
+        }
+        #square3{
+            animation: spin 30s linear infinite;;
+        }
+        @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(3600deg); } }
+
+    </style>
 </head>
 
 <body>
@@ -18,9 +31,20 @@
     </a>
     <main>
         <h2><a href="index.html">Week 9</a></h2>
-
+        <h3>setInterval()</h3>
+        <p>This was the only way to achieve animation using JavaScript until the window.requestAnimationFrame() method was
+        developed.</p>
+        <div id='square1' class="square"></div>
+        <h3>requestAnimationFrame</h3>
+        <p>Has a number of improvements to optimize its performance. These include making the most of the browser’s built-in
+        graphics-handling capabilities, and not running the animation when the tab is inactive, resulting in a much smoother
+        performance</p>
+        <div id='square2' class="square"></div>
+        <h3>Animation with CSS</h3>
+        <p>It is typically better to use CSS for any animation effects</p>
+        <div id='square3' class="square"></div>
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>
