@@ -21,9 +21,180 @@
 
         <h3>Ch9: The Window Object</h3>
         <ul>
-            <li><span></span>
+            <li><span>Global Object</span>
                 <ul>
-                    <li></li>
+                    <li>If you don’t know the name of the global object, you can also refer to it using the keyword this in the global scope
+                        <ul>
+                            <li>const global = this;</li>
+                        </ul>
+                    </li>
+                    <li>use <span>window.variableName</span> if you need to check whether a global variable has been defined (i.e. in if())</li>
+                </ul>
+            </li>
+        <li>window <span>dialogs</span>
+            <ul>
+                <li>alert()</li>
+                <li>confirm()</li>
+                <li>prompt()</li>
+                <li>these methods will stop the execution of a program in its tracks</li>
+                <li>It’s also worth keeping in mind that most browsers allow users to disable any dialogs from repeatedly
+                    appearing, meaning
+                    they are not a feature to be relied upon.</li>
+            </ul>
+        </li>
+            <li><span>Browser Information</span>
+                <ul>
+                    <li><span>navigator</span> property
+                        <ul>
+                            <li><span>.userAgent</span>
+                                <ul>
+                                    <li>Don’t rely on this information though, as it can be modified by a user to masquerade as a different browser.</li>
+                                    <li>every browser will include the string “Mozilla” in its userAgent property</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>location</span> property
+                <ul>
+                    <li>.href</li>
+                    <li>.protocol</li>
+                    <li>.host</li>
+                    <li>.hostname</li>
+                    <li>.port</li>
+                    <li>.pathname</li>
+                    <li>.search</li>
+                    <li>.hash</li>
+                    <li>.origin</li>
+                    <br>
+                    <li>.reload()</li>
+                    <li>.assign()</li>
+                    <li>.replace()</li>
+                    <li>.toString()</li>
+
+                </ul>
+            </li>
+            <li><span>The Browser History</span>
+                <ul>
+                    <li><span>window.history</span>
+                        <ul>
+                            <li>.length</li>
+                            <li>.go()</li>
+                            <li>.forward()</li>
+                            <li>.back()</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Controlling Windows</span>
+                <ul>
+                    <li><span>window.open()</span></li>
+                    <li><span>.close()</span>
+                        <ul>
+                            <li>can be used to close a window, assuming you have a reference to it (i.e. popup.close())</li>
+                        </ul>
+                    </li>
+                    <li><span>.moveTo()</span></li>
+                    <li><span>.resizeTo()</span></li>
+                    <li>It’s a bad idea from a usability standpoint to resize or move a user’s window</li>
+                </ul>
+            </li>
+            <li><span>Screen Information</span>
+                <ul>
+                    <li><span>window.screen</span>
+                        <ul>
+                            <li>.height</li>
+                            <li>.width</li>
+                            <li>.availHeight</li>
+                            <li>.availWidth</li>
+                            <li>.colorDepth</li>
+                            <li>The Screen object has more uses for mobile devices. It also allows you to do things like turn off the device’s screen,
+                            detect a change in its orientation or lock it in a specific orientation.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>The Document Object</span>
+                <ul>
+                    <li>This object has properties and methods that deal with the page that has been loaded into the window</li>
+                    <li><span>document</span>
+                        <ul>
+                            <li>.write()
+                                <ul>
+                                    <li>heavily frowned upon as it can only be realistically used by mixing JavaScript within an HTML document</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Cookies</span>
+                <ul>
+                    <li>small files that are saved locally on a user’s computer</li>
+                    <li>stores info that can then be retrieved between requests</li>
+                    <li>Their use for data storage is starting to be replaced in many cases by the new HTML5 localStorage API as it allows more
+                    data to be stored.</li>
+                    <li>Cookies are still useful for retaining state information (such as if a user is logged in) because they’re passed between
+                    the client and server on every HTTP request.</li>
+                    <li><span>document.cookie</span>
+                        <ul>
+                            <li><span>Changing cookie value</span>
+                                <ul>
+                                    <li>A cookie’s value can be changed by reassigning it to document.cookie using the same name but a different value</li>
+                                </ul>
+                            </li>
+                            <li><span>Reading Cookies</span>
+                                <ul>
+                                    <li>const cookies = document.cookie.split("; ");
+                                    for (crumb of cookies){
+                                    const [key,value] = crumb.split("=");
+                                    console.log(`The value of ${key} is ${value}`);
+                                    }</li>
+                                </ul>
+                            </li>
+                            <li><span>Cookie Expiry Dates</span>
+                                <ul>
+                                    <li>"expires=date"</li>
+                                    <li>"max-age=numInSecs"</li>
+                                </ul>
+                            </li>
+                            <li><span>The Path and Domain of Cookies</span>
+                                <ul>
+                                    <li>"path=/"</li>
+                                    <li>"domain=domainName"</li>
+                                </ul>
+                            </li>
+                            <li><span>Secure Cookies</span>
+                                <ul>
+                                    <li>'secure'</li>
+                                </ul>
+                            </li>
+                            <li><span>Deleting Cookies</span>
+                                <ul>
+                                    <li>Set expiration date to past</li>
+                                </ul>
+                            </li>
+                            <li><span>Libraries</span>
+                                <ul>
+                                    <li><a href="https://github.com/ScottHamper/Cookies">Cookies.js</a></li>
+                                    <li><a href="https://github.com/js-cookie/js-cookie">sCookie</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Timing Functions</span>
+                <ul>
+                    <li><span>window</span>
+                        <ul>
+                            <li>.setTimeout()</li>
+                            <li>.clearTimeout()</li>
+                            <li>.setInterval()</li>
+                            <li>.clearInterval()</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
