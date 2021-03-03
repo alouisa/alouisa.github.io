@@ -173,7 +173,68 @@
             </li>
             <li><span>Multimedia</span>
                 <ul>
-                    <li></li>
+                    <li><span>audio</span> tag</li>
+                    <li><span>video</span> tag</li>
+                    <li>Any content inside the audio or video tags will only display if the browser does not support them; hence, it can be
+                            used to display a message to users of older browsers without support for these features</li>
+                    <li><span>Methods and Attributes</span>
+                        <ul>
+                            <li>controls</li>
+                            <li>.play()</li>
+                            <li>.pause()</li>
+                            <li>.volume</li>
+                            <li>.muted</li>
+                            <li>.currentTime</li>
+                            <li>.playbackRate</li>
+                            <li>.loop</li>
+                            <li>.duration</li>
+                        </ul>
+                        <li><span>Event Listeners</span>
+                            <ul>
+                                <li>'loadedmetadata'
+                                    <ul>
+                                        <li>Some of the properties are only available once the browser has received all the metadata associated with the video.</li>
+                                        <li>use an event listener that fires once the metadata has loaded to access properties</li>
+                                    </ul>
+                                </li>
+                                <li>play</li>
+                                <li>pause</li>
+                                <li>volumechange</li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                 </ul>
+            </li>
+
+            <li><span>Other APIs</span>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">HTML5 APIs</a></li>
+                </ul>
+            </li>
+
+            <li><span>Drawing with Canvas</span>
+                <ul>
+                    <li><span>canvas</span>
+                        <ul>
+                            <li>allow graphics to be drawn onto a web page in real time using JavaScript</li>
+                            <li>.lineWidth()</li>
+                            <li>.moveTo()</li>
+                            <li>.lineTo()</li>
+                            <li>.arc()</li>
+                            <li>.font</li>
+                            <li>.fillText()</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><span>Shims and Polyfills</span>
+                <ul>
+                    <li>These are libraries of code that allow you to use the APIs as usual. They then fill in the necessary code that's not
+                    provided natively by the user’s browser.</li>
+                    <li>Once you are confident that enough users have up-to-date browsers, you can remove the polyfill code without having to
+                    update any actual JavaScript code</li>
                 </ul>
             </li>
         </ul>
