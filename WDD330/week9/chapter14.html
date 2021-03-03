@@ -123,6 +123,57 @@
             <li><span>Websockets</span>
                 <ul>
                     <li>Websocket is a new protocol that allows two-way communication with a server – also known as <span>push messaging</span></li>
+                    <li>wss://' instead of 'https://</li>
+                    <li>When the code <span>new WebSocket(URL)</span> runs, it creates an instance of a WebSocket object and tries to connect to the URL.
+                    When this is successful, it fires an <span>'open' event</span>.
+                        <ul>
+                            <li>This is one of a number of events that a WebSocket object can emit</li>
+                            <li><span>'message' event</span></li>
+                            <li><span>close event</span></li>
+                            <li><span>error event</span></li>
+                        </ul>
+                </li>
+                </ul>
+            </li>
+            <li><span>Notifications</span>
+                <ul>
+                    <li>The Notification API allows you to show messages using the system's notifications</li>
+                    <li><span>window.Notification</span>
+                        <ul>
+                            <li>.requestPermission()</li>
+                            <li>if(window.Notification) {
+                            Notification.requestPermission()
+                            .then((permission) => {
+                            if(Notification.permission === 'granted') {
+                            new Notification('Hello JavaScript!');
+                            }
+                            });
+                            }</li>
+                            <li><span>new Notification('notificationTitle', {options})</span>
+                                <ul>
+                                    <li><span>options</span>
+                                        <ul>
+                                            <li>body</li>
+                                            <li>icon</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>.close()</li>
+                            <li><span>events</span>
+                                <ul>
+                                    <li>click</li>
+                                    <li>show</li>
+                                    <li>close</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Multimedia</span>
+                <ul>
+                    <li></li>
                 </ul>
             </li>
         </ul>
