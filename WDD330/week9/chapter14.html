@@ -21,9 +21,102 @@
 
         <h3>Ch14: HTML5 APIs</h3>
         <ul>
-            <li><span></span>
+            <li><a href="https://caniuse.com/">Can I Use</a></li>
+            <li><span>data-</span> attribute
                 <ul>
-                    <li></li>
+                    <li>way of embedding data in a web page using custom attributes that are ignored by the browser.</li>
+                    <li>Start with data-
+                        <ul>
+                            <li>Contain only lowercase letters, numbers, hyphens, dots, colons or underscores.</li>
+                            <li>Include an optional string value.</li>
+                        </ul>
+                    </li>
+                    <li>support is generally very good in modern browsers</li>
+                </ul>
+            </li>
+            <li>Each element has a <span>dataset</span> property that can be used to access any data- attributes it contains.</li>
+            <hr>
+            <li>Due to the ever-changing nature of most APIs, it’s still best practice to use feature detection before using any of the
+            API methods.</li>
+            <li><span>HTML5 Web Storage</span>
+                <ul>
+                    <li>provides a key-value store on the client’s computer that is similar to using cookies but has fewer restrictions, more
+                    storage capacity, and is generally easier to use</li>
+                    <li>If a browser supports the Web Storage API, the window object will have a property called <span>localStorage</span>
+                        <ul>
+                            <li>.getItem()</li>
+                            <li>.setItem()</li>
+                            <li>.name</li>
+                            <li>.removeItem()</li>
+                            <li>.clear()</li>
+                            <hr>
+                            <li>Every time a value is saved to local storage, a <span>storage event</span> is fired
+                                <ul>
+                                    <li><span>event</span>
+                                        <ul>
+                                            <li>.key</li>
+                                            <li>.newValue</li>
+                                            <li>.oldValue</li>
+                                            <li>.storageArea</li>
+                                        </ul>
+                                    </li>
+                        
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>sessionStorage</span></li>
+                </ul>
+            </li>
+            <li><span>Geolocation</span>
+                <ul>
+                    <li>can be used to find the user’s exact location, then link to nearby places or measure the speed at which the user is
+                    moving</li>
+                    <li>it is a property of the <span>navigator</span>
+                    <li><span>navigator.geolocation</span></li>
+                        <ul>
+                            <li>.getCurrentPosition()
+                                <ul>
+                                    <li>will return a <span>position object</span> to a specified callback function
+                                        <ul>
+                                            <li>.coords
+                                                <ul>
+                                                    <li>.latitude</li>
+                                                    <li>.longitude</li>
+                                                </ul>
+                                            </li>
+                                            <li>.speed (meter/second)</li>
+                                            <li>.altitude (meters)</li>
+                                            <li>.heading (direction in deg)</li>
+                                            <li>.timestamp</li>
+                                            <li>.accuracy</li>
+                                            <li>.altitudeAccuracy</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>.watchPosition()</li>
+                            <li>.clearWatch()</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Web Workers</span>
+                <ul>
+                    <li>any processes that could take a long time are carried out in the background</li>
+                    <li><span>new Worker()</span>
+                        <ul>
+                            <li>.postMessage()
+                                <ul>
+                                    <li>When a message is posted, a <span>message event</span> is fired, so they can be dealt with using an event listener</li>
+                                </ul>
+                            </li>
+                            <li>.terminate()</li>
+                            <li>.close()</li>
+                        </ul>
+                    </li>
+                    <li>At the time of writing, the Chrome browser won't let you run workers from local files like this. A workaround is start
+                    Chrome using the <span>--allow-file-access-from-files flag</span>, or simply use a different browser for this example</li>
                 </ul>
             </li>
         </ul>
