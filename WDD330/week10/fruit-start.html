@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDD 330 Week 10</title>
+    <meta name="description" content="WDD330 Chapter 9 notes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        /* input:invalid {
+            border: 2px dashed red;
+        } */
+        input:invalid:required {
+            background-image: linear-gradient(to right, pink, lightgreen);
+        }
+        /* input:valid {
+            border: 2px solid black;
+        } */
+        #form2Ex {
+            /* font: 1em sans-serif; */
+            width: 200px;
+            padding: 0;
+            /* margin : 0 auto; */
+            }
+
+        p * {
+            display: block;
+        }
+
+        input[type=email]{
+            -webkit-appearance: none;
+            appearance: none;
+
+            width: 100%;
+            border: 1px solid #333;
+            margin: 0;
+
+            font-family: inherit;
+            font-size: 90%;
+
+            box-sizing: border-box;
+        }
+
+        /* This is our style for the invalid fields */
+        input:invalid{
+            border-color: #900;
+            background-color: #FDD;
+        }
+
+        input:focus:invalid {
+            outline: none;
+        }
+
+        /* This is the style of our error messages */
+        .error {
+            width  : 100%;
+            padding: 0;
+
+            font-size: 80%;
+            color: white;
+            background-color: #900;
+            border-radius: 0 0 5px 5px;
+
+            box-sizing: border-box;
+        }
+
+        .error.active {
+        padding: 0.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>Anna Astle WDD 330</h1>
+        </header>
+    </a>
+    <main>
+        <h2><a href="index.html">Week 10</a></h2>
+        <div>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input type="text" id="choose" name="i_like" required minlength="6" maxlength="6">
+        </div>
+        <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" value="1" min="1" max="10">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+        <br>
+        <hr>
+        <form id="form2Ex">
+            <label for="mail">I would like you to provide me with an e-mail address:</label>
+            <input type="email" id="mail" name="mail">
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
