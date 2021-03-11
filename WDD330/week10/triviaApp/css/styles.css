@@ -86,6 +86,11 @@ h2 {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  cursor: pointer;
+}
+#categories li:hover {
+  background-color: #555;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
