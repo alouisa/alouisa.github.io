@@ -92,10 +92,11 @@ h2 {
   padding: 10px;
   margin: 5px;
   cursor: pointer;
+  color: #181818;
 }
 #categories li:hover {
-  background-color: #555;
-  color: white;
+  background-color: rgba(129, 121, 204, 0.199);
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
