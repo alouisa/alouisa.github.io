@@ -74,11 +74,16 @@ h2{
 
 #categories{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 850px;
     margin: 0 auto;
     list-style: none;
     padding: 5px;
+
+    @media(min-width: 380px) {
+    grid-template-columns: 1fr 1fr 1fr; 
+    }
+
 }
 #categories li{
     border: 2px solid rgba(153, 153, 153, 0.644); 
