@@ -1,5 +1,5 @@
 let categoryParent = document.getElementById('categories');
-let categoryList = [];
+let categoryNames = [];
 
 function fetchCategory() {
     return fetch(`https://opentdb.com/api.php?amount=1&type=multiple`)
@@ -8,25 +8,21 @@ function fetchCategory() {
 }
 
 async function createCategoryList(list, listLength) {
-    let categoryNames = [];
     for (let i = 0; i < listLength;) {
         let category = await fetchCategory();
         if (!categoryNames.includes(category["category"])) {
-            list.push(category);
             categoryNames.push(category["category"]);
+            setCategory(category["category"], categoryParent);
             i++;
         }
     }
 }
-
-function setCategories(list, parent) {
-    list.forEach(item => {
-        console.log("setcategories function");
-        let li = document.createElement('li');
-        li.innerText = item["category"];
+function setCategory(item, parent){
+    let li = document.createElement('li');
+        li.innerText = item;
         parent.appendChild(li);
-    });
+
 }
 
-createCategoryList(categoryList, 6);
-console.log(categoryList);
+createCategoryList(categoryNames, 6);
+console.log(categoryNames);
