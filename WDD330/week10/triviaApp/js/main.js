@@ -1,23 +1,26 @@
+import { fetchCategories, getCategoryList, setCategories} from 'categories.js'
+
 let categoryParent = document.getElementById('categories');
 
-function fetchCategory(){
-    fetch(`https://opentdb.com/api.php?amount=1&type=multiple`)
+function fetchCategories() {
+    fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
         .then(response => response.json())
-        .then(data => setCategory(data.results[0]['category'], categoryParent));
+        .then(data => data.results);
 }
 
-function setCategories(){
-    for (let i = 0; i < 6; i++) {
-       fetchCategory(); 
-}
-}
+// function getCategoryList(list){
+//     list.forEach(item => {
+//         if(list.length < 6 && (!list.includes(item.category))){
+//             list.append(item);
+//         }
+//     }
+// }
+function setCategories(list, parent) {
+    list.forEach(item => {
+        let li = document.createElement('li');
+        li.innerHTML = item;
+        parent.appendChild(li);
+    });
 
-function setCategory(item, parent){
-    let li = document.createElement('li');
-    li.innerHTML = item;
-    parent.appendChild(li);
-}
-
-setCategories();
-
-console.log(categoryParent.children);
+    let categories = fetchCategories();
+    console.log(categories);
