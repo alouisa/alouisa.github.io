@@ -38,7 +38,11 @@ const links = [
     {
         label: "10",
         url: "week10/index.html"
-    }
+    },
+    {
+        label: "11",
+        url: "week11/index.html"
+    },
 ]
 
 let htmlList = document.getElementById("linkList");
