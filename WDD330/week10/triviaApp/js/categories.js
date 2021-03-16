@@ -9,14 +9,16 @@ export function getCategoryList(list){
         if(list.length < 6 && (!list.includes(item.category))){
             list.append(item);
         }
-    }
+    });
 }
+
 export function setCategories(list, parent) {
     list.forEach(item => {
         let li = document.createElement('li');
         li.innerHTML = item;
         parent.appendChild(li);
     });
+}
 
 
 
