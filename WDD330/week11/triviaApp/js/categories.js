@@ -1,4 +1,6 @@
+let categoriesContainer = document.getElementsByClassName('categoriesContainer');
 let categoryParent = document.getElementById('categories');
+let categoryTitle = document.getElementById('categoriesTitle');
 let categoryNames = [];
 var categoryList = [];
 
@@ -44,3 +46,32 @@ function setCategory(item, parent) {
 
 createCategoryList(categoryList, categoryNames, 6);
 console.log(categoryList);
+console.log(categoryNames);
+
+
+function addCategoryEvent(list1, list2, parent, title){
+    window.onclick = e => {
+        let targetText = e.target.innerText;
+        let currentCategory = list2[list1.indexOf(targetText)]
+        title.innerHTML = `Category= ${targetText}`;
+
+
+        //Quiz
+        let i = 0;
+        let currentQuestion = currentCategory[i]["question"];
+        let allQuestions = (currentCategory[i]["incorrect_answers"].concat(currentCategory[i]["correct_answer"])).sort();
+        let question = document.createElement('h3');
+        parent.innerHTML = "";
+        allQuestions.forEach(question => {
+            let li = document.createElement('li');
+            li.innerText = question;
+            parent.appendChild(li);
+
+        });
+        console.log(currentCategory);
+        console.log(currentQuestion);
+        console.log(allQuestions);
+}
+}
+
+addCategoryEvent(categoryNames, categoryList, categoryParent, categoryTitle);
