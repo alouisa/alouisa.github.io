@@ -50,7 +50,7 @@ console.log(categoryNames);
 
 
 function addCategoryEvent(list1, list2, parent, title){
-    window.onclick = e => {
+    parent.onclick = e => {
         let targetText = e.target.innerText;
         let currentCategory = list2[list1.indexOf(targetText)]
         title.innerHTML = `Category= ${targetText}`;
@@ -60,11 +60,14 @@ function addCategoryEvent(list1, list2, parent, title){
         let i = 0;
         let currentQuestion = currentCategory[i]["question"];
         let allQuestions = (currentCategory[i]["incorrect_answers"].concat(currentCategory[i]["correct_answer"])).sort();
-        let question = document.createElement('h3');
+        //instead of bellow try rewritting innerHTML of categoriesContainer
         parent.innerHTML = "";
+        let questionTitle = document.createElement('h3');
+        questionTitle.innerHTML = currentQuestion;
+        parent.appendChild(questionTitle);
         allQuestions.forEach(question => {
             let li = document.createElement('li');
-            li.innerText = question;
+            li.innerHTML = question;
             parent.appendChild(li);
 
         });
