@@ -35,7 +35,7 @@ main {
 
 .homeTitle span {
   opacity: 0;
-  color: #ff3300;
+  color: #ce4303;
   animation: fadeIn 3s forwards;
 }
 
@@ -100,7 +100,7 @@ main {
   list-style: none;
   padding: 5px;
 }
-@media (min-width: 380px) {
+@media (min-width: 400px) {
   #categoriesList {
     grid-template-columns: 1fr 1fr 1fr;
   }

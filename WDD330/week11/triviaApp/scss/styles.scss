@@ -33,7 +33,7 @@ main{
 }
 .homeTitle span{
     opacity: 0;
-    color: rgb(255, 51, 0);
+    color: rgb(206, 67, 3);
     animation: fadeIn 3s forwards;
 }
 
@@ -99,7 +99,7 @@ main{
     list-style: none;
     padding: 5px;
 
-    @media(min-width: 380px) {
+    @media(min-width: 400px) {
     grid-template-columns: 1fr 1fr 1fr; 
     }
 
