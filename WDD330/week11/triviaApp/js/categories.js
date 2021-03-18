@@ -1,6 +1,6 @@
 let categoriesContainer = document.getElementsByClassName('categoriesContainer');
-let categoryParent = document.getElementById('categories');
-let categoryTitle = document.getElementById('categoriesTitle');
+let categories = document.getElementById('categoriesList');
+let categoriesTitle = document.getElementById('categoriesTitle');
 let categoryNames = [];
 var categoryList = [];
 
@@ -30,10 +30,10 @@ async function createCategoryList(list1, list2) {
     const categoryList = createRandomList(6, 9, 25);
     categoryList.forEach(async item => {
         let category = await fetchCategory(item, 10);
-        let categoryTitle = category[0]["category"];
+        let categoriesTitle = category[0]["category"];
         list1.push(category);
-        list2.push(categoryTitle);
-        setCategory(categoryTitle, categoryParent);
+        list2.push(categoriesTitle);
+        setCategory(categoriesTitle, categories);
     });
 }
 
@@ -54,27 +54,31 @@ function addCategoryEvent(list1, list2, parent, title){
         let targetText = e.target.innerText;
         let currentCategory = list2[list1.indexOf(targetText)]
         title.innerHTML = `Category= ${targetText}`;
-
-
-        //Quiz
-        let i = 0;
-        let currentQuestion = currentCategory[i]["question"];
-        let allQuestions = (currentCategory[i]["incorrect_answers"].concat(currentCategory[i]["correct_answer"])).sort();
-        //instead of bellow try rewritting innerHTML of categoriesContainer
-        parent.innerHTML = "";
-        let questionTitle = document.createElement('h3');
-        questionTitle.innerHTML = currentQuestion;
-        parent.appendChild(questionTitle);
-        allQuestions.forEach(question => {
-            let li = document.createElement('li');
-            li.innerHTML = question;
-            parent.appendChild(li);
-
-        });
-        console.log(currentCategory);
-        console.log(currentQuestion);
-        console.log(allQuestions);
+        
+        quizSetup(currentCategory, parent);
 }
 }
 
-addCategoryEvent(categoryNames, categoryList, categoryParent, categoryTitle);
+function quizSetup(category, parent){
+
+    let i = 0;
+    let currentQuestion = category[i]["question"];
+    let allAnswers = (category[i]["incorrect_answers"].concat(category[i]["correct_answer"])).sort();
+    //instead of bellow try rewritting innerHTML of categoriesContainer
+    parent.innerHTML = "";
+    let questionTitle = document.createElement('h3');
+    questionTitle.innerHTML = `*** * * ${currentQuestion} * * ***`;
+    questionTitle.style = 'grid-column: 1/-1; justify-self: center; padding: 10px;';
+    parent.appendChild(questionTitle);
+    allAnswers.forEach(question => {
+        let li = document.createElement('li');
+        li.innerHTML = question;
+        parent.appendChild(li);
+
+    });
+    console.log(category);
+    console.log(currentQuestion);
+    console.log(allAnswers);
+}
+
+addCategoryEvent(categoryNames, categoryList, categories, categoriesTitle);

@@ -75,7 +75,7 @@ h2 {
   padding: 8px;
 }
 
-#categories {
+#categoriesList {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 850px;
@@ -84,12 +84,12 @@ h2 {
   padding: 5px;
 }
 @media (min-width: 380px) {
-  #categories {
+  #categoriesList {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-#categories li {
+#categoriesList li {
   border: 2px solid rgba(153, 153, 153, 0.644);
   border-radius: 5px;
   padding: 10px;
@@ -97,7 +97,7 @@ h2 {
   cursor: pointer;
   color: #181818;
 }
-#categories li:hover {
+#categoriesList li:hover {
   background-color: rgba(129, 121, 204, 0.199);
   color: black;
 }
