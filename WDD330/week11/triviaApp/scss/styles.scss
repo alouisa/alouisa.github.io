@@ -31,6 +31,10 @@ main{
    max-width: 330px; 
    margin: 0 auto;  
 }
+.homeTitle{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
 .homeTitle span{
     opacity: 0;
     color: rgb(206, 67, 3);
@@ -38,7 +42,7 @@ main{
 }
 
 .homeIcon{
-    animation: shake 1s 1s;
+    animation: shake 1s 2s;
 }
 
 .mainHeaderLink{
@@ -61,7 +65,7 @@ main{
     padding: 8px; 
     font-size: 1.3rem; 
     border-radius: 50%;
-    animation: fadeInBeat 1.5s 2s forwards;
+    animation: fadeInBeat 1.5s 3s forwards;
 }
 
 // ** main Header Link ** 
