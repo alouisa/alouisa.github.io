@@ -100,7 +100,7 @@ main {
   list-style: none;
   padding: 5px;
 }
-@media (min-width: 400px) {
+@media (min-width: 550px) {
   #categoriesList {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -109,7 +109,7 @@ main {
 #categoriesList li {
   border: 2px solid rgba(153, 153, 153, 0.644);
   border-radius: 5px;
-  padding: 10px;
+  padding: 1rem;
   margin: 5px;
   cursor: pointer;
   color: #181818;
