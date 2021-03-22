@@ -22,6 +22,10 @@ h2 {
   font-size: 1.8rem;
 }
 
+h3 {
+  text-align: center;
+}
+
 main {
   grid-column: 2;
 }
@@ -30,6 +34,34 @@ main {
   display: none;
   width: 0;
   height: 0;
+}
+
+.show {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.triviaList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 850px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 5px;
+}
+
+.triviaList li {
+  border: 2px solid rgba(153, 153, 153, 0.644);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  color: #181818;
+}
+.triviaList li:hover {
+  background-color: rgba(129, 121, 204, 0.199);
+  color: black;
 }
 
 .homeBody {
@@ -103,31 +135,16 @@ main {
   padding: 8px;
 }
 
-#categoriesList {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 850px;
-  margin: 0 auto;
-  list-style: none;
-  padding: 5px;
-}
 @media (min-width: 550px) {
   #categoriesList {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-#categoriesList li {
-  border: 2px solid rgba(153, 153, 153, 0.644);
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 5px;
-  cursor: pointer;
-  color: #181818;
-}
-#categoriesList li:hover {
-  background-color: rgba(129, 121, 204, 0.199);
-  color: black;
+@media (min-width: 550px) {
+  #quizList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @keyframes shake {

@@ -4,6 +4,10 @@ let categoriesTitle = document.getElementById('categoriesTitle');
 let categoryNames = [];
 var categoryList = [];
 
+let quizParent = document.querySelector('.quizBody');
+let quizTitle = document.getElementById('quizTitle');
+let quizList = document.getElementById('quizList');
+
 function randomInt(min, max) {
     return Math.ceil(Math.random() * (max - min) + min);
 }
@@ -49,16 +53,36 @@ console.log(categoryList);
 console.log(categoryNames);
 
 
-function addCategoryEvent(list1, list2, parent, title){
-    parent.onclick = e => {
-        if (e.target != parent){
+function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
+    categoryUL.onclick = e => {
+        if (e.target != categoryUL){
             let targetText = e.target.innerText;
             let currentCategory = list2[list1.indexOf(targetText)]
             title.innerHTML = `Category= ${targetText}`;
-            quizSetup(currentCategory, parent);
+            quizSetup(currentCategory, quizUL);
+            hide(categoryUL.parentElement.parentElement);
         }
         
 }
+}
+
+function hide(element){
+    element.classList.remove('show');
+    element.classList.add('hide');
+}
+
+function show(parent){
+    element.classList.remove('hide');
+    element.classList.add('show');
+}
+
+function createQuizList(parent, questions){
+    questions.forEach(question => {
+        let li = document.createElement('li');
+        li.innerHTML = question;
+        parent.appendChild(li);
+
+    });
 }
 
 function quizSetup(category, parent){
@@ -66,21 +90,13 @@ function quizSetup(category, parent){
     let i = 0;
     let currentQuestion = category[i]["question"];
     let allAnswers = (category[i]["incorrect_answers"].concat(category[i]["correct_answer"])).sort();
-    //instead of bellow try rewritting innerHTML of categoriesContainer
-    parent.innerHTML = "";
+   
     let questionTitle = document.createElement('h3');
     questionTitle.innerHTML = `*** * * ${currentQuestion} * * ***`;
-    questionTitle.style = 'grid-column: 1/-1; justify-self: center; padding: 10px; color:rgb(170, 30, 100)';
-    parent.appendChild(questionTitle);
-    allAnswers.forEach(question => {
-        let li = document.createElement('li');
-        li.innerHTML = question;
-        parent.appendChild(li);
+    parent.parentElement.appendChild(questionTitle);
+    createQuizList(parent, allAnswers)
+    parent.parentElement.appendChild(parent);
 
-    });
-    console.log(category);
-    console.log(currentQuestion);
-    console.log(allAnswers);
 }
 
-addCategoryEvent(categoryNames, categoryList, categories, categoriesTitle);
+addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
