@@ -137,10 +137,17 @@ main {
   }
 }
 
-@media (min-width: 550px) {
-  #quizList {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+#quizList {
+  max-width: 500px;
+}
+
+#score {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  padding: 8px;
+  font-size: 1.2rem;
+  cursor: default;
 }
 
 @keyframes shake {

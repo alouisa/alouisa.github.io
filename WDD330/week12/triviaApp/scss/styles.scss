@@ -135,10 +135,18 @@ main{
     }
 }
 
+// ** Quiz **
 #quizList{
-      @media(min-width: 550px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    } 
+     max-width: 500px;
+}
+
+#score{ 
+    display: flex; 
+    align-self: center; 
+    margin-left: auto; 
+    padding: 8px;
+    font-size: 1.2rem; 
+    cursor: default;
 }
 
 

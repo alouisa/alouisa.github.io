@@ -7,6 +7,7 @@ var categoryList = [];
 let quizParent = document.querySelector('.quizBody');
 let quizTitle = document.getElementById('quizTitle');
 let quizList = document.getElementById('quizList');
+let score = document.getElementById('score');
 
 function randomInt(min, max) {
     return Math.ceil(Math.random() * (max - min) + min);
