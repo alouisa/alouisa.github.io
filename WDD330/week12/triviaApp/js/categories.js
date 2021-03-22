@@ -51,11 +51,13 @@ console.log(categoryNames);
 
 function addCategoryEvent(list1, list2, parent, title){
     parent.onclick = e => {
-        let targetText = e.target.innerText;
-        let currentCategory = list2[list1.indexOf(targetText)]
-        title.innerHTML = `Category= ${targetText}`;
+        if (e.target != parent){
+            let targetText = e.target.innerText;
+            let currentCategory = list2[list1.indexOf(targetText)]
+            title.innerHTML = `Category= ${targetText}`;
+            quizSetup(currentCategory, parent);
+        }
         
-        quizSetup(currentCategory, parent);
 }
 }
 
