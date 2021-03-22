@@ -99,4 +99,8 @@ function quizSetup(category, parent){
 
 }
 
+function selectAnswerEvent(element){
+    let selectedAnswer = e.target.innerHTML;
+}
+
 addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
