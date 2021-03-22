@@ -70,7 +70,7 @@ function quizSetup(category, parent){
     parent.innerHTML = "";
     let questionTitle = document.createElement('h3');
     questionTitle.innerHTML = `*** * * ${currentQuestion} * * ***`;
-    questionTitle.style = 'grid-column: 1/-1; justify-self: center; padding: 10px;';
+    questionTitle.style = 'grid-column: 1/-1; justify-self: center; padding: 10px; color:rgb(170, 30, 100)';
     parent.appendChild(questionTitle);
     allAnswers.forEach(question => {
         let li = document.createElement('li');

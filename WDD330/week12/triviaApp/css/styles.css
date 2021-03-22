@@ -26,6 +26,12 @@ main {
   grid-column: 2;
 }
 
+.hide {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 .homeBody {
   display: grid;
   grid-template-columns: 2fr 1fr;
