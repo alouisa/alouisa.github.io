@@ -103,12 +103,21 @@ function quizSetup(category, parent){
 }
 
 function addAnswerEvent(element, answer, btn){
+    let clickCount = 0;
     element.addEventListener('click', e => {
         if (e.target != element){
-        displayAnswer(e.target.innerHTML, quizAnswer, answer);
-        show(btn.parentElement);
-        show(element);
-        show(btn);
+            // const classNameArray = Array.from(element.childNodes).map(item => item.className);
+            // if(!classNameArray.includes('selected')){
+            //     e.target.classList.add('selected');
+
+            // }
+            clickCount ++;
+            console.log(clickCount);
+            displayAnswer(e.target.innerHTML, quizAnswer, answer)
+            btn.parentElement.style = 'animation: 1s fadeIn';
+            show(btn.parentElement);
+            show(element);
+            show(btn);
         }
     }
         );

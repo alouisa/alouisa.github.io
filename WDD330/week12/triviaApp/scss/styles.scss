@@ -104,7 +104,7 @@ main{
 }
 
 .homeIcon{
-    animation: shake 1s 2s;
+    animation: shake 1s 1s;
 }
 
 .mainHeaderLink{
@@ -127,7 +127,7 @@ main{
     padding: 8px; 
     font-size: 1.3rem; 
     border-radius: 50%;
-    animation: fadeInBeat 1.5s 3s forwards;
+    animation: fadeInBeat 1.5s 1s forwards;
 }
 
 // ** main Header Link ** 
@@ -178,6 +178,15 @@ main{
     font-size: 1.2rem; 
     cursor: default;
 }
+.selected{
+    background: url('../images/brain350pxFlipp.png');
+    color: $blueDark;
+    text-shadow: 1px 1px white;
+    transform: scale(1.01);
+}
+.incorrect{
+    text-decoration: line-through;
+}
 
 #continueQuiz{
     display: flex;
@@ -187,6 +196,7 @@ main{
     background: lighten($gray, 60%);
     border-radius: 5px;
 }
+
 #nextBtn{
     background-color: $pinkPurpleLight;
     color: white;
