@@ -93,7 +93,7 @@ function quizSetup(category, parent){
     let allAnswers = (category[i]["incorrect_answers"].concat(category[i]["correct_answer"])).sort();
    
     let questionTitle = document.createElement('h3');
-    questionTitle.innerHTML = `*** * * ${currentQuestion} * * ***`;
+    questionTitle.innerHTML = `* ${currentQuestion} *`;
     parent.parentElement.appendChild(questionTitle);
     createQuizList(parent, allAnswers)
     parent.parentElement.appendChild(parent);

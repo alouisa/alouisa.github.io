@@ -9,7 +9,7 @@ a {
 }
 
 header {
-  color: #aa1e64;
+  color: #c02a8d;
 }
 
 header, h2 {
@@ -17,7 +17,8 @@ header, h2 {
 }
 
 h2 {
-  color: #0b6849;
+  color: #3d5368;
+  text-shadow: 1px 1px white;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -47,17 +48,29 @@ main {
   padding: 5px;
 }
 
+.triviaSection {
+  background: radial-gradient(white, #fcd967);
+  padding-top: 8px;
+  height: 100vh;
+}
+
 .triviaList li {
-  border: 2px solid rgba(153, 153, 153, 0.644);
+  border: 2px solid #b6c6d4;
   border-radius: 5px;
   padding: 1rem;
   margin: 5px;
   cursor: pointer;
-  color: #181818;
+  color: #1e9582;
+  background-color: white;
 }
 .triviaList li:hover {
-  background-color: rgba(129, 121, 204, 0.199);
-  color: black;
+  background: url("../images/brain350px.png");
+  color: #1c4b83;
+}
+@media (min-width: 550px) {
+  .triviaList li {
+    font-size: 1.15rem;
+  }
 }
 
 .homeBody {
@@ -74,7 +87,7 @@ main {
 
 .homeTitle span {
   opacity: 0;
-  color: #ce4303;
+  color: #e5524b;
   animation: fadeIn 3s forwards;
 }
 
@@ -99,7 +112,7 @@ main {
   text-align: center;
   cursor: pointer;
   color: white;
-  background-color: #333;
+  background-color: #1e9582;
   padding: 8px;
   font-size: 1.3rem;
   border-radius: 50%;
@@ -108,7 +121,7 @@ main {
 
 .mainLink-header {
   display: flex;
-  border: 1px solid rgba(167, 164, 164, 0.459);
+  border-bottom: 1px solid #c6d2de;
   padding: 5px;
 }
 
@@ -137,7 +150,7 @@ main {
   }
 }
 
-#quizList {
+#quizList, #quizBody h3 {
   max-width: 500px;
 }
 

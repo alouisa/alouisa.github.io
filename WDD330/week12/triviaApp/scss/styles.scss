@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+//** Variables ** //
+
+$pinkPurpleLight : #c02a8d;
+$pinkPurpleDark : #94288b;
+$yellow : #fac71c;
+$orange : #e5524b; 
+$blueLight : #12768e;
+$blueDark : #1c4b83;
+$green : #1e9582;
+$gray : #3d5368;
+
+$mediumBreak : 'min-width: 550px';
+
 
 // ** Default **
 body{
@@ -10,13 +23,14 @@ a{
 }
 
 header{ 
-    color:rgb(170, 30, 100);
+    color:$pinkPurpleLight;
 }
 header, h2{
     font-family: 'Neucha', cursive;
 }
 h2{
-    color:rgb(11, 104, 73); 
+    color: $gray;
+    text-shadow: 1px 1px white; 
     text-align: center; 
     font-size: 1.8rem;
 }
@@ -44,19 +58,31 @@ main{
     list-style: none;
     padding: 5px;
 }
+
+.triviaSection{
+    background: radial-gradient(white, lighten(#fac71c, 15));
+    padding-top: 8px;
+    height: 100vh;
+}
+
 .triviaList li{
-    border: 2px solid rgba(153, 153, 153, 0.644); 
+    border: 2px solid lighten($gray, 45);
     border-radius: 5px;
     padding: 1rem;
     margin: 5px;
     cursor: pointer;
-    color: rgb(24, 24, 24);
+    color: $green;
+    background-color: white;
    
     &:hover{
-        background-color:rgba(129, 121, 204, 0.199);
-        color: black;
+        background: url('../images/brain350px.png');
+        color: $blueDark;
+    }
+    @media($mediumBreak){
+        font-size: 1.15rem; 
     }
 }
+
 
 // ** HOME **
 .homeBody{
@@ -71,7 +97,7 @@ main{
 }
 .homeTitle span{
     opacity: 0;
-    color: rgb(206, 67, 3);
+    color: $orange;
     animation: fadeIn 3s forwards;
 }
 
@@ -95,7 +121,7 @@ main{
     text-align:center; 
     cursor: pointer; 
     color: white; 
-    background-color: #333; 
+    background-color: $green; 
     padding: 8px; 
     font-size: 1.3rem; 
     border-radius: 50%;
@@ -105,7 +131,7 @@ main{
 // ** main Header Link ** 
 .mainLink-header{
     display: flex; 
-    border: 1px solid rgba(167, 164, 164, 0.459); 
+    border-bottom: 1px solid lighten($gray, 50); 
     padding: 5px;
 }
 
@@ -130,13 +156,13 @@ main{
 }
 
 #categoriesList{
-    @media(min-width: 550px) {
+    @media($mediumBreak) {
     grid-template-columns: 1fr 1fr 1fr; 
     }
 }
 
 // ** Quiz **
-#quizList{
+#quizList, #quizBody h3{
      max-width: 500px;
 }
 
@@ -210,3 +236,5 @@ main{
         transform: translateX(0px);
     }
 }
+
+ 
