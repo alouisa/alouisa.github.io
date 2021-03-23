@@ -205,8 +205,15 @@ main {
   background-color: #c02a8d;
   color: white;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 49%;
   border-radius: 5px;
+}
+@media (min-width: 550px) {
+  #nextBtn {
+    width: 25%;
+  }
 }
 
 @keyframes shake {

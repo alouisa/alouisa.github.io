@@ -215,8 +215,14 @@ main{
     background-color: $pinkPurpleLight;
     color: white;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 49%;
     border-radius: 5px;
+
+    @media($mediumBreak){
+        width: 25%;
+    }
 }
 
 // ** KEYFRAMES ** 
