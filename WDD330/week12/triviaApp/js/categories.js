@@ -1,13 +1,15 @@
-let categoriesContainer = document.getElementsByClassName('categoriesContainer');
-let categories = document.getElementById('categoriesList');
-let categoriesTitle = document.getElementById('categoriesTitle');
-let categoryNames = [];
-var categoryList = [];
+const categoriesContainer = document.getElementsByClassName('categoriesContainer');
+const categories = document.getElementById('categoriesList');
+const categoriesTitle = document.getElementById('categoriesTitle');
+const categoryNames = [];
+const categoryList = [];
 
-let quizParent = document.querySelector('.quizBody');
-let quizTitle = document.getElementById('quizTitle');
-let quizList = document.getElementById('quizList');
-let score = document.getElementById('score');
+const quizParent = document.querySelector('.quizBody');
+const quizTitle = document.getElementById('quizTitle');
+const quizList = document.getElementById('quizList');
+const quizAnswer = document.getElementById('quizAnswer');
+const score = document.getElementById('score');
+const nextBtn = document.getElementById('nextBtn');
 
 function randomInt(min, max) {
     return Math.ceil(Math.random() * (max - min) + min);
@@ -68,13 +70,11 @@ function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
 }
 
 function hide(element){
-    element.classList.remove('show');
     element.classList.add('hide');
 }
 
-function show(parent){
+function show(element){
     element.classList.remove('hide');
-    element.classList.add('show');
 }
 
 function createQuizList(parent, questions){
@@ -90,18 +90,40 @@ function quizSetup(category, parent){
 
     let i = 0;
     let currentQuestion = category[i]["question"];
-    let allAnswers = (category[i]["incorrect_answers"].concat(category[i]["correct_answer"])).sort();
-   
+    let correctAnswer = category[i]["correct_answer"];
+    let allAnswers = (category[i]["incorrect_answers"].concat(correctAnswer)).sort();
+
     let questionTitle = document.createElement('h3');
     questionTitle.innerHTML = `* ${currentQuestion} *`;
     parent.parentElement.appendChild(questionTitle);
     createQuizList(parent, allAnswers)
     parent.parentElement.appendChild(parent);
+    addAnswerEvent(quizList, correctAnswer, nextBtn);
 
 }
 
-function selectAnswerEvent(element){
-    let selectedAnswer = e.target.innerHTML;
+function addAnswerEvent(element, answer, btn){
+    element.addEventListener('click', e => {
+        if (e.target != element){
+        displayAnswer(e.target.innerHTML, quizAnswer, answer);
+        show(btn.parentElement);
+        show(element);
+        show(btn);
+        }
+    }
+        );
+}
+
+function displayAnswer(response, element, correctAnswer){
+    if (response) {
+        if (response == correctAnswer) {
+            element.innerHTML = "<span><b>Correct!</b></span>";
+        }
+        else{
+            element.innerHTML = `<span><b>Incorrect!</b></span><br/>The correct answer was ${correctAnswer}.`;
+        }
+    }
+
 }
 
 addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);

@@ -37,10 +37,7 @@ main {
 
 .hide {
   display: none;
-}
-
-.show {
-  display: block;
+  padding: 0;
 }
 
 .triviaList {
@@ -54,7 +51,6 @@ main {
 
 .triviaSection {
   padding-top: 8px;
-  height: 100vh;
 }
 
 .triviaList li {
@@ -65,10 +61,13 @@ main {
   cursor: pointer;
   color: #1e9582;
   background-color: white;
+  transition: all 0.2s;
 }
 .triviaList li:hover {
-  background: url("../images/brain350px.png");
+  background: url("../images/brain350pxFlipp.png");
   color: #1c4b83;
+  text-shadow: 1px 1px white;
+  transform: scale(1.01);
 }
 @media (min-width: 550px) {
   .triviaList li {
@@ -164,6 +163,23 @@ main {
   padding: 8px;
   font-size: 1.2rem;
   cursor: default;
+}
+
+#continueQuiz {
+  display: flex;
+  max-width: 485px;
+  margin: 0 auto;
+  justify-content: space-between;
+  background: #e6ecf1;
+  border-radius: 5px;
+}
+
+#nextBtn {
+  background-color: #c02a8d;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
 @keyframes shake {
