@@ -87,14 +87,18 @@ main{
 
 // ** HOME **
 .homeBody{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-//    display: grid; 
-//    grid-template-columns: 2fr 1fr;
+   display: grid; 
+   grid-template-columns: 2fr 1fr;
    max-width: 330px; 
    margin: 0 auto;  
+
+   @media($mediumBreak){
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+   }
 }
 
 .homeTitle{
