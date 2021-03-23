@@ -105,6 +105,9 @@ main{
     padding: 8px;
     opacity: 0;
     animation: fadeIn 1s forwards;
+    @media($mediumBreak){
+        padding: 0;
+    }
 }
 .homeTitle span{
     opacity: 0;

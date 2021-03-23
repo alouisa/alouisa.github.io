@@ -95,6 +95,11 @@ main {
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
+@media (min-width: 550px) {
+  .homeTitle {
+    padding: 0;
+  }
+}
 
 .homeTitle span {
   opacity: 0;
