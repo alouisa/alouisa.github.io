@@ -53,7 +53,6 @@ main {
 }
 
 .triviaSection {
-  background: radial-gradient(white, #fde699);
   padding-top: 8px;
   height: 100vh;
 }
@@ -82,11 +81,6 @@ main {
   grid-template-columns: 2fr 1fr;
   max-width: 330px;
   margin: 0 auto;
-  background: linear-gradient(#fdecb2, white);
-}
-
-.homeBody .homeIcon {
-  border-radius: 50%;
 }
 
 .homeTitle {

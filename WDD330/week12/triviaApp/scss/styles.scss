@@ -64,7 +64,6 @@ main{
 }
 
 .triviaSection{
-    background: radial-gradient(white, lighten(#fac71c, 25));
     padding-top: 8px;
     height: 100vh;
 }
@@ -93,12 +92,9 @@ main{
    display: grid; 
    grid-template-columns: 2fr 1fr;
    max-width: 330px; 
-   margin: 0 auto; 
-   background: linear-gradient(lighten(#fac71c, 30), white); 
+   margin: 0 auto;  
 }
-.homeBody .homeIcon{
-    border-radius: 50%;
-}
+
 .homeTitle{
     opacity: 0;
     animation: fadeIn 1s forwards;
