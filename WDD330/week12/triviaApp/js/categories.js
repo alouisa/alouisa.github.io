@@ -111,6 +111,9 @@ function addAnswerEvent(element, answer, btn){
             //     e.target.classList.add('selected');
 
             // }
+            if(e.target.innerHTML != answer){
+                e.target.classList.add('incorrect');
+            }
             clickCount ++;
             console.log(clickCount);
             displayAnswer(e.target.innerHTML, quizAnswer, answer)
@@ -129,7 +132,7 @@ function displayAnswer(response, element, correctAnswer){
             element.innerHTML = "<span><b>Correct!</b></span>";
         }
         else{
-            element.innerHTML = `<span><b>Incorrect!</b></span><br/>The correct answer was ${correctAnswer}.`;
+            element.innerHTML = `<span><b>Incorrect!</b>`;
         }
     }
 
