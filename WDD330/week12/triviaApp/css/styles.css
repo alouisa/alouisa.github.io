@@ -26,6 +26,9 @@ h2 {
 h3 {
   text-align: center;
   color: #3d5368;
+  background-color: white;
+  padding: 8px;
+  border-radius: 30%;
 }
 
 main {
@@ -50,7 +53,7 @@ main {
 }
 
 .triviaSection {
-  background: radial-gradient(white, #fcd967);
+  background: radial-gradient(white, #fde699);
   padding-top: 8px;
   height: 100vh;
 }
@@ -79,6 +82,11 @@ main {
   grid-template-columns: 2fr 1fr;
   max-width: 330px;
   margin: 0 auto;
+  background: linear-gradient(#fdecb2, white);
+}
+
+.homeBody .homeIcon {
+  border-radius: 50%;
 }
 
 .homeTitle {

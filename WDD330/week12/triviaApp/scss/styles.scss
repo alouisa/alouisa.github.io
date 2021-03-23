@@ -37,6 +37,9 @@ h2{
 h3{
     text-align: center;
     color: #3d5368;
+    background-color: white;
+    padding: 8px;
+    border-radius: 30%;
 }
 main{
     grid-column: 2;
@@ -61,7 +64,7 @@ main{
 }
 
 .triviaSection{
-    background: radial-gradient(white, lighten(#fac71c, 15));
+    background: radial-gradient(white, lighten(#fac71c, 25));
     padding-top: 8px;
     height: 100vh;
 }
@@ -90,7 +93,11 @@ main{
    display: grid; 
    grid-template-columns: 2fr 1fr;
    max-width: 330px; 
-   margin: 0 auto;  
+   margin: 0 auto; 
+   background: linear-gradient(lighten(#fac71c, 30), white); 
+}
+.homeBody .homeIcon{
+    border-radius: 50%;
 }
 .homeTitle{
     opacity: 0;
