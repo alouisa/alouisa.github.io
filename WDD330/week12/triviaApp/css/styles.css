@@ -17,7 +17,7 @@ header, h2 {
 }
 
 h2 {
-  color: #3d5368;
+  color: #12768e;
   text-shadow: 1px 1px white;
   text-align: center;
   font-size: 1.8rem;
@@ -25,6 +25,7 @@ h2 {
 
 h3 {
   text-align: center;
+  color: #3d5368;
 }
 
 main {
@@ -150,7 +151,7 @@ main {
   }
 }
 
-#quizList, #quizBody h3 {
+#quizList {
   max-width: 500px;
 }
 

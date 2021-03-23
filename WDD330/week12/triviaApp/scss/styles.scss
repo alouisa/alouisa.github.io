@@ -29,13 +29,14 @@ header, h2{
     font-family: 'Neucha', cursive;
 }
 h2{
-    color: $gray;
+    color: $blueLight;
     text-shadow: 1px 1px white; 
     text-align: center; 
     font-size: 1.8rem;
 }
 h3{
     text-align: center;
+    color: #3d5368;
 }
 main{
     grid-column: 2;
@@ -162,9 +163,11 @@ main{
 }
 
 // ** Quiz **
-#quizList, #quizBody h3{
+
+#quizList{
      max-width: 500px;
 }
+
 
 #score{ 
     display: flex; 
