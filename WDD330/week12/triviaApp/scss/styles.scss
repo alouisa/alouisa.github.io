@@ -67,6 +67,7 @@ main{
     color: $green;
     background-color: white;
     transition: all 0.2s;
+    box-shadow: rgb(230, 236, 241) 2px 2px 6px 3px;
    
     &:hover{
         background: url('../images/brain350pxFlipp.png');
@@ -229,7 +230,7 @@ main{
 #quizAnswer{
     padding-left: 11px;
     align-self: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 #nextBtn{

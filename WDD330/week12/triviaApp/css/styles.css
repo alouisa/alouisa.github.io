@@ -57,6 +57,7 @@ main {
   color: #1e9582;
   background-color: white;
   transition: all 0.2s;
+  box-shadow: #e6ecf1 2px 2px 6px 3px;
 }
 .triviaList li:hover {
   background: url("../images/brain350pxFlipp.png");
@@ -218,7 +219,7 @@ main {
 #quizAnswer {
   padding-left: 11px;
   align-self: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #nextBtn {
