@@ -108,6 +108,8 @@ function quizSetup(category, parent, i = 0){
     else{
         hide(nextBtn);
         continueBtn.classList.remove('hide');
+        // createCategoryList(categoryList, categoryNames, 6);
+        // continueBtn.addEventListener('click', addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle));
     }
 }
 

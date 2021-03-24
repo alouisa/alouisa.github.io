@@ -126,6 +126,9 @@ main{
     display: block;
     max-width: 100%;
     animation: shake 1s 1s;
+    // &:hover{
+    //    animation: fadeInBeat 1s;
+    // }
 }
 
 .mainHeaderLink{
