@@ -281,6 +281,14 @@ main {
     opacity: 100%;
   }
 }
+@keyframes fadeOut {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0%;
+  }
+}
 @keyframes slideInRight {
   from {
     transform: translateX(-300px);
