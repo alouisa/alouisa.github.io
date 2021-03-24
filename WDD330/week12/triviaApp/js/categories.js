@@ -139,10 +139,10 @@ function addAnswerEvent(element, answer, btn){
 function displayAnswer(response, element, correctAnswer){
     if (response) {
         if (response == correctAnswer) {
-            element.innerHTML = `<span style="color:green;"><b>Correct!</b></span>`;
+            element.innerHTML = `<span style="color:#1e9582;"><b>Correct!</b></span>`;
         }
         else{
-            element.innerHTML = `<span style="color:red;"><b>Incorrect!</b> Try Again.`;
+            element.innerHTML = `<span style="color:#e5524b;"><b>Incorrect!</b> Try Again.`;
         }
     }
 

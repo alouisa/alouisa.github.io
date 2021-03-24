@@ -211,11 +211,12 @@ main{
 .incorrect{
     text-decoration: line-through;
 }
-.correct{
+.triviaList li.correct{
     background: url('../images/brain350pxFlipp.png');
     color: $blueDark;
     text-shadow: 1px 1px white;
-    transform: scale(1.01); 
+    transform: scale(1.01);
+    border: 2px solid $yellow; 
 }
 
 #continueQuiz{

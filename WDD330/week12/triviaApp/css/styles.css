@@ -200,11 +200,12 @@ main {
   text-decoration: line-through;
 }
 
-.correct {
+.triviaList li.correct {
   background: url("../images/brain350pxFlipp.png");
   color: #1c4b83;
   text-shadow: 1px 1px white;
   transform: scale(1.01);
+  border: 2px solid #fac71c;
 }
 
 #continueQuiz {
