@@ -199,6 +199,13 @@ main {
   text-decoration: line-through;
 }
 
+.correct {
+  background: url("../images/brain350pxFlipp.png");
+  color: #1c4b83;
+  text-shadow: 1px 1px white;
+  transform: scale(1.01);
+}
+
 #continueQuiz {
   display: flex;
   max-width: 485px;

@@ -9,7 +9,7 @@ const quizParent = document.querySelector('.quizBody');
 const quizTitle = document.getElementById('quizTitle');
 const quizList = document.getElementById('quizList');
 const quizQuestion = document.getElementById('quizQuestion');
-const quizAnswer = document.getElementById('quizAnswer');
+let quizAnswer = document.getElementById('quizAnswer');
 const score = document.getElementById('score');
 const nextBtn = document.getElementById('nextBtn');
 const continueBtn = document.getElementById('continueBtn');
@@ -103,6 +103,9 @@ function quizSetup(category, parent, i = 0){
     i++; 
     if (i < 10){
         nextBtn.addEventListener('click', () => {
+           let children = Array.from(quizList.childNodes);
+           console.log(children);
+            quizAnswer.innerHTML = '';
             quizSetup(currentCategory, quizList, i);
         });
     }
@@ -115,14 +118,14 @@ function quizSetup(category, parent, i = 0){
 function addAnswerEvent(element, answer, btn){
     let clickCount = 0;
     element.addEventListener('click', e => {
+        e.target.classList.remove('incorrect');
+        e.target.classList.remove('correct');
         if (e.target != element){
-            // const classNameArray = Array.from(element.childNodes).map(item => item.className);
-            // if(!classNameArray.includes('selected')){
-            //     e.target.classList.add('selected');
-
-            // }
             if(e.target.innerHTML != answer){
                 e.target.classList.add('incorrect');
+            }
+            else{
+                e.target.classList.add('correct');
             }
             clickCount ++;
             console.log(clickCount);

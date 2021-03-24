@@ -208,6 +208,12 @@ main{
 .incorrect{
     text-decoration: line-through;
 }
+.correct{
+    background: url('../images/brain350pxFlipp.png');
+    color: $blueDark;
+    text-shadow: 1px 1px white;
+    transform: scale(1.01); 
+}
 
 #continueQuiz{
     display: flex;
