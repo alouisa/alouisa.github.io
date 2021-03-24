@@ -97,6 +97,7 @@ function quizSetup(category, parent, i = 0){
     addAnswerEvent(quizList, correctAnswer, nextBtn);
     i++; 
     if (i < 10){
+        show(nextBtn);
         nextBtn.addEventListener('click', () => {
            let children = Array.from(quizList.childNodes);
            console.log(children);
@@ -128,7 +129,6 @@ function addAnswerEvent(element, answer, btn){
             btn.parentElement.style = 'animation: 1s fadeIn';
             show(btn.parentElement);
             show(element);
-            show(btn);
         }
     }
         );
