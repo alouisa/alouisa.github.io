@@ -35,11 +35,6 @@ main {
   grid-column: 2;
 }
 
-.hide {
-  display: none;
-  padding: 0;
-}
-
 .triviaList {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -73,6 +68,18 @@ main {
   .triviaList li {
     font-size: 1.15rem;
   }
+}
+
+.triviaBtn {
+  display: block;
+  background-color: #c02a8d;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 49%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .homeBody {
@@ -202,18 +209,23 @@ main {
 }
 
 #nextBtn {
-  background-color: #c02a8d;
-  color: white;
-  border: none;
-  font-size: 1.3rem;
-  padding: 5px;
   width: 49%;
-  border-radius: 5px;
 }
 @media (min-width: 550px) {
   #nextBtn {
     width: 25%;
   }
+}
+
+#continueBtn {
+  max-width: 489px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+  padding: 0;
 }
 
 @keyframes shake {

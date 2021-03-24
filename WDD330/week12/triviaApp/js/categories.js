@@ -3,13 +3,16 @@ const categories = document.getElementById('categoriesList');
 const categoriesTitle = document.getElementById('categoriesTitle');
 const categoryNames = [];
 const categoryList = [];
+let currentCategory = '';
 
 const quizParent = document.querySelector('.quizBody');
 const quizTitle = document.getElementById('quizTitle');
 const quizList = document.getElementById('quizList');
+const quizQuestion = document.getElementById('quizQuestion');
 const quizAnswer = document.getElementById('quizAnswer');
 const score = document.getElementById('score');
 const nextBtn = document.getElementById('nextBtn');
+const continueBtn = document.getElementById('continueBtn');
 
 function randomInt(min, max) {
     return Math.ceil(Math.random() * (max - min) + min);
@@ -25,6 +28,15 @@ function createRandomList(listLength, min, max) {
     }
     return randomList;
 }
+
+function hide(element) {
+    element.classList.add('hide');
+}
+
+function show(element) {
+    element.classList.remove('hide');
+}
+
 
 function fetchCategory(category, amount) {
     return fetch(`https://opentdb.com/api.php?amount=${amount}&type=multiple&category=${category}`)
@@ -52,15 +64,15 @@ function setCategory(item, parent) {
 }
 
 createCategoryList(categoryList, categoryNames, 6);
-console.log(categoryList);
-console.log(categoryNames);
+// console.log(categoryList);
+// console.log(categoryNames);
 
 
 function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
     categoryUL.onclick = e => {
         if (e.target != categoryUL){
             let targetText = e.target.innerText;
-            let currentCategory = list2[list1.indexOf(targetText)]
+            currentCategory = list2[list1.indexOf(targetText)]
             title.innerHTML = `Category= ${targetText}`;
             quizSetup(currentCategory, quizUL);
             hide(categoryUL.parentElement.parentElement);
@@ -69,13 +81,6 @@ function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
 }
 }
 
-function hide(element){
-    element.classList.add('hide');
-}
-
-function show(element){
-    element.classList.remove('hide');
-}
 
 function createQuizList(parent, questions){
     questions.forEach(question => {
@@ -86,20 +91,25 @@ function createQuizList(parent, questions){
     });
 }
 
-function quizSetup(category, parent){
-
-    let i = 0;
+function quizSetup(category, parent, i = 0){
     let currentQuestion = category[i]["question"];
     let correctAnswer = category[i]["correct_answer"];
     let allAnswers = (category[i]["incorrect_answers"].concat(correctAnswer)).sort();
-
-    let questionTitle = document.createElement('h3');
-    questionTitle.innerHTML = `* ${currentQuestion} *`;
-    parent.parentElement.appendChild(questionTitle);
+    quizQuestion.innerHTML = `* ${currentQuestion} *`;
+    parent.innerHTML = '';
     createQuizList(parent, allAnswers)
     parent.parentElement.appendChild(parent);
     addAnswerEvent(quizList, correctAnswer, nextBtn);
-
+    i++; 
+    if (i < 10){
+        nextBtn.addEventListener('click', () => {
+            quizSetup(currentCategory, quizList, i);
+        });
+    }
+    else{
+        hide(nextBtn);
+        continueBtn.classList.remove('hide');
+    }
 }
 
 function addAnswerEvent(element, answer, btn){
