@@ -63,11 +63,6 @@ function setCategory(item, parent) {
 
 }
 
-createCategoryList(categoryList, categoryNames, 6);
-// console.log(categoryList);
-// console.log(categoryNames);
-
-
 function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
     categoryUL.onclick = e => {
         if (e.target != categoryUL){
@@ -151,4 +146,5 @@ function displayAnswer(response, element, correctAnswer){
 
 }
 
+createCategoryList(categoryList, categoryNames, 6);
 addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
