@@ -215,6 +215,12 @@ main {
   border-radius: 5px;
 }
 
+#quizAnswer {
+  padding-left: 11px;
+  align-self: center;
+  font-size: 1.1rem;
+}
+
 #nextBtn {
   width: 49%;
 }

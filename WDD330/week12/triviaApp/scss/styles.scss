@@ -190,7 +190,6 @@ main{
      max-width: 500px;
 }
 
-
 #score{ 
     display: flex; 
     align-self: center; 
@@ -222,6 +221,12 @@ main{
     justify-content: space-between;
     background: lighten($gray, 60%);
     border-radius: 5px;
+}
+
+#quizAnswer{
+    padding-left: 11px;
+    align-self: center;
+    font-size: 1.1rem;
 }
 
 #nextBtn{
