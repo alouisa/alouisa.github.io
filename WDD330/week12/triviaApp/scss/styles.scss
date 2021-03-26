@@ -112,15 +112,15 @@ main{
 .homeTitle{
     padding: 8px;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 2s forwards;
     @media($mediumBreak){
         padding: 0;
     }
 }
 .homeTitle span{
-    opacity: 0;
+    display: inline-block;
     color: $orange;
-    animation: fadeIn 3s forwards;
+    animation: shake 1s 1s ;
 }
 
 .homeIcon{

@@ -10,9 +10,12 @@ const quizTitle = document.getElementById('quizTitle');
 const quizList = document.getElementById('quizList');
 const quizQuestion = document.getElementById('quizQuestion');
 let quizAnswer = document.getElementById('quizAnswer');
-const score = document.getElementById('score');
+let score = document.getElementById('score');
 const nextBtn = document.getElementById('nextBtn');
 const continueBtn = document.getElementById('continueBtn');
+
+let scoreCount = 0;
+// let clickCount = 0;
 
 function randomInt(min, max) {
     return Math.ceil(Math.random() * (max - min) + min);
@@ -68,7 +71,7 @@ function addCategoryEvent(list1, list2, categoryUL, quizUL, title){
         if (e.target != categoryUL){
             let targetText = e.target.innerText;
             currentCategory = list2[list1.indexOf(targetText)]
-            title.innerHTML = `Category= ${targetText}`;
+            title.innerHTML = `${targetText}`;
             quizSetup(currentCategory, quizUL);
             hide(categoryUL.parentElement.parentElement);
         }
@@ -89,6 +92,7 @@ function createQuizList(parent, questions){
 function quizSetup(category, parent, i = 0){
     let currentQuestion = category[i]["question"];
     let correctAnswer = category[i]["correct_answer"];
+    console.log(correctAnswer);
     let allAnswers = (category[i]["incorrect_answers"].concat(correctAnswer)).sort();
     quizQuestion.innerHTML = `* ${currentQuestion} *`;
     parent.innerHTML = '';
@@ -98,9 +102,8 @@ function quizSetup(category, parent, i = 0){
     i++; 
     if (i < 10){
         show(nextBtn);
+        // clickCount = 0;
         nextBtn.addEventListener('click', () => {
-           let children = Array.from(quizList.childNodes);
-           console.log(children);
             quizAnswer.innerHTML = '';
             quizSetup(currentCategory, quizList, i);
         });
@@ -108,29 +111,31 @@ function quizSetup(category, parent, i = 0){
     else{
         hide(nextBtn);
         continueBtn.classList.remove('hide');
-        // createCategoryList(categoryList, categoryNames, 6);
-        // continueBtn.addEventListener('click', addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle));
     }
 }
 
 function addAnswerEvent(element, answer, btn){
-    let clickCount = 0;
     element.addEventListener('click', e => {
+        // clickCount += 1;
         e.target.classList.remove('incorrect');
         e.target.classList.remove('correct');
         if (e.target != element){
-            if(e.target.innerHTML != answer){
+            if(e.target.innerText != answer){
                 e.target.classList.add('incorrect');
+                displayScore();
             }
             else{
                 e.target.classList.add('correct');
+                // if(clickCount == 1){
+                    scoreCount += 1;
+                    displayScore();
+                // }
             }
-            clickCount ++;
-            console.log(clickCount);
+
             displayAnswer(e.target.innerHTML, quizAnswer, answer)
-            btn.parentElement.style = 'animation: 1s fadeIn';
             show(btn.parentElement);
             show(element);
+            // console.log(clickCount);
         }
     }
         );
@@ -146,6 +151,10 @@ function displayAnswer(response, element, correctAnswer){
         }
     }
 
+}
+
+function displayScore(){
+    score.innerHTML = `Score: ${scoreCount}/10`;
 }
 
 createCategoryList(categoryList, categoryNames, 6);

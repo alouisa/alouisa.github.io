@@ -101,7 +101,7 @@ main {
 .homeTitle {
   padding: 8px;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fadeIn 2s forwards;
 }
 @media (min-width: 550px) {
   .homeTitle {
@@ -110,9 +110,9 @@ main {
 }
 
 .homeTitle span {
-  opacity: 0;
+  display: inline-block;
   color: #e5524b;
-  animation: fadeIn 3s forwards;
+  animation: shake 1s 1s;
 }
 
 .homeIcon {

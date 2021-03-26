@@ -15,7 +15,7 @@
         <header class="mainLink-header">
             <img class="mainLink-icon" src="images/brain50px.png" alt="simple drawing of brain with a splash of color">
             <h1 class="mainLink_title">Can your BRAIN<br>Weather this STORM?</h1>
-            <div id="score">Score: 0</div>
+            <div id="score"></div>
         </header>
     </a>
     <main>
@@ -25,16 +25,18 @@
                 <ul id="categoriesList" class="triviaList"></ul>
             </div>
         </section>
-        <section class="quizBody triviaSection">
-            <h2 id="quizTitle" class="triviaTitle"></h2>
-            <h3 id="quizQuestion"></h3>
-            <ul id="quizList" class="triviaList"></ul>
-        </section>
-        <section id="continueQuiz" class="hide">
-            <div id="quizAnswer"></div>
-            <button id="nextBtn" class="hide triviaBtn">Next</button>
-        </section>
+        <div class="quiz">
+            <section class="quizBody triviaSection">
+                <h2 id="quizTitle" class="triviaTitle"></h2>
+                <h3 id="quizQuestion"></h3>
+                <ul id="quizList" class="triviaList"></ul>
+            </section>
+            <section id="continueQuiz" class="hide">
+                <div id="quizAnswer"></div>
+                <button id="nextBtn" class="hide triviaBtn">Next</button>
+            </section>
             <button id="continueBtn" class="hide triviaBtn">New Category</button>
+        </div>
     </main>
     <script src="js/categories.js"></script>
 </body>
