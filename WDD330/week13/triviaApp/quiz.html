@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 13 triviaApp</title>
+    <meta name="description" content="WDD 330 Week 13 triviaApp progress">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <a class="mainLink" href="index.html">
+        <header class="mainLink-header">
+            <img class="mainLink-icon" src="images/brain50px.png" alt="simple drawing of brain with a splash of color">
+            <h1 class="mainLink_title">Can your BRAIN<br>Weather this STORM?</h1>
+            <div id="score"></div>
+        </header>
+    </a>
+    <main>
+        <section class="categoriesContainer triviaSection">
+            <h2 id="categoriesTitle" class="triviaTitle">Choose Your Category</h2>
+            <div class="categoriesBody">
+                <ul id="categoriesList" class="triviaList"></ul>
+            </div>
+        </section>
+        <div class="quiz">
+            <section class="quizBody triviaSection">
+                <h2 id="quizTitle" class="triviaTitle"></h2>
+                <h3 id="quizQuestion"></h3>
+                <ul id="quizList" class="triviaList"></ul>
+            </section>
+            <section id="continueQuiz" class="hide">
+                <div id="quizAnswer"></div>
+                <button id="nextBtn" class="hide triviaBtn">Next</button>
+            </section>
+            <button id="continueBtn" class="hide triviaBtn" onclick="location.href='quiz.html'">New Category</button>
+        </div>
+    </main>
+    <script src="js/categories.js"></script>
+</body>
+
+</html>
