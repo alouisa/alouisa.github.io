@@ -110,7 +110,7 @@ function quizSetup(category, parent, i = 0){
     }
     else{
         hide(nextBtn);
-        continueBtn.classList.remove('hide');
+        show(continueBtn);
     }
 }
 
@@ -159,3 +159,13 @@ function displayScore(){
 
 createCategoryList(categoryList, categoryNames, 6);
 addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
+
+
+// continueBtn.addEventListener('click', ()=>{
+//     hide(quizParent); 
+//     hide(continueBtn);
+//     categories.innerHTML = '';
+//     createCategoryList(categoryList, categoryNames, 6);
+//     show(categories.parentElement.parentElement);
+//     addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
+// });
