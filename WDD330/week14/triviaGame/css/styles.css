@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+body {
+  margin: 0;
+  opacity: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  color: #c02a8d;
+}
+
+header, h2 {
+  font-family: "Neucha", cursive;
+}
+
+h2 {
+  color: #12768e;
+  text-shadow: 2px 2px white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+h3 {
+  text-align: center;
+  color: #3d5368;
+  background-color: white;
+  padding: 8px;
+  border-radius: 30%;
+}
+
+main {
+  grid-column: 2;
+}
+
+.triviaList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 850px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 5px;
+}
+
+.triviaSection {
+  padding-top: 8px;
+}
+
+.triviaList li {
+  border: 2px solid #b6c6d4;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  color: #1e9582;
+  background-color: white;
+  transition: all 0.2s;
+  box-shadow: #e6ecf1 2px 2px 6px 3px;
+}
+.triviaList li:hover {
+  background: url("../images/brain350pxFlipp.png");
+  color: #1c4b83;
+  text-shadow: 1px 1px white;
+  transform: scale(1.01);
+}
+@media (min-width: 550px) {
+  .triviaList li {
+    font-size: 1.15rem;
+  }
+}
+
+.triviaBtn {
+  display: block;
+  background-color: #c02a8d;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 49%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.homeBody {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 330px;
+  margin: 0 auto;
+}
+@media (min-width: 550px) {
+  .homeBody {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.homeTitle {
+  padding: 8px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@media (min-width: 550px) {
+  .homeTitle {
+    padding: 0;
+  }
+}
+
+.homeTitle span {
+  display: inline-block;
+  color: #e5524b;
+  animation: shake 1s 1s;
+}
+
+.homeIcon {
+  display: block;
+  max-width: 100%;
+  animation: shake 1s 1s;
+}
+
+.mainHeaderLink {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homeHeader {
+  grid-column: 1/3;
+  font-size: 1.1rem;
+}
+
+.categoriesLink {
+  opacity: 0;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: #1e9582;
+  padding: 8px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  animation: fadeInBeat 1.5s 1s forwards;
+}
+
+.mainLink-header {
+  display: flex;
+  border-bottom: 1px solid #c6d2de;
+  padding: 5px;
+}
+
+.mainLink-icon {
+  align-self: center;
+  justify-self: center;
+  transform: translateX(-300px);
+  animation: slideInRight 1s 1s forwards;
+}
+
+.mainLink_title {
+  font-size: 1.2rem;
+  transform: translateX(-300px);
+  animation: slideInRight 2s forwards;
+}
+
+.categoryOption {
+  border: 1px solid rgba(167, 164, 164, 0.459);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+@media (min-width: 550px) {
+  #categoriesList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#quizList {
+  max-width: 500px;
+}
+
+#score {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  padding: 8px;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.selected {
+  background: url("../images/brain350pxFlipp.png");
+  color: #1c4b83;
+  text-shadow: 1px 1px white;
+  transform: scale(1.01);
+}
+
+.incorrect {
+  text-decoration: line-through;
+}
+
+.triviaList li.correct {
+  background: url("../images/brain350pxFlipp.png");
+  color: #1c4b83;
+  text-shadow: 1px 1px white;
+  transform: scale(1.01);
+  border: 2px solid #fac71c;
+}
+
+#continueQuiz {
+  display: flex;
+  max-width: 485px;
+  margin: 0 auto;
+  justify-content: space-between;
+  background: #e6ecf1;
+  border-radius: 5px;
+}
+
+#quizAnswer {
+  padding-left: 11px;
+  align-self: center;
+  font-size: 1.3rem;
+}
+
+#nextBtn {
+  width: 49%;
+}
+@media (min-width: 550px) {
+  #nextBtn {
+    width: 25%;
+  }
+}
+
+#continueBtn {
+  max-width: 489px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+  padding: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateX(0deg) translate(5px);
+  }
+  50% {
+    transform: rotateY(25deg) translate(-5px);
+  }
+  63% {
+    transform: rotateX(-25deg) translate(5px);
+  }
+  75% {
+    transform: rotateY(-25deg) translate(-5px);
+  }
+}
+@keyframes fadeInBeat {
+  0% {
+    opacity: 0%;
+  }
+  85% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 75%;
+    transform: scale(1.2);
+  }
+  90% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+  95% {
+    opacity: 75%;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
