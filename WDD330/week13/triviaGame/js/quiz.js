@@ -96,7 +96,7 @@ export default class Quiz {
         this.score.innerHTML = `Score: ${this.scoreCount}/10`;
     }
 
-    nextEvent() {
+    next() {
         if (this.index < 10) {
             show(this.nextBtn);
             // clickCount = 0;
