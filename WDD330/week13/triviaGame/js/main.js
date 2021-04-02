@@ -1,4 +1,6 @@
-import { createCategoryList, addCategoryEvent } from './categories.js';
+import Categories  from './categories.js';
 
-createCategoryList(categoryList, categoryNames, 6);
-addCategoryEvent(categoryNames, categoryList, categories, quizList, quizTitle);
+let newCategories = new Categories();
+
+newCategories.createCategoryList();
+newCategories.addCategoryEvent();
