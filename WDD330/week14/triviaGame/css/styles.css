@@ -217,7 +217,7 @@ main {
   border-radius: 5px;
 }
 
-#quizAnswer {
+#answerDisplayBox {
   padding-left: 11px;
   align-self: center;
   font-size: 1.3rem;
