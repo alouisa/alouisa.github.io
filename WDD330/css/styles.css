@@ -43,7 +43,7 @@ main {
   padding-right: 5px;
   padding-bottom: 40px;
 }
-#linkList a {
+#linkList li a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #2d617e;
@@ -53,9 +53,20 @@ main {
   border: 1.4px solid pink;
   border-radius: 5px;
 }
-#linkList a:hover {
+#linkList li a:hover {
   color: #fafbfc;
   background-color: #f862a1;
+}
+#linkList li:nth-of-type(n + 14) a {
+  background-color: white;
+  color: #e62887;
+  transition: all 0.5s;
+}
+#linkList li:nth-of-type(n + 14) a:hover {
+  background-color: #e1fae6;
+}
+#linkList li:nth-of-type(n + 10) a {
+  padding: 1rem 2.64rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

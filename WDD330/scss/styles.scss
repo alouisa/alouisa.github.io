@@ -37,8 +37,7 @@ main{
     li{
         padding-right: 5px;
         padding-bottom: 40px;
-    }
-    a{
+         a{
         text-decoration: none;
         font-size: 1.5rem;
         color:  rgb(45, 97, 126);
@@ -50,7 +49,20 @@ main{
         &:hover{
             color: rgb(250, 251, 252);
             background-color: rgb(248, 98, 161);
+            }
         }
 
+        &:nth-of-type(n + 14) a{
+            background-color: white;
+            color:rgb(230, 40, 135);
+            transition: all 0.5s;
+            &:hover{
+                background-color: #e1fae6;
+            } 
+        }
+        &:nth-of-type(n + 10) a{
+            padding: 1rem 2.64rem;
+        }
     }
+   
 }
