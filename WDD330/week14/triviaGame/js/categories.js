@@ -39,6 +39,7 @@ export default class Categories {
                 let quiz = new Quiz(this.currentCategory, targetText);
                 quiz.title.innerHTML = `${targetText}`;
                 quiz.setup();
+                quiz.checkAnswer(quiz.quizList, quiz.nextBtn);
                 quiz.next();
                 
             }
