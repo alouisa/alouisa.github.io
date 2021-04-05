@@ -193,6 +193,10 @@ main{
     font-size: 1.2rem; 
     cursor: default;
 }
+#score .hide{
+    display: none;
+    padding: 0;
+}
 #finalScore{
     display: flex;
     justify-content: center;
