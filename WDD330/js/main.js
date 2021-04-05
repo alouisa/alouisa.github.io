@@ -53,7 +53,7 @@ const links = [
     },
     {
         label: "14",
-        url: "week14/index.html"
+        url: "week14/triviaGame/index.html"
     },
     {
         label: "🌺",
