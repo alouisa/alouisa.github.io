@@ -21,7 +21,7 @@ main{
 
 }
 .list-header{
-    max-width: 342px;
+    max-width: 346px;
     font-size: 1.75rem;
     color:  rgb(18, 61, 126);
     padding: 5px;
@@ -35,8 +35,8 @@ main{
     flex-wrap: wrap;
     min-width: 350px;
     li{
-        padding-right: 5px;
-        padding-bottom: 40px;
+        padding-right: 10px;
+        padding-bottom: 45px;
          a{
         text-decoration: none;
         font-size: 1.5rem;
@@ -44,7 +44,7 @@ main{
         background-color: rgb(245, 245, 228);
         padding: 1rem 3rem;
         transition: 0.5s color;
-        border: 1.4px solid pink;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 255, .2);
         border-radius: 5px;
         &:hover{
             color: rgb(250, 251, 252);
@@ -52,12 +52,13 @@ main{
             }
         }
 
-        &:nth-of-type(n + 14) a{
-            background-color: white;
+        &:nth-of-type(6) a, &:nth-of-type(n + 14) a{
+            background-color: #f2faf3;
             color:rgb(230, 40, 135);
             transition: all 0.5s;
             &:hover{
-                background-color: #e1fae6;
+                color: white;
+                background-color: rgb(51, 160, 154);
             } 
         }
         &:nth-of-type(n + 10) a{

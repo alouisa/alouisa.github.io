@@ -24,7 +24,7 @@ main {
 }
 
 .list-header {
-  max-width: 342px;
+  max-width: 346px;
   font-size: 1.75rem;
   color: #123d7e;
   padding: 5px;
@@ -40,8 +40,8 @@ main {
   min-width: 350px;
 }
 #linkList li {
-  padding-right: 5px;
-  padding-bottom: 40px;
+  padding-right: 10px;
+  padding-bottom: 45px;
 }
 #linkList li a {
   text-decoration: none;
@@ -50,20 +50,21 @@ main {
   background-color: #f5f5e4;
   padding: 1rem 3rem;
   transition: 0.5s color;
-  border: 1.4px solid pink;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 255, 0.2);
   border-radius: 5px;
 }
 #linkList li a:hover {
   color: #fafbfc;
   background-color: #f862a1;
 }
-#linkList li:nth-of-type(n + 14) a {
-  background-color: white;
+#linkList li:nth-of-type(6) a, #linkList li:nth-of-type(n + 14) a {
+  background-color: #f2faf3;
   color: #e62887;
   transition: all 0.5s;
 }
-#linkList li:nth-of-type(n + 14) a:hover {
-  background-color: #e1fae6;
+#linkList li:nth-of-type(6) a:hover, #linkList li:nth-of-type(n + 14) a:hover {
+  color: white;
+  background-color: #33a09a;
 }
 #linkList li:nth-of-type(n + 10) a {
   padding: 1rem 2.64rem;
