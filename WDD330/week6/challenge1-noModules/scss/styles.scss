@@ -6,11 +6,17 @@
 .backArrow{
     font-size: 2.5rem;
     padding: 0.5rem;
-    transition: all 0.5s;
+    transition: all 0.5s; 
 }
 .backArrow:hover{
     color:rgb(247, 74, 103);
 }
+.headerBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .filterContainer p{
     transition: all 0.25s;
     font-size: 1.1rem;
@@ -29,6 +35,8 @@ body{
 
 header{
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
 }
 header, footer{
     color:white;
