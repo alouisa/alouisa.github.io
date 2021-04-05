@@ -1,3 +1,4 @@
+import { saveTodos, removeLocalToDo } from './ls.js'
 //Selectors
 const todoInput = document.querySelector(".todoInput");
 export const todoBtn = document.querySelector(".todoBtn");
