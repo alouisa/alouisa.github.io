@@ -1,6 +1,6 @@
-import { todoInput, todoList, toDoCount } from './utilities.js';
-//Local Storage
+//create localStorage helper functions here
 
+//Local Storage
 export function saveTodos(todo) {
     let todos;
     if (localStorage.getItem('todos') == null) {
@@ -26,7 +26,7 @@ export function getTodos(key) {
     toDoCount();
 }
 
-export function renderToDoList(list) {
+export function renderToDoList(list, element) {
     list.forEach(todo => {
         const text =
             `<li class="todo">
@@ -35,8 +35,8 @@ export function renderToDoList(list) {
             <i class="trashBtn far fa-trash-alt"></i>
         </li>`;
 
-        todoList.insertAdjacentHTML("beforeend", text);
-        todoInput.value = "";
+        element.insertAdjacentHTML("beforeend", text);
+        element.value = "";
         toDoCount();
     });
 }
@@ -49,8 +49,8 @@ export function removeLocalToDo(todo) {
     else {
         todos = JSON.parse(localStorage.getItem('todos'));
     };
-    let todoText = todo.children[1].innerText;
-    let todoIndex = todos.indexOf(todoText);
+    todoText = todo.children[1].innerText;
+    todoIndex = todos.indexOf(todoText);
     todos.splice(todos[todoIndex], 1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }

@@ -1,16 +1,27 @@
-import { todoInput, todoBtn, todoList, filterContainer, toDoCount } from './utilities.js';
-import { saveTodos, getTodos, removeLocalToDo, } from './ls.js';
+import { saveTodos, removeLocalToDo } from './ls.js'
+//Selectors
+const todoInput = document.querySelector(".todoInput");
+export const todoBtn = document.querySelector(".todoBtn");
+export const todoList = document.querySelector(".todoList");
+export const filterContainer = document.querySelector(".filterContainer");
+const tasksLeft = document.querySelector(".tasksLeft")
 
-export default class Todos {
-    addTodoListeners() {
-        //Event listeners
-        document.addEventListener('DOMContentLoaded', getTodos);
-        todoBtn.addEventListener('click', this.addToDo);
-        todoList.addEventListener('click', this.deleteOrCheck);
-        filterContainer.addEventListener('click', this.filterTodos);
+export default class Todos{
+    constructor(){
+
+    }
+    toDoCount() {
+        let todoCount;
+        if (!todoList.childElementCount) {
+            todoCount = 0;
+        }
+        else {
+            todoCount = todoList.childElementCount;
+        }
+        tasksLeft.textContent = todoCount;
     }
 
-    //Functions
+
     addToDo(event) {
         //prevent form from submitting:
         event.preventDefault();
@@ -21,7 +32,6 @@ export default class Todos {
                 <p class="todoText">${todoInput.value}</p>
                 <i class="trashBtn far fa-trash-alt"></i>
             </li>`;
-        // class for checked <i class="fas fa-check-square"></i>
 
         //Add html in text variable to the end of the list if value not empty:
         todoList.insertAdjacentHTML("beforeend", text);
@@ -30,6 +40,7 @@ export default class Todos {
         saveTodos(todoInput.value);
         todoInput.value = "";
     }
+
 
     deleteOrCheck(e) {
         //delete todo

@@ -14,12 +14,6 @@
   color: #f74a67;
 }
 
-.headerBack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .filterContainer p {
   transition: all 0.25s;
   font-size: 1.1rem;
@@ -40,8 +34,6 @@ body {
 
 header {
   font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
 }
 
 header, footer {
