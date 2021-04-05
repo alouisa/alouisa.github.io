@@ -183,13 +183,15 @@ main {
 }
 
 #finalScore {
-  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: 50vh;
   margin: 0 auto;
   padding: 8px;
   font-size: 2rem;
-  color: #e5524b;
-  animation: 3s shake infinite;
-  height: 50vh;
+  color: #12768e;
+  animation: 3s shake;
 }
 
 .selected {
