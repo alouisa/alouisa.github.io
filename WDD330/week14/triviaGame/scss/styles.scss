@@ -95,18 +95,12 @@ main{
 
 // ** HOME **
 .homeBody{
-   display: grid; 
-   grid-template-columns: 2fr 1fr;
-   max-width: 330px; 
-   margin: 0 auto;  
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 
-   @media($mediumBreak){
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-
-   }
 }
 
 .homeTitle{
@@ -127,9 +121,6 @@ main{
     display: block;
     max-width: 100%;
     animation: shake 1s 1s;
-    // &:hover{
-    //    animation: fadeInBeat 1s;
-    // }
 }
 
 .mainHeaderLink{
@@ -202,6 +193,16 @@ main{
     font-size: 1.2rem; 
     cursor: default;
 }
+#finalScore{
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 2rem;
+    color: #1e9582; 
+    animation: 3s shake infinite;
+    height: 50vh;
+}
+
 .selected{
     background: url('../images/brain350pxFlipp.png');
     color: $blueDark;

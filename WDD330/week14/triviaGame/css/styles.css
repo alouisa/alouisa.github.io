@@ -84,18 +84,11 @@ main {
 }
 
 .homeBody {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  max-width: 330px;
   margin: 0 auto;
-}
-@media (min-width: 550px) {
-  .homeBody {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeTitle {
@@ -187,6 +180,16 @@ main {
   padding: 8px;
   font-size: 1.2rem;
   cursor: default;
+}
+
+#finalScore {
+  text-align: center;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 2rem;
+  color: #1e9582;
+  animation: 3s shake infinite;
+  height: 50vh;
 }
 
 .selected {

@@ -15,6 +15,7 @@ export default class Quiz {
         this.continueBtn = document.getElementById('continueBtn');
 
         this.score = document.getElementById('score');
+        this.finalScore = document.getElementById('finalScore');
         this.index = 0;
         this.scoreCount = 0;
         this.attempts = 0;
@@ -49,7 +50,7 @@ export default class Quiz {
             if (e.target != element) {
                 if (e.target.innerText != this.correctAnswer) {
                     e.target.classList.add('incorrect');
-                    this.displayScore();
+                    this.displayScore(this.score);
                 }
                 else {
                     e.target.classList.add('correct');
@@ -58,7 +59,7 @@ export default class Quiz {
                         this.scoreCount += 1;
                     }
     
-                    this.displayScore();
+                    this.displayScore(this.score);
                 }
 
                 this.displayAnswer(e.target.innerHTML, this.answerDisplayBox);
@@ -81,13 +82,13 @@ export default class Quiz {
 
     }
 
-    displayScore() {
-        this.score.innerHTML = `Score: ${this.scoreCount}/10`;
+    displayScore(element) {
+        element.innerHTML = `Score: ${this.scoreCount}/10`;
     }
 
     next() {
 
-        if (this.index < 10) {
+        if (this.index < 9) {
             show(this.nextBtn);
 
         }
@@ -97,11 +98,16 @@ export default class Quiz {
             this.answerDisplayBox.innerHTML = '';
             this.index += 1;
             if (this.index < 10) {
-                this.setup(this.index);;
+                this.setup(this.index);
             }
             else {
+                hide(this.question.parentElement);
                 hide(this.nextBtn);
+                hide(this.score);
+                this.displayScore(this.finalScore);
+                show(this.finalScore);
                 show(this.continueBtn);
+
             }
         });
     }
