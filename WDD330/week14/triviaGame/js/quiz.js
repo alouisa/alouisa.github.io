@@ -103,7 +103,6 @@ export default class Quiz {
             else {
                 hide(this.question.parentElement);
                 hide(this.nextBtn);
-                hide(this.score);
                 show(this.finalScore);
                 this.displayScore(this.finalScore);
                 show(this.continueBtn);
