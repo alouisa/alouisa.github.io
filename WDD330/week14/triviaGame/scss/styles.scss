@@ -96,10 +96,14 @@ main{
 // ** HOME **
 .homeBody{
     margin: 0 auto;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    max-width: 90%;
+
+    @media($mediumBreak){
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
