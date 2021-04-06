@@ -202,6 +202,7 @@ main{
     padding: 0;
 }
 #finalScore{
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +211,6 @@ main{
     padding: 8px;
     font-size: 2rem;
     color: #12768e; 
-    animation: 5s 1s fadeInBeat infinite;
 }
 
 .selected{

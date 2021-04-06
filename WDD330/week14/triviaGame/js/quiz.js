@@ -103,6 +103,7 @@ export default class Quiz {
             else {
                 hide(this.question.parentElement);
                 hide(this.nextBtn);
+                this.finalScore.style = "animation: 5s fadeInBeat infinite;";
                 show(this.finalScore);
                 this.displayScore(this.finalScore);
                 show(this.continueBtn);
