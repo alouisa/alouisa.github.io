@@ -8,7 +8,7 @@ export default class Quiz {
         this.title = document.getElementById('quizTitle');
         this.question = document.getElementById('quizQuestion');
         this.answerDisplayBox = document.getElementById('answerDisplayBox');
-        this.correctAnswer = '';
+        this.correctAnswerIndex;
 
         this.quizList = document.getElementById('quizList');
         this.nextBtn = document.getElementById('nextBtn');;
@@ -26,6 +26,7 @@ export default class Quiz {
         let currentQuestion = this.categoryData[i]["question"];
         this.correctAnswer = this.categoryData[i]["correct_answer"];
         let allAnswers = (this.categoryData[i]["incorrect_answers"].concat(this.correctAnswer)).sort();
+        this.correctAnswerIndex = allAnswers.indexOf(this.correctAnswer);
         
         quizQuestion.innerHTML = `* ${currentQuestion} *`;
 
@@ -48,7 +49,8 @@ export default class Quiz {
             this.attempts += 1;
 
             if (e.target != element) {
-                if (e.target.innerText != this.correctAnswer) {
+                let targetIndex = Array.from(e.target.parentElement.childNodes).indexOf(e.target);
+                if (targetIndex != this.correctAnswerIndex) {
                     e.target.classList.add('incorrect');
                     this.displayScore(this.score);
                 }
