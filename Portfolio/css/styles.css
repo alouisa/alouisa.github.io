@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: black;
+  padding: 0 2%;
+}
+.mainNav {
+  padding: 1rem;
+}
+
+.mainNav ul {
+  display: flex;
+  padding: 0;
+}
+.mainNav ul li {
+  display: block;
+  list-style: none;
+}
+.mainNav ul li a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+}
+main{
+  height: 100px; /* remove */
+}
+footer{
+  background-color: black;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
