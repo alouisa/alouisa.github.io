@@ -1,0 +1,120 @@
+    .main-nav button{
+       display: none;
+    }
+    .main-nav ul li{
+       flex: 1 1 100%;
+    }
+    .main-nav ul li a{ 
+        text-align: center;
+        border: none;
+    }
+     .main-nav ul.hide, .main-nav ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto; 
+
+    }
+    main{
+        margin: 0 auto;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footertext{
+        display: flex;
+    }
+
+    .mediaIcons{
+        align-self: flex-end;
+        padding-bottom: 1%;
+    }
+
+
+
+
+/* ----------Home Page---------- */
+.weatherSummary p{
+   font-size: 1.15rem; 
+} 
+
+.rentalOfferings{
+    display: flex;
+} 
+#jeepOptions{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.locations{
+    display: flex;
+}
+
+/* ---------- Rentals ---------- */
+.rentalfigures{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.rentalfigures figure img{
+    max-width: 100%;
+}
+#rentalPricesTable{
+    margin: 25px auto 50px auto;
+    max-width: 100%;
+}
+
+thead tr:first-of-type{
+    font-size: 1.4rem;
+}
+
+thead tr:nth-child(3){
+    font-size: 1rem;
+}
+tbody{
+    font-size: 0.9rem;
+}
+
+
+/* ----------  Reservations  ---------- */
+
+
+
+/* ----------  Tours  ---------- */
+.tourGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+.scootTours h2{
+    margin-bottom: 0px;
+}
+.tourGrid p:first-child{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 1.1rem;
+    margin-top: 0;
+
+}
+.tourGrid figure{
+    margin: 0;
+}
+.islandFeatures h3, .sitesToVisit h3{
+    font-size: 1.5rem;
+}
+.islandFeatures p, .sitesToVisit a{
+    font-size: 1.1rem;
+}
+
+
+/* ----------  Contact  ---------- */
+.googlemaps{
+    display: flex;
+}
+
+/* ----------  Thank You & Confirmation Pages  ---------- */
+.scootThankyou h2, .scootConfirmation h2{
+    font-size: 2rem;
+}
+.scootThankyou p:first-of-type, .scootConfirmation p:first-of-type{
+    font-size: 1.1rem;
+}

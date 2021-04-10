@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+//colors
+$lightblue: #6495ED;
+$beige: #FAEBD7;
+$sand: #DEB887;
+
+$mediumgray: #555; 
+$header-background-color: $lightblue;
+$main-background-color: $beige; 
+$nav-link-color: $mediumgray;
+$nav-default-color: $beige;
+$nav-active-color: $sand; 
+$header2-default-color: black;
+$header2-active-color: $sand;
+$header2-hover-color: $lightblue; 
+$article-background-color: white;
+$article-link-default-color: $lightblue;
+$article-link-active-color: $sand;
+
+$primary-font-family:  Helvetica, Arial, sans-serif;
+$secondary-font-family: "Lora";
+
+//media sizes
+$break-small: 42em;
+$break-medium: 60em;
+$break-large: 72em;
+
+
+//mixims
+@mixin breakpoint($break) {
+@if $break == small {
+@media (min-width: $break-small) { @content; }
+}
+@else if $break == medium {
+@media (min-width: $break-medium) { @content; }
+}
+@else if $break == large {
+@media (min-width: $break-large) { @content; }
+} @else {
+@media ($break) { @content; }
+}
+}
+
+@mixin center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+//selectors
+body{
+   font-family: $primary-font-family;
+   margin: 0;
+   div{
+        @include breakpoint(small){
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+
+   }
+  }
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color:$header-background-color;
+    text-align: right;
+    padding: 2rem;
+
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+    list-style: none;
+     padding: 10px 0; 
+    }
+}
+.post-date{
+    color: $nav-link-color;
+}
+main{
+    background-color: $main-background-color;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-gap: 2rem;
+    @include breakpoint(small){
+        padding: 3rem 4rem;
+        grid-gap: 3rem; 
+    }
+
+}
+article{
+    background-color: $article-background-color;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 0px rgba(153, 153, 153, 0.712);
+}
+section img{
+    @include center-img();
+}
+
+/* LINKS */
+/*  ----- H1 Link ----- */
+h1 a{
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    color: white;
+}
+/*  ----- Navigation Links ----- */
+header {
+    nav a, nav a:visited{
+       color: $nav-default-color; 
+    }
+    nav a:hover{
+       text-decoration: underline 
+    }
+    nav a:active{
+        color: $nav-active-color;
+}
+}
+
+/*  ----- Article Title Links ----- */
+h2{
+    a, a:visited{
+        font-family: $secondary-font-family;
+         color: $header2-default-color 
+    }
+    a:hover{
+    color: $header2-hover-color;
+    text-decoration: underline;
+}
+    a:active{
+        color: $header2-active-color;
+}
+}
+
+
+/*  ----- Other Page Links ----- */
+article{
+    p a, article p a:visited{
+        color: $article-link-default-color;
+}
+    p a:active{
+        color: $article-link-active-color;
+}
+    p a:hover{
+        text-decoration: underline;
+}
+}
+
+

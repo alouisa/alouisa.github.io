@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cloud Catch Site weather forecast for Fish Haven, Idaho"  >
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Cloud Catch- Fish Haven, Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+   
+<body>
+    <header>
+        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <section class="header-text">
+        <h1>Cloud Catch</h1>
+        <div>For Idahoans fishing the clouds</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="townMain">
+        <h2>Fish Haven, Idaho</h2>
+        <div class="main-grid">
+            <div class="herodiv">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/fishhaven500px.jpg">
+                <source media="(max-width: 700px)" srcset="images/fishhaven700px.jpg">
+                <img src="images/fishhaven900px.jpg" alt="Man standing in front of defrosting river">
+            </picture>
+                <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p><b>Current: <span id="current-temp"></span>&deg;F <span id="weatherDescr"></span></b></p>
+                <p>High: <span id="highTemp"></span></p>
+                <p id="windchill-container">Wind Chill: <span id="windchill"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                </section>
+            </div>
+            <div class="forecast5">
+                <h3>5 day Forecast</h3>
+                <div class="cast5">
+                    <div>
+                        <p id="day1"></p>
+                        <img id="icon1" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast1"></p>
+                    </div>
+                    <div>
+                        <p id="day2"></p>
+                        <img id="icon2" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast2"></p>
+                    </div>
+                    <div>
+                        <p id="day3"></p>
+                        <img id="icon3" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast3"></p>
+                    </div>
+                    <div>
+                        <p id="day4"></p>
+                        <img id="icon4" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast4"></p>
+                    </div>
+                    <div>
+                        <p id="day5"></p>
+                        <img id="icon5" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast5"></p>
+                    </div>
+                </div>
+            </div>
+            <article class="prestonArticle">
+                <h3>Bear Lake Junior Livestock County 4-H and FFA Fair Activities Will Continue as Normal</h3>
+                <p>by Bear Lake County Extension Office</p>
+                <img src="images/fishhavenArticle.jpg" alt="hen plucking up grains from the ground">
+                <div class="article-p">
+                <p>The Bear Lake Junior Livestock Committee and 4-H Personnel met Thursday evening to make plans to move forward with a
+                reduced version of the fair.</p>
+                
+               <p>The County Commissioners realize the kids have put in countless hours raising and working with their animals to be ready
+                for the fair and feel we can safely have all the 4-H and FFA activities. The fair is a culminating event that marks the
+                end of countless hours of hard work, effort, and learning. 4-H and FFA livestock projects effectively help youth develop
+                critical life skills such as accepting responsibility, getting along with others, setting goals, decision making, and
+                interpersonal skills.</p>
+                
+                <p>The activities will be held August 11-15. The 4-H Horse Show will kick off the events and will be held Tuesday morning.
+                On Thursday morning, the youth will exhibit their swine and lamb projects followed by poultry and rabbit shows in the
+                afternoon. The evening will finish with the 4-H Style Review. The beef show will be held Friday morning, followed by the
+                dairy show. After lunch the “best of the best” will compete in the Round Robin, crowning the overall livestock showman.
+                </p>
+                </div>
+            </article>
+            <div id="upcomingEvents"></div>
+            <div class="contactInfo clear">
+                <img class="map" src="images/fishhavenMap.jpg" alt="Map of Fish Haven, Idaho">
+                <div class="contactDiv">
+                    <section class="address">
+                    <h3>Cloud Catch</h3>
+                    <p>2703 US-89</p>
+                    <p>Fish Haven, ID 83287</p>
+                    </section>
+                    <div class="emailPhone">
+                        <p>&#9742; (555)555-5555</p>
+                        <p>&#9993; idahoscloudcatch.com</p>
+                    </div>
+                    <div class="mediaIcons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="images/facebook.png" alt="facebook icon"> 
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="images/twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img src="images/pinterest.png" alt="pinterest icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy;<span></span> Cloud Catch | Attribution: 
+             <a href="https://openweathermap.org" target="_blank">OpenWeather</a>,
+             <a href="https://unsplash.com/photos/KeDUk_ltYvw" target="_blank">Will Walker</a>,
+             <a href="https://unsplash.com/photos/qVneOrTN06c" target="_blank">Jesse Schoff</a>,
+             <a href="https://www.hjnews.com/montpelier/bear-lake-county-4-h-and-ffa-fair-activities-will-continue-as-normal/article_81b1ea0a-5fed-5080-a4c3-5d8c83690744.html" target="_blank">The News Examiner</a> | Anna Astle </p>
+        <p id="todaysDate"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/towns.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots Site contact page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> ~Scoots- Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scooticon.svg" alt="scoots logo">
+        <section class="header-text">
+            <h1>~Scoots</h1>
+            <div>Opening the road to paradise</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="scootContact">
+        <h2>Contact Us</h2>
+        <form method="GET" action="thankyou.html">
+            <label> Full Name*
+                <input type="text" name="name" pattern="[A-Za-z ]{5,}" required>
+            </label>
+            <label> Phone*
+                <input type="tel" name="phone" placeholder="5551235432" required>
+            </label>
+            <label> Email
+                <input type="email" name="email" placeholder="someone@email.com">
+            </label>
+            <label>Comments
+                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+            </label>
+            <input type="submit" value="Contact Us">
+        </form>
+        <div class="googlemaps">
+            <figure>
+                <iframe
+                    title="Google Map of 77717 Playa del Carmen, Q.R., Mexico"
+                    src="https://via.placeholder.com/450x600?text=Map:Playa+del+Carmen" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119468.4239293378!2d-87.14173743044502!3d20.653777820322354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4323d22d4e61%3A0xe8c10b783bab4adc!2sPlaya%20del%20Carmen%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595010807519!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                    <figcaption>77717 Playa del Carmen, Q.R., Mexico<br/> +52 555 666 7890</figcaption>
+            </figure>
+            <figure>
+                <iframe title="Google Map of 77600 San Miguel de Cozumel, Q.R., Mexico" src="https://via.placeholder.com/450x600?text=Map:San+Miguel+de+Cozumel" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.60892185148!2d-86.97138260489442!3d20.512351587627062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595011000671!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <figcaption>77600 San Miguel de Cozumel, Q.R., Mexico<br/>+52 987 869 1999
+    </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div class="footertext">
+            <p><a href="contact.html">Contact Us </a><a href="resource.html"> | Resource
+                    Page</a> | Page Last Modified:&nbsp;
+            <p id="modifiedDate"></p>
+        </div>
+        <div class="mediaIcons">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="instagram icon" rel="noopener">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.google.com/maps/place/Cozumel+Cruise+Ship+Terminal/@20.5087645,-86.9586604,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4e59c46e7f3811:0x68b45730273fd699!8m2!3d20.5087595!4d-86.9564663"
+                target="_blank" rel="noopener">
+                <img src="images/mapicon.png" alt="map icon">
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazy.js"></script>
+</body>
+
+</html>

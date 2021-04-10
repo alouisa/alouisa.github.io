@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+@media (min-width: 42em) {
+  body div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #6495ED;
+  text-align: right;
+  padding: 2rem;
+}
+header nav ul {
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.post-date {
+  color: #555;
+}
+
+main {
+  background-color: #FAEBD7;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+@media (min-width: 42em) {
+  main {
+    padding: 3rem 4rem;
+    grid-gap: 3rem;
+  }
+}
+
+article {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px 0px rgba(153, 153, 153, 0.712);
+}
+
+section img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* LINKS */
+/*  ----- H1 Link ----- */
+h1 a {
+  font-family: "Lora";
+  font-weight: 500;
+  color: white;
+}
+
+/*  ----- Navigation Links ----- */
+header nav a, header nav a:visited {
+  color: #FAEBD7;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav a:active {
+  color: #DEB887;
+}
+
+/*  ----- Article Title Links ----- */
+h2 a, h2 a:visited {
+  font-family: "Lora";
+  color: black;
+}
+h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+h2 a:active {
+  color: #DEB887;
+}
+
+/*  ----- Other Page Links ----- */
+article p a, article article p a:visited {
+  color: #6495ED;
+}
+article p a:active {
+  color: #DEB887;
+}
+article p a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

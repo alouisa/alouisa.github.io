@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloud Catch Site weather forecast for Preston Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Cloud Catch- Preston Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- <aside class="announcement" style="display:block;">
+        <p>Saturday= Preston <b>Pancakes</b> in the Park!</p>
+        <p><b>9:00a.m. Saturday</b> at the <b>park pavilion</b>.</p>
+    </aside> -->
+    <header>
+        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <section class="header-text">
+            <h1>Cloud Catch</h1>
+            <div>For Idahoans fishing the clouds</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+        <main>
+            <h2 id="galleryHeading">Weather Gallery</h2>
+            <div class="weatherFigures">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="images/gallery/clouds-300x200.jpg" alt="Cloudy day in Fish Haven">
+                    <figcaption>Cloudy day in Fish Haven</figcaption>
+                </figure>   
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="images/gallery/rainbow-300x200.jpg" alt="Rainbow over Soda Springs">
+                    <figcaption>Rainbow over Soda Springs</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="images/gallery/rough-horn-300x200.jpg" alt="Snow covered mountains near Preston Idaho">
+                    <figcaption>Powdered mountains near Preston Idaho</figcaption>
+                </figure>
+                 <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="https://picsum.photos/id/1036/300/200" alt="Snow layering Soda Springs">
+                    <figcaption>Snow layering Soda Springs</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image"
+                        data-src="https://picsum.photos/id/1044/300/200" alt="Foggy day in Fish Haven">
+                    <figcaption>Foggy day in Fish Haven</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image"
+                        data-src="https://picsum.photos/id/109/300/200" alt="Sunny day in Preston Idaho">
+                    <figcaption>Sunny day in Preston Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="images/gallery/tornado-300x200.jpg" alt="Tornado passing through Preston Idaho">
+                    <figcaption>Tornado passing through Preston Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image" data-src="images/gallery/thunderstorm-300x200.jpg" alt="Thunderstorm in Fish Haven">
+                    <figcaption>Thunderstorm in Fish Haven</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200.png/1c4966/fff?text=Placehlder+Image"
+                        data-src="images/gallery/lightning-300x200.jpg" alt="lightning storm over Soda Springs">
+                    <figcaption>Lightning storm in Soda Springs</figcaption>
+                </figure>
+            </div>
+    </main>
+    <footer id="galleryFooter">
+        <p class="copyright">&copy;<span></span> Cloud Catch | Attributions: pexels.com, picsum.photos | Anna Astle </p>
+        <p id="todaysDate"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots Site rentals page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> ~Scoots- Rentals</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scooticon.svg" alt="scoots logo">
+        <section class="header-text">
+            <h1>~Scoots</h1>
+            <div>Opening the road to paradise</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="scootRentals">
+        <h2>Rentals</h2>
+        <div class="rentalfigures">
+            <figure>
+                <img src="images/rentals/scooterrental350px.jpg" alt="honda motor scooter">
+            <figcaption>Honda Scooter</figcaption>
+            </figure> 
+            <figure>
+                <img src="images/rentals/atvrental350px.jpg" alt="ATV side-by-side ">
+                <figcaption>Honda ATV</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rentals/jeeprental350px.jpg" alt="jeep">
+                <figcaption>Jeep Wrangler</figcaption>
+            </figure>
+        </div>
+        <table id="rentalPricesTable">
+            <thead>
+                <tr>
+                    <th colspan="6">Max Persons and Price Chart (includes Tax)</th>
+                </tr>
+                <tr>
+                    <th colspan="2">&nbsp;</th>
+                    <th colspan="2" class="pricetypes">Reservation</th>
+                    <th colspan="2" class="pricetypes">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            <tbody></tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="footertext">
+            <p> &#9742; +52 987 869 1999 |<a href="resource.html"> Resource Page</a>| Page Last Modified:&nbsp;
+            <p id="modifiedDate"></p>
+        </div>
+        <div class="mediaIcons">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="instagram icon" rel="noopener">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.google.com/maps/place/Cozumel+Cruise+Ship+Terminal/@20.5087645,-86.9586604,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4e59c46e7f3811:0x68b45730273fd699!8m2!3d20.5087595!4d-86.9564663" target="_blank" rel="noopener">
+                <img src="images/mapicon.png" alt="map icon">
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/rentalprices.js"></script>
+</body>
+
+</html>

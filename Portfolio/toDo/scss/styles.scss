@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backArrow{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s; 
+}
+.backArrow:hover{
+    color:rgb(247, 74, 103);
+}
+.headerBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterContainer p{
+    transition: all 0.25s;
+    font-size: 1.1rem;
+}
+.filterContainer p:nth-child(n + 2):hover{
+    border:1px solid black; 
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: rgb(247, 74, 103);
+    color: white;
+}
+body{
+   background-image: linear-gradient(45deg, rgb(119, 201, 228), rgb(88, 233, 88));
+   min-height: 100vh; 
+}
+
+header{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+header, footer{
+    color:white;
+    text-shadow: .5px .5px rgb(37, 1, 1);
+}
+
+header, main, footer{
+   min-height: 25vh; 
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.3rem;
+    min-width: 350px;
+    background-color: white;
+    transition: all 0.5s; 
+}
+.todo p{
+    flex: 1;
+    padding: 0 0.5rem;
+    transition: all 0.5s;
+}
+
+.completed{
+    opacity: 0.5;
+}
+.completed p{
+   text-decoration: line-through; 
+}
+
+.far, form button{
+    cursor: pointer;
+}
+
+.fa-square{
+ color: white;   
+ background-color: rgb(1, 160, 99);
+ padding: 1rem;
+ transition: all 0.5s;
+}
+.completed .fa-square{
+   color: rgb(1, 160, 99);
+   background-color: white; 
+}
+
+.fa-trash-alt{
+    background-color: orange;
+    padding: 1rem;
+}
+.filterContainer{
+    background-color: white;
+    min-width: 350px;
+    padding: 0.5rem;
+}
+.filterContainer, .select{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterContainer select{
+    margin-right: 0.1rem;
+}
+form input{
+    min-width: 300px;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    border: none;
+    background: white;
+    font-size: 1.2rem;
+}
+
+form button{
+    background-color: rgb(247, 74, 103);
+    color: white;
+    transition: all 0.5s;
+}
+
+form button:hover{
+    background-color: lightcoral;
+    color: black;
+}

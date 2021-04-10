@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloud Catch Site weather storm center">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Cloud Catch- Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!-- <aside class="announcement" style="display:block;">
+        <p>Saturday= Preston <b>Pancakes</b> in the Park!</p>
+        <p><b>9:00a.m. Saturday</b> at the <b>park pavilion</b>.</p>
+    </aside> -->
+    <header>
+        <img class="logo" src="images/weathericon.png" alt="Cloud Catch logo">
+        <section class="header-text">
+            <h1>Cloud Catch</h1>
+            <div>For Idahoans fishing the clouds</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="stormMain">
+        <h2>Storm Center</h2>
+        <form method="GET" action="thanks.html">
+        <fieldset>
+            <legend>
+                Reporter's Information
+            </legend>
+            <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+            <label class="top">Phone Number<input type="tel" name="phone" placeholder="5551235432" required></label>
+            <label class="top">Zip Code*<input type="number" name="zip" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date <input type="date" name="completeDate"></label>
+            <label class="top">Storm Type
+                <input type="text" list="stormtypes"> 
+            </label>
+                <datalist id="stormtypes">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+            <label class="top">Storm Severity = <span id="ratingvalue">5</span> / 10
+                <input id="stormSeverity" type="range" name="range" value="5" min="0" max="10" list="tickmarks"
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 
+            </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+            <label class="top">Storm Region
+                <select name="region">
+                    <option value="" selected disabled>Select Region</option>
+                    <option value="fish haven">Fish Haven</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda spring">Soda Springs</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Danger Level</legend>
+                <div>Are you in Danger?</div>
+               <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+               <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+               <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label class="top">What else should we know? <textarea name="comment"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Report this Storm" class="submitBtn">
+    </form>
+    </main>
+    <footer>
+        <p class="copyright">&copy;<span></span> Cloud Catch | Attribution: pexels.com, picsum.photos | Anna Astle </p>
+        <p id="todaysDate"></p>
+    </footer>
+    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/value.js"></script>
+</body>
+
+</html>

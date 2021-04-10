@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots Site reservation page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> ~Scoots- Reservations</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scooticon.svg" alt="scoots logo">
+        <section class="header-text">
+            <h1>~Scoots</h1>
+            <div>Opening the road to paradise</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="scootReservations">
+        <h2>Reservations</h2>
+        <form method="GET" action="confirmation.html">
+            <fieldset>
+                <legend>
+                    Renter's Information
+                </legend>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" placeholder="5551235432" required></label>
+                <label class="top">State<input type="text" name="text" ></label>
+                <label class="top">Country<input type="text" name="text"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top">Rental Date* <input type="date" name="completeDate" required></label>
+
+                <label class="top">Total Rental Days* <input type="number" name="totalrentaldays" required></label>
+                <label class="top">Rental Type*
+                    <select name="rentaltype" required>
+                        <option value="" selected disabled>Select Rental Type</option>
+                        <option value="honda metropolitan">Honda Metropolitan</option>
+                        <option value="honda dio">Honda Dio</option>
+                        <option value="honda PCX150">Honda PCX150</option>
+                        <option value="honda pioneer 1000">Honda Pioneer 1000</option>
+                        <option value="4-door jeep wrangler">4-door Jeep Wrangler</option>
+                        <option value="2-door jeep wrangler">2-door Jeep Wrangler</option>
+                    </select>
+                </label>
+
+    
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Cruise Line
+                    <input type="text" list="cruiselines" name="cruiseline">
+                </label>
+                <datalist id="cruiselines">
+                    <option value="Carnival">
+                    </option>
+                    <option value="Celebrity">
+                    </option>
+                    <option value="Crystal">
+                    </option>
+                    <option value="Disney">
+                    </option>
+                    <option value="Holland America">
+                    </option>
+                    <option value="Norweigian">
+                    </option>
+                    <option value="Princess">
+                    </option>
+                    <option value="Regent Seven Seas">
+                    </option>
+                </datalist>
+
+                <label class="top">What else should we know? <textarea name="comment"></textarea></label>
+                <div class="infoAndServices">
+                    <div>Information and Services</div>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <input type="submit" value="Reserve Your Vehicle">
+        </form>
+    </main>
+    <footer>
+        <div class="footertext">
+            <p> &#9742; +52 987 869 1999 |<a href="resource.html"> Resource Page</a>| Page Last Modified:&nbsp;
+            <p id="modifiedDate"></p>
+        </div>
+        <div class="mediaIcons">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="instagram icon" rel="noopener">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.google.com/maps/place/Cozumel+Cruise+Ship+Terminal/@20.5087645,-86.9586604,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4e59c46e7f3811:0x68b45730273fd699!8m2!3d20.5087595!4d-86.9564663"
+                target="_blank" rel="noopener">
+                <img src="images/mapicon.png" alt="map icon">
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

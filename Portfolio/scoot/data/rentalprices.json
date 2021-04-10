@@ -1,0 +1,53 @@
+{
+    "rentalData": [
+        {
+            "rentalType": "Honda Motor Scooter",
+            "maxPersons": 1,
+            "halfDayRes": 20,
+            "fullDayRes": 30,
+            "halfDayWalkIn": 25,
+            "fullDayWalkIn": 35
+        },
+        {
+            "rentalType": "Honda Dio Scooter",
+            "maxPersons": 2,
+            "halfDayRes": 30,
+            "fullDayRes": 40,
+            "halfDayWalkIn": 35,
+            "fullDayWalkIn": 45
+        },
+        {
+            "rentalType": "Honda PCX150 Scooter",
+            "maxPersons": 2,
+            "halfDayRes": 40,
+            "fullDayRes": 50,
+            "halfDayWalkIn": 45,
+            "fullDayWalkIn": 55
+        },
+        {
+            "rentalType": "Honda Pioneer ATV",
+            "maxPersons": 4,
+            "halfDayRes": 50,
+            "fullDayRes": 70,
+            "halfDayWalkIn": 60,
+            "fullDayWalkIn": 80
+        },
+        {
+            "rentalType": "Jeep Wrangler - 4 door",
+            "maxPersons": 5,
+            "halfDayRes": 70,
+            "fullDayRes": 100,
+            "halfDayWalkIn": 85,
+            "fullDayWalkIn": 125
+        },
+        {
+            "rentalType": "Jeep Wrangler - 2 door",
+            "maxPersons": 4,
+            "halfDayRes": 60,
+            "fullDayRes": 85,
+            "halfDayWalkIn": 70,
+            "fullDayWalkIn": 90
+        }
+  
+    ]
+}

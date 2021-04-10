@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots Site homepage">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> ~Scoots- Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scooticon.svg" alt="scoots logo">
+        <section class="header-text">
+            <h1>~Scoots</h1>
+            <div>Opening the road to paradise</div>
+        </section>
+    </header>
+    <nav class="main-nav">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="scootHome">
+        <h2>Welcome to Cozumel Paradise!</h2>
+            <div class="weatherSummary">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/home/cozumel500px.jpg">
+                    <source media="(max-width: 700px)" srcset="images/home/cozumel700px.jpg">
+                    <img src="images/home/cozumel900px.jpg" alt="Cozumel, Mexico">
+                </picture>
+                    <p><i>Currently: <span id="weatherDescr"></span> <span id="current-temp"></span>&deg;F 
+                        with <span id="humidity"></span>% humidity</i></p>
+            </div>
+                <div class="cast5">
+                    <div>
+                        <p id="day1"></p>
+                        <img id="icon1" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast1"></p>
+                    </div>
+                    <div>
+                        <p id="day2"></p>
+                        <img id="icon2" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast2"></p>
+                    </div>
+                    <div>
+                        <p id="day3"></p>
+                        <img id="icon3" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast3"></p>
+                    </div>
+                    <div>
+                        <p id="day4"></p>
+                        <img id="icon4" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast4"></p>
+                    </div>
+                    <div>
+                        <p id="day5"></p>
+                        <img id="icon5" src="images/weathericonplaceholder.png" alt="sun shining">
+                        <p id="forecast5"></p>
+                    </div>
+                </div>  
+
+               <div class="rentalOfferings">
+                   <div id="scooterOptions">
+                       <p><img src="images/home/scooter.svg" alt="scooter icon"> Honda Motor Scooters</p>
+                       <ul>
+                           <li>Honda Metropolitan (49cc)- 1 person</li>
+                           <li>Honda Dio (110cc)- 2 person</li>
+                           <li>Honda PCX150 (149cc)- 2 person</li>
+                       </ul>
+                    </div>
+                    <div id="atvOptions">
+                       <p><img src="images/home/atv30px.jpg" alt="atv icon"> Honda Motor Scooters</p>
+                       <ul>
+                           <li>Honda Pioneer 1000</li>
+                       </ul>
+                    </div>
+                    <div id="jeepOptions">
+                       <p><img src="images/home/jeep.svg" alt="jeep icon"> Honda Motor Scooters</p>
+                       <ul>
+                           <li>4-door Jeep Wrangler-<br/>
+                        manual with A/C- 5 people max</li>
+                           <li>2-door Jeep Wrangler- open air -<br/>
+                        manual- 4 people max</li>
+                       </ul> 
+                    </div>
+               </div>
+                <p id="rentaltravelvehicle"><a href="reservations.html">Rent Your Travel Vehicle</a>
+                    from one of our two locations:</p>
+               <div class="locations">
+                <figure>
+                    <img src="images/home/playadelcarmen450px.jpg" alt="playa del carmen location">
+                    <figcaption>Playa del Carmen Location</figcaption>  
+                </figure>
+                    <figure>
+                        <img src="images/home/terminalpuerta450px.jpg" alt="terminal puerta maya location">
+                        <figcaption>Terminal Puerta Maya Location</figcaption>
+                    </figure>
+            </div>
+    </main>
+    <footer>
+        <div class="footertext">
+            <p> &#9742; +52 987 869 1999 |<a href="resource.html"> Resource Page</a>|  Page Last Modified:&nbsp;
+            <p id="modifiedDate"></p>
+        </div>
+            <div class="mediaIcons">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                    <img src="images/instagram.png" alt="instagram icon" rel="noopener">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="images/facebook.png" alt="facebook icon">
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://www.google.com/maps/place/Cozumel+Cruise+Ship+Terminal/@20.5087645,-86.9586604,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4e59c46e7f3811:0x68b45730273fd699!8m2!3d20.5087595!4d-86.9564663" target="_blank" rel="noopener">
+                    <img src="images/mapicon.png" alt="map icon">
+                </a>
+            </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
