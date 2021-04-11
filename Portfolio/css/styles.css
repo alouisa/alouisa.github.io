@@ -32,6 +32,12 @@ main{
 footer{
   background-color: black;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }
 
 /*# sourceMappingURL=styles.css.map */
