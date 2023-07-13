@@ -1,11 +1,10 @@
 # Brain Storm
-![brain copy1 1brainstorm](https://github.com/alouisa/alouisa.github.io/assets/41756295/56ec2101-1663-463d-b414-ff0c0a4d9f74)
 
 ## Table of contents
 
 - [Description](#description)
 - [Technologies](#technologies)
-
+![brain copy1 1brainstorm](https://github.com/alouisa/alouisa.github.io/assets/41756295/56ec2101-1663-463d-b414-ff0c0a4d9f74)
 
 # Description
 
