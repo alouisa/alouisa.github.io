@@ -4,7 +4,7 @@
 
 - [Description](#description)
 - [Technologies](#technologies)
-![brain copy1 1brainstorm](https://github.com/alouisa/alouisa.github.io/assets/41756295/56ec2101-1663-463d-b414-ff0c0a4d9f74)
+![brainstorm2 1brainstorm](https://github.com/alouisa/alouisa.github.io/assets/41756295/9eb7439e-3f7b-4912-b650-b22d3f08c349)
 
 # Description
 
