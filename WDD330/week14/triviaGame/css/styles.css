@@ -89,7 +89,7 @@ main {
 }
 
 .homeBody {
-  margin: 0 auto;
+  margin: 0 auto 0 50px;
   max-width: 90%;
   display: flex;
   height: 100vh;
@@ -232,11 +232,16 @@ main {
 
 #continueQuiz {
   display: flex;
-  max-width: 485px;
-  margin: 0 auto;
+  max-width: 350px;
+  margin: 2%;
   justify-content: space-between;
   background: #e6ecf1;
   border-radius: 5px;
+}
+@media (min-width: 500px) {
+  #continueQuiz {
+    margin: 0 auto;
+  }
 }
 
 #answerDisplayBox {
