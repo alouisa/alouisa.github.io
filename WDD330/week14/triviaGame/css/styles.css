@@ -249,7 +249,7 @@ main {
 }
 
 .hide {
-  display: none;
+  display: none !important;
   padding: 0;
 }
 
