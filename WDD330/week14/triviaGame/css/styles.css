@@ -162,8 +162,7 @@ main {
   animation: slideInRight 2s forwards;
 }
 
-.catergoriesContainer,
-.quiz {
+.catergoriesContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
