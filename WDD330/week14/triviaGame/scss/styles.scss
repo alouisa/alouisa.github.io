@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Neucha&display=swap");
 //** Variables ** //
 
 $pinkPurpleLight: #c02a8d;
@@ -16,6 +16,7 @@ $mediumBreak: "min-width: 550px";
 body {
   margin: 0;
   opacity: 100%;
+  font-family: "Kumbh Sans", sans-serif;
 }
 a {
   text-decoration: none;
@@ -33,6 +34,10 @@ h2 {
   text-shadow: 2px 2px white;
   text-align: center;
   font-size: 1.8rem;
+  margin-bottom: 0;
+  @media (min-width: 700px) {
+    font-size: 3rem;
+  }
 }
 h3 {
   text-align: center;
@@ -63,7 +68,7 @@ main {
 }
 
 .triviaList li {
-  border: 2px solid lighten($gray, 45);
+  border: 1px solid #b0b0b0;
   border-radius: 5px;
   padding: 1rem;
   margin: 5px;
@@ -71,7 +76,7 @@ main {
   color: $green;
   background-color: white;
   transition: all 0.2s;
-  box-shadow: rgb(230, 236, 241) 2px 2px 6px 3px;
+  box-shadow: 7px 7px 8px -3px #00000040;
 
   &:hover {
     background: url("../images/brain350pxFlipp.png");
