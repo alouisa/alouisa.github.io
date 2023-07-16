@@ -46,7 +46,11 @@ main {
 }
 
 .triviaSection {
-  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
 }
 
 .triviaList li {
@@ -156,6 +160,15 @@ main {
   font-size: 1.2rem;
   transform: translateX(-300px);
   animation: slideInRight 2s forwards;
+}
+
+.catergoriesContainer,
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
 }
 
 .categoryOption {

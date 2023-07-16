@@ -55,7 +55,11 @@ main {
 }
 
 .triviaSection {
-  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
 }
 
 .triviaList li {
@@ -164,7 +168,14 @@ main {
 }
 
 // ** Categories **
-
+.catergoriesContainer,
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
 .categoryOption {
   border: 1px solid rgba(167, 164, 164, 0.459);
   border-radius: 5px;
