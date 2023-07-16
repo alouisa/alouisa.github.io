@@ -235,13 +235,14 @@ main {
 
 #continueQuiz {
   display: flex;
-  max-width: 350px;
+  max-width: 100%;
   margin: 2%;
   justify-content: space-between;
   background: lighten($gray, 60%);
   border-radius: 5px;
   @media (min-width: "500px") {
     margin: 0 auto;
+    max-width: 350px;
   }
 }
 
